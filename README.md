@@ -10,7 +10,7 @@ This version does **not** require a `pl/` folder to install. The loader can be i
 2. Run `install.bat`.
 3. Start the game from Steam.
 
-If no `translation/` or `pl/` folder exists, the installer only installs the DLL loader, config, EXE bootstrap, and launcher. It does not copy CSV files.
+If no `translation/` folder exists, the installer only installs the DLL loader, config, EXE bootstrap, and launcher. It does not copy CSV files.
 
 If auto-detection fails, run:
 
@@ -41,7 +41,6 @@ Run `uninstall.bat`.
 ## Modder Notes
 
 - Edit translation files in `translation/` or pass your own folder with `--translation-dir`.
-- `pl/` is still supported for compatibility, but it is no longer required.
 - Edit `saeko_mod_loader.ini` to change language code, label, game CSV folder, fallback language, or template source language.
 - Save CSV as UTF-8 without BOM.
 - Run `python .	oolsalidate_translation.py --translation ".	ranslation"` before installing translated files.
