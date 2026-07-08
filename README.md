@@ -57,7 +57,6 @@ If no `translation/` folder exists, the installer will still install the loader.
     │  ├─ banner.png
     │  └─ social-preview.png
     ├─ docs/
-    ├─ source/
     ├─ tools/
     ├─ install.bat
     ├─ uninstall.bat
