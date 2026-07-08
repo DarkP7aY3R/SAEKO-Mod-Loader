@@ -1,0 +1,134 @@
+skit,1
+cake,prologue
+action,wake-up
+wait,4
+
+play,prologue,prologue
+saeko,Oh. You're finally up.
+
+action,exclamation
+wait,2
+
+action,
+saeko,"I was worried, you know.
+Since you suddenly fainted."
+
+saeko,You've been asleep the whole time.
+
+saeko,"But it looks like I was worried for nothing.
+How are you feeling? Nothing hurts?"
+
+rin,Uh...
+
+action,nod
+rin,"I'm fine. My head's just a bit blank.
+But..."
+
+saeko,But?
+
+rin,"Maybe I'm still dreaming. In front of me...
+There's a huge human, as big as a wall..."
+
+saeko,"...Teehee. I knew it.
+I would look that way to you, wouldn't I?"
+
+saeko,"But this is reality.
+I can see your little figure just fine."
+
+saeko,"And it's not that I'm big.
+Take a look around you."
+
+action,look-around
+rin,...
+
+action,question
+rin,Is this a desk for giants?
+
+action
+saeko,"Wrong again. I'm a normal human, and this is a normal desk. It's a study desk made of red pine. I've been using it for ten years or so."
+
+saeko,"Now, for the correct answer. You're the one who's gotten smaller. That's why everything looks big to you."
+
+action
+rin,...
+
+action,question
+rin,Why?
+
+action,
+saeko,Who knows? I'd like the answer myself.
+
+saeko,"I saw you walking outside, tiny as a doll. I thought it'd be dangerous for you out there so I took you home right away."
+
+rin,So this...
+
+action,question
+rin,...is your home?
+
+action
+saeko,"Correct. Just an eight-tatami one-room apartment. But it must look as large as a palace to you, right?"
+
+action,nod
+rin,Yeah...
+
+action
+saeko,"...Hey, what are you going to do now? The outside world is full of dangers for a tiny thing like you."
+
+saeko,"I'll help you look for a way to change back, so why don't you live with me until then?"
+
+saeko,I'll take care of everything for you while you're here.
+
+rin,...
+
+action,nod
+rin,Thanks. I guess that works...
+
+saeko,Hehe. Are you feeling nervous? Don't worry. You aren't any trouble at all.
+
+saeko,"Oh, right. Tell me about you.
+What's your name? What kind of person are you?"
+
+know,rin
+rin,My name is Rin. And...
+
+rin,"And, er..."
+
+saeko,Oh? What's wrong?
+
+rin,Um... Huh?
+
+saeko,"You can't remember?
+Don't tell me you've lost your memory?"
+
+rin,"It seems like it. When I try to remember anything besides my name, um..."
+
+action,worry
+rin,...
+
+saeko,"...Oh dear, that's a bit of a situation."
+
+saeko,"Okay. I'll help you find a way to get both your memories and your size back. We can work together."
+
+action,normal
+saeko,"...Oh, I haven't introduced myself yet."
+
+know,saeko
+saeko,"My name is Saeko. Written with the character Sae meaning cold and clear like moonlight."
+
+action
+rin,"Nice to meet you, Saeko."
+
+saeko,"It's nice to meet you too.
+I hope we'll enjoy our time together."
+
+action,meta_hand
+saeko,"Now, get on my hand."
+
+rin,...!
+
+saeko,No need to be afraid. It'll be fine.
+
+saeko,"Let's go together.
+I'll give you a full tour of your new home..."
+
+goto,day,1

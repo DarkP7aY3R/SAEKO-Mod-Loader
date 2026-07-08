@@ -1,0 +1,11 @@
+*.log
+*.tmp
+__pycache__/
+*.pyc
+target/
+build/
+*.exe
+*.pdb
+*.exp
+*.lib
+saeko_win64.original.exe

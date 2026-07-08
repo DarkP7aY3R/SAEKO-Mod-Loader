@@ -1,0 +1,34 @@
+open
+cake,ending
+layout,ribbon
+play,ending,g
+action,g5_city-light
+wait,3
+
+saeko,...Teehee. How exhilarating.
+
+saeko,The night really sparkles when you look at it from here... How beautiful.
+
+action,g5_city-fire
+wait,12
+
+saeko,...Oh dear.
+
+saeko,It's fine. We have all the time in the world.
+
+wait,2
+
+saeko,"Even if this toy disappears, there are many more fun toys waiting for us out there."
+
+saeko,"Come on, Rin. I'm sure you've caught your breath by now."
+
+saeko,Let's enjoy ourselves to the fullest until the world meets its end...
+
+wait,3
+
+achieve,ENDING_G
+clear,g
+center,"
+END"
+
+goto,endroll,g

@@ -1,0 +1,152 @@
+skit,1
+play,night,coffee
+cake,desk-down
+action,study
+wait,normal,1
+
+s,normal,"So, how was your day?"
+
+s,normal,"It was rough for a first day, wasn't it?"
+
+cake,desk-up
+wait,angry,1
+s,angry,Respond.
+
+skit,2
+q,yes,yes
+s,angry,"Answer when I ask a question. If you screw up again...you got it?"
+label,2,yes
+    jump,next
+
+skit,3
+allow,yes,yes
+s,normal,"The last supervisor isn't around anymore."
+
+action,
+allow,yes,yes
+s,bored,"I need you to stick around a little longer than that
+gentleman."
+
+cake,desk-down
+action,study
+wait,bored,3
+
+action,idle
+allow,yes,yes
+s,,Hey.
+
+skit,4
+q,yes|no,yes|no
+s,,"Do you think a person's personality can change?"
+label,4,yes
+    action,tonton
+    wait,,2
+
+    allow,yes,yes
+    s,,Hmm...
+    action,nearhand
+    jump,next
+
+label,4,no
+    allow,yes,yes
+    action,idle
+    s,,...Yeah.
+    jump,next
+
+skit,5
+allow,yes,yes
+s,,...I don't think it can.
+
+allow,yes,yes
+action,study
+s,,"Personalities are like yachts on water. Once the wind blows, they can't stop."
+
+allow,yes,yes
+action,study|patapata
+s,,"All I can do is idly watch the other boats..."
+
+allow,yes|wrong,yes
+action,study|patapata
+s,,"Or accept where this boat takes me. That's all."
+
+action,nearhand
+allow,yes,yes
+s,,Appearances are like that too...
+
+skit,6
+q,wrong|yes,yes
+action,tonton
+s,,"But everyone knows how to change those, right?"
+label,6,yes
+
+allow,yes,yes
+action,nearhand|study
+s,smug,"Take care of your skin. Exercise. Don't eat sweet stuff at night."
+
+cake,desk-up
+wait,bored,2
+
+skit,7
+q,why|yes,why|yes|nop
+s,normal,"...I have something better to eat anyway, don't I?"
+
+label,7,why
+    jump,7a
+
+label,7,yes
+    jump,7b
+
+label,7,nop
+    jump,7b
+
+skit,7a
+q,why_you_eat|nothing,why_you_eat|nothing
+# ここから顔アップになり1行36文字に
+s,angry,Hm?
+
+label,7a,why_you_eat
+s,serious,Well...
+wait,serious,2
+
+skit,8a
+q,good|no_good,good
+s,angry,"Because you're delicious.
+...That's not good enough?"
+
+label,8a,good
+    allow,sou|silent,sou
+    s,normal,"That's good then.
+    Little people are so yummy."
+
+    allow,yes|iranai,yes
+    s,normal,"I wish I could let you have a taste too..."
+
+    allow,yes|thanks|iranai,yes|thanks
+    s,bored,"...Well. Maybe another time."
+
+    object,add,cookie
+    jump,9
+
+skit,7b
+cake,desk-down
+action,study
+wait,bored,3
+
+skit,9
+cake,desk-down
+pose,study
+wait,normal,2
+# 顔再び映らない。1行40文字に戻る
+allow,yes,yes
+pose,idle
+s,normal,"Oh, it's this late already?"
+
+allow,yes,yes
+s,normal,...Let's leave it for today.
+
+allow,yes|thanks,yes|thanks
+cake,desk-up
+s,normal,"Bye, Rin... Good night.
+And sweet dreams."
+
+goto,midnight,1

@@ -1,0 +1,15 @@
+id,variant,order,name,condition,description,quote
+omamori,,1,Charm,Finish the prologue.,A felt charm. The uneven stitches are cute.,"Even if it doesn't look that well-made, it really works."
+cookie,,1,Cookie,Ask what food Saeko likes during a conversation on the first night.,A gingerbread cookie in the shape of a human. The sugary smile makes you hungry.,The real thing is warmer.
+camera,,2,Camera,Explore Saeko's past memories during a conversation on the second night.,"An instant camera with undeveloped film. Even if the subject is gone, the memories remain.",It was hard getting the camera to focus.
+beanie,,3,Knit Cap,Find the third choice during a conversation on the third night.,An off-white knit cap. Even you recognize the brand logo.,I knew it'd look good even without you trying it on.
+jewelrybox,a,3,Jewelry Box,Complete Chapter 1.,A jewelry box that can open and close. The location changes a little every time you go out.,I almost never find anything good to buy.
+jewelrybox,b,3,Jewelry Box,Complete Chapter 1.,A jewelry box that can open and close. The location changes a little every time you go out.,I almost never find anything good to buy.
+kaiju,,1,Figurine,Talk about monster movies during a conversation on the fourth or fifth night.,A figurine in the shape of a monster. The horn expresses its desire to destroy.,"Rin, why are your eyes sparkling so much?"
+sunglasses,,4,Sunglasses,Try to flirt with Saeko during a conversation on the fourth or fifth night.,Designer sunglasses. They are a must-have for any flashy guy.,"What do you think? They'd look good on me too, right?"
+concealer,,5,Concealer,Show interest in makeup during a conversation on the fourth or fifth night.,A concealer for hiding skin imperfections. The face becomes a canvas for art.,"Like I thought, little people have no need for this."
+horagai,p,3,Seashell,Complete Chapter 2.,"A conch shell from the seashore. Put your ear close, and you can hear the sound of the ocean.",The sound is your breathing being echoed back at you.
+horagai,g,3,Broken Seashell,Complete Chapter 2.,A conch shell broken at the seashore. You used to be able to hear the sound of the ocean.,I won't waver anymore.
+handmirror,atonement,6,Hand Mirror,Complete the seventh night.,"A hand mirror for looking at yourself. Saeko and you, Rin, can be seen in it now.","Yes, this is you and me."
+handmirror,suicide,6,Hand Mirror,Complete the seventh night.,A hand mirror for looking at yourself. Only Saeko's body can be seen in it now.,"Yes, this is me."
+handmirror,g,6,Hand Mirror,Complete the seventh night.,A hand mirror for looking at yourself. Nothing is reflected in its shattered surface.,I no longer care what other people think.

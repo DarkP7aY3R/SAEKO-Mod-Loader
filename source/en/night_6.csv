@@ -1,0 +1,341 @@
+# 6日目、Pルート(チオ,クララ死亡)
+skit,1
+play
+dplay,night,shore
+undead
+cake,shore-down
+action
+s,,"...Rin, aren't you cold?"
+
+s,,Careful. The sea breeze is strong at night.
+
+wait,,2
+
+s,,"...I love this place. It's high up, so you can see the waves go far into the distance."
+
+wait,,1
+
+s,,...Hey.
+
+skit,2
+q,no|yes,yes|no
+s,,Did you have fun with me these last few days?
+
+label,2,yes
+label,2,no
+skit,2b
+q,hontou|uso,hontou|uso
+s,,...Really?
+
+label,2b,hontou
+s,,Hm...
+
+wait,,1
+
+s,,It's fine. Don't lie today.
+
+jump,2c
+
+label,2b,uso
+s,,Hm...
+
+wait,,1
+
+s,,Please. Don't lie today.
+
+skit,2c
+s,,Tell me your honest feelings... I want to know the truth.
+
+jump,3
+
+skit,3
+
+wait,,1
+
+s,,...How was your job as the supervisor?
+
+skit,4
+# Gルート（チオ生存）だと「楽しかった」しか選べない
+if,50,survived,chio
+q,tanoshikatta,tanoshikatta
+else,50
+q,tanoshikatta|saiaku,tanoshikatta|saiaku
+end,50
+s,,You chose little people for me every day. How did that feel?
+
+label,4,saiaku
+skit,4a1
+dsect,tense
+q,mainichi,mainichi
+s,,Huh?
+
+label,4a1,mainichi
+skit,4a2
+action,dark
+q,ikita,ikita
+s,,...
+
+label,4a2,ikita
+skit,4a3
+action,dark|wave_weak
+q,sonnano,sonnano
+s,,...
+
+label,4a3,sonnano
+skit,4a4
+q,hontounisaiaku,hontounisaiaku
+s,,...
+
+label,4a4,hontounisaiaku
+skit,4a5
+action,dark|wave_strong
+size,1
+q,wrong,wrong
+s,,"...I didn't mishear you, did I?"
+
+label,4a5,wrong
+skit,4a6
+q,minna1,minna1
+s,,...
+
+label,4a6,minna1
+skit,4a7
+action,dark|wave_strong|wind
+q,mokomo,mokomo
+s,,...
+
+label,4a7,mokomo
+skit,4a8
+q,yuimo,yuimo
+s,,...
+
+label,4a8,yuimo
+skit,4a9
+size,2
+q,claramo,claramo
+s,,...
+
+label,4a9,claramo
+skit,4a10
+q,minna2,minna2
+s,,...
+
+label,4a10,minna2
+skit,4a11
+dsect,break
+q,minna3,minna3
+s,,...
+
+label,4a11,minna3
+skit,4a12
+size,-1
+q,minna4,minna4
+s,,...
+
+label,4a12,minna4
+skit,4a13
+size,0
+wait,,2
+
+cake,shore-up
+action,earring
+s,side_normal,...I can't help it.
+
+s,side_normal,There's another me inside of me.
+
+s,side_normal,"Her senses are dulled, and she rarely moves."
+
+s,side_normal,"Someone good-looking likes her, or a friend's dream comes true..."
+
+s,side_normal,"Other people would cry in happiness at that, but she doesn't respond at all."
+
+dsect,tense
+s,side_normal,"So I don't feel happy either. I paste a smile on my face, but it's like I'm not even there."
+
+wait,side_closed,1
+
+s,side_closed,"...But, you know."
+
+s,side_normal,The girl inside me does respond strongly sometimes. To screams. To tears rolling down cheeks.
+
+s,side_normal,"To thin arms and legs, huge eyes, and tiny bodies I can do anything I want to..."
+
+s,side_normal,"The first time I shrunk somebody, I finally felt fulfilled."
+
+s,side_sad,This is it. I knew the moment I did it.
+
+s,side_normal,I knew I shouldn't do it. That I was hurting somebody.
+
+s,side_normal,But there's something within me that I can't hold back...
+
+s,side_normal,And if I don't hurt someone...make them feel pain...that something will never be fulfilled.
+
+action,front|earring
+s,front_normal,"I wish somebody's smile could make me happy, like it does for other people."
+
+s,front_angry,"That's what it's like for everyone, right?!"
+
+s,front_angry,But not for me! I can't be happy unless I'm hurting someone!
+
+s,front_angry,This is how I was born!
+
+wait,front_angry,2
+
+skit,5a
+q,no|yes,yes|no
+s,front_angry,So who cares? I can do what I want!
+
+label,5a,no
+skit,5a1
+q,tashikani,tashikani
+s,front_shocked,...!
+
+label,5a1,tashikani
+dsect,break
+skit,5a2
+q,hitowo,hitowo
+s,front_shocked,...
+
+label,5a2,hitowo
+skit,5a3
+q,bokuwa,bokuwa
+s,front_shocked,...
+
+label,5a3,bokuwa
+skit,5a4
+q,konnakoto,konnakoto
+s,front_shocked,...
+
+label,5a4,konnakoto
+skit,5a5
+s,front_shocked,...
+
+wait,front_normal,2
+
+s,front_normal,"Rin, you're right."
+
+s,front_closed,But if that's true...then I...
+
+wait,front_closed,2
+object,add,horagai,p
+
+action,earring
+s,side_sad,"Hey, Rin. Let me go home."
+
+s,side_sad,I want time to think by myself.
+
+goto,midnight,today
+
+label,5a,yes
+skit,5c
+action,front|earring
+q,yes,yes
+s,front_normal,...Really?
+
+label,5c,yes
+s,front_smile,Thank you. I knew you'd understand me.
+
+jump,6b
+
+label,4,tanoshikatta
+cake,shore-down
+skit,5b
+if,245,survived,chio
+q,yes,yes
+else,245
+q,yes|no,yes|no
+end,245
+s,,...Really?
+
+label,5b,no
+allow,sorry,sorry
+s,,...Please. Don't lie to me today.
+
+s,,Then...
+
+jump,4
+
+label,5b,yes
+dsect,tense
+s,,Great. I was a bit worried.
+
+# チオ生存＝リンがクララを差し出した場合
+if,246,survived,chio
+s,,That girl you fed me today--Clara.
+else,246
+achieve,CHANGE_OF_HEART
+s,,That girl I crushed today--Clara.
+end,246
+
+s,,"I shrunk her and brought her here since she was close to you, Rin."
+
+action,wind
+s,,I thought it'd be a nice little test for you.
+
+s,,...But you passed. I should be thankful.
+
+cake,shore-up
+action,earring
+wait,,2
+
+s,side_normal,...I think I'm different from other people.
+
+s,side_normal,"When someone good-looking likes me, or a friend's dream comes true..."
+
+s,side_normal,"Other people would cry in happiness, but I don't feel happy at all."
+
+s,side_normal,Normal happiness doesn't fulfill me. I was always left behind by myself.
+
+wait,side_closed,1
+
+s,side_closed,"...But, you know."
+
+s,side_normal,The first time I caught somebody...and shrunk them...
+
+s,side_normal,When I accidentally crushed their struggling little hands and feet with my fingers--
+
+s,side_smile,Something sparked deep within my heart. This is it. I knew the moment I did it.
+
+s,side_closed,"From then on, color returned to my life. It was just so fun playing with little people."
+
+wait,side_closed,1
+
+action,front|earring
+
+s,front_normal,"But, as time passed... I've eaten people on a whim--even friends I'd finally made somehow..."
+
+s,front_normal,"And I started to waver. I wondered if I couldn't fall in love with someone, like everyone around me."
+
+dsect,break
+s,front_normal,But then I met you.
+
+skit,6b
+s,front_smile,"You've been a good supervisor since the day I met you, Rin."
+
+s,front_normal,"But things happened, and you fell in love with me."
+
+s,front_normal,"It made me uncomfortable, so I erased your memory."
+
+s,front_smile,"It's cuter if you hate and despise me, don't you think?"
+
+s,front_normal,I made you do lots of awful things after erasing your memory.
+
+s,front_normal,So that you'd hate me and die like a normal little person.
+
+wait,,1
+action,front|earring
+s,front_closed,But even after all that...
+
+s,front_normal,You came back to me again.
+
+wait,front_normal,2
+
+s,front_normal,"Hey, Rin. Let's go home together."
+
+object,add,horagai,g
+
+s,front_normal,"No matter what happens, I won't waver anymore."
+
+s,front_smile,I'll protect this happiness to the end.
+
+goto,midnight,today

@@ -1,0 +1,295 @@
+skit,1
+play,night,casual
+undead
+cake,desk-down
+action
+wait,,2
+
+cake,desk-up
+action
+wait,angry,1
+s,angry,...Hey.
+
+s,serious,I changed my mind. You don't have to come with me today.
+
+skit,1a
+q,yes|no,yes|no
+s,serious,"I want to think on my own. You'd have more fun talking with somebody else, wouldn't you?"
+
+label,1a,yes
+label,1a,no
+skit,2
+cake,desk-up
+action,sway
+q,wakatta|modoranai,wakatta|modoranai
+s,serious,Come to my hand. I'll take you back to the drawer.
+
+label,2,modoranai
+jump,4
+
+label,2,wakatta
+skit,3
+
+q,yes|no,yes|no
+s,bored,...Really? You want to go back?
+
+label,3,yes
+s,serious,Okay. Fine.
+
+jump,99_suicide
+
+label,3,no
+jump,4
+
+skit,4
+action
+s,closed,Okay...
+
+cake,desk-down
+wait,closed,2
+
+allow,yes,yes
+s,serious,"Well, do what you want, but I'm fine on my own."
+
+# 冴子、無言で考え事してる。勉強はしてない。できれば悩んでる感じの初出し差分が欲しい
+
+wait,,2
+
+action,drink
+wait,,3
+
+skit,5
+q,nee,nee
+s,normal,...
+
+label,5,nee
+skit,6
+action,drink-down
+q,hanashikaketemo,hanashikaketemo
+s,normal,...
+
+label,6,hanashikaketemo
+skit,7
+cake,desk-up
+action
+wait,angry,1
+
+s,angry,...What?
+
+s,serious,No. I just told you I want to think about something.
+
+wait,lookaway,2
+
+# 3〜4つ質問を自由に選べる。答えたあとは元の選択肢に戻り、全て聞いたら(skit,10)へ
+
+skit,10
+list
+q,q_sukinamono|q_doushite|q_seikaku,q_sukinamono|q_doushite|q_seikaku
+action
+if,77,first_time
+s,lookaway,...What did you want to ask?
+else,77
+s,lookaway,...That's all?
+end,77
+
+label,10,q_sukinamono
+s,serious,What I like? ...Why are you asking?
+
+wait,serious,1
+
+allow,hee,hee
+s,lookaway,"Hm, I like looking at clothing. Seeing what's popular, and what isn't."
+
+allow,hee,hee
+s,lookaway,I used to wear formal dresses a lot for piano recitals.
+
+allow,naruhodo,naruhodo
+s,serious,I'd be reborn as a princess from another world just by putting on a long dress.
+
+allow,yes,yes
+s,closed,"I haven't been to any recitals lately, so I haven't had many chances to wear them..."
+
+allow,hee,hee
+action,sway
+s,serious,I still look at clothes sometimes and think about whether they'll look good on me.
+
+action
+wait,serious,1
+
+allow,yes,yes
+action
+s,serious,Everyone says you should just wear what you want and ignore what other people think...
+
+action,think
+s,lookaway,But it's a bit embarrassing...
+
+jump,back
+
+label,10,q_doushite
+
+allow,yes,yes
+s,lookaway,...So you're curious.
+
+wait,lookaway,1
+
+allow,yes,yes
+s,serious,It's a mystery to me too... but I remember when it started.
+
+# 原案小説で、「冴子の父親がアフリカから呪術師の仮面を持って帰ってきた、それをきっかけに魔力が開花した」という設定があります。
+# ただ、現代の感覚では若干ステレオタイプな感じがするので、ゲーム内のテキストとしては具体的な地域をボカしています
+allow,yes,yes
+s,serious,My father brought back a mask from an overseas business trip.
+
+action,sway
+allow,naruhodo,naruhodo
+s,serious,He probably just meant it as a surprise for his young daughter.
+
+# 初潮、ただし低年齢すぎるので絶対にボカす
+allow,naruhodo,naruhodo
+action
+s,closed,"But on the next full moon, I suddenly fell ill..."
+
+action,think
+s,lookaway,And now I'm here.
+
+wait,lookaway,1
+
+allow,no,no
+s,bored,...What? You look unsatisfied.
+
+allow,yes,yes
+s,serious,It's a mystery to me too. All of it.
+
+action
+s,serious,But...
+
+s,closed,"Even if I don't know the backstory, all of it started with me."
+
+s,lookaway,"I really enjoyed shrinking and eating people. I'm sad to say it, but it's true."
+
+jump,back
+
+label,10,q_seikaku
+
+s,serious,"...Well, I'm a bad person."
+
+wait,serious,1
+
+allow,yes|no,yes|no
+s,bored,Why ask when you already know? You must have already realized that in your time with me.
+
+allow,yes,yes
+s,serious,Besides that? Well...
+
+s,serious,"I'm rather diligent, I think. I've never forgotten to do my homework."
+
+allow,hee,hee
+s,bored,"I usually do what people ask me to perfectly, though I haven't had any chance to show you that..."
+
+wait,bored,1
+
+allow,naruhodo,naruhodo
+action,sway
+s,serious,"And, hm... I like things to be harmonious."
+
+allow,naruhodo,naruhodo
+s,serious,Like with my room and Scriabin's melodies.
+
+action
+allow,yes,yes
+s,closed,"When everything I see is perfectly in order, with nothing out of line..."
+
+action,think
+allow,naruhodo,naruhodo
+s,normal,I love it when the world is like that.
+
+jump,back
+
+label,10,over
+action
+if,183,survived,kazu
+skit,11
+q,soreja,soreja
+s,serious,...
+
+label,11,soreja
+skit,12
+q,q_sukina|nothing,q_sukina|nothing
+s,angry,...What?
+
+label,12,nothing
+allow,yes,yes
+s,serious,...If you say so.
+jump,99_suicide
+else,183
+skit,12
+s,serious,...Haaah.
+
+s,serious,Why are you asking me that now?
+
+jump,99_suicide
+end,183
+
+skit,99_suicide
+allow,yes,yes
+s,serious,"Bye, Rin. Let's meet again tomorrow."
+
+object,add,handmirror,suicide
+goto,midnight,today
+
+label,12,q_sukina
+
+allow,yes,yes
+s,angry,Hey.
+
+allow,sorry,sorry
+s,angry,You can't just ask anything you want because I'm feeling weak.
+
+skit,13
+q,yes|sonna,yes|sonna
+s,angry,That question's off-limits. Got it?
+
+label,13,yes
+label,13,sonna
+wait,angry,2
+
+s,serious,...I've never fallen in love with somebody like other girls.
+
+s,serious,"Kissing, holding hands, and having my heart race over that... I've never felt that way."
+
+wait,closed,2
+
+action,think
+allow,yes,yes
+s,closed,"But, well..."
+
+allow,yes,yes
+s,serious,If you put aside any ideas of romance...
+
+wait,closed,1
+
+object,add,handmirror,atonement
+s,lookaway,...there is somebody I don't want to hate me.
+
+jump,12
+
+skit,12
+
+wait,lookaway,3
+
+action,sway
+allow,yes,yes
+s,serious,"...That should be enough, right?"
+
+wait,serious,2
+
+s,serious,Forget everything I said just now. Or else...
+
+wait,angry,2
+
+s,lookaway,Sorry. It's nothing.
+
+allow,yes,yes
+s,angry,"Bye, Rin. I'll see you tomorrow morning."
+
+goto,midnight,today

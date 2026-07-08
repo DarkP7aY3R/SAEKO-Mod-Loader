@@ -1,0 +1,217 @@
+skit,1
+play,night,casual
+undead
+cake,desk-down
+action
+wait,,2
+
+action,nearhand
+s,,...Hey.
+
+allow,yes,yes
+s,,I don't feel like studying right now. This time...
+
+cake,desk-up
+wait,normal,1
+
+skit,2
+q,yes,yes
+action
+s,tilted,Why don't we chat?
+
+label,2,yes
+s,smile,"Good. Now then, Rin."
+
+allow,yes,yes
+s,normal,I feel like I'm always the one talking...
+
+allow,yes|wakatta,yes|wakatta
+s,tilted,Why don't you ask me questions today?
+
+skit,5
+list
+q,q_sukinamono|q_doushite|q_seikaku,q_sukinamono|q_doushite|q_seikaku
+action
+if,23,first_time
+s,tilted,"I'll answer any questions, just this once... So what do you want to ask?"
+else,23
+s,tilted,Do you have anything else you want to ask?
+end,23
+
+label,5,q_sukinamono
+s,tilted,What I like? Good question.
+
+allow,hee,hee
+s,smile,"Hm, I like looking at clothing. Seeing what's popular, and what isn't."
+
+allow,yes,yes
+s,normal,I used to wear formal dresses a lot for piano recitals.
+
+allow,naruhodo|sou,naruhodo|sou
+s,normal,I'd be reborn as a princess from another world just by putting on a long dress.
+
+allow,yes,yes
+action,sway
+s,normal,"I haven't been to any recitals lately, so I haven't had many chances to wear them..."
+
+allow,naruhodo|sou,naruhodo|sou
+s,bored,I still look at clothes sometimes and think about whether they'll look good on me.
+
+wait,normal,1
+
+action
+allow,yes,yes
+s,normal,"But in the end, clothes are about how other people see them..."
+
+action,think
+s,smile,So I don't really care about them now.
+
+jump,back
+
+label,5,q_doushite
+allow,yes,yes
+s,smile,...Teehee. You want to know?
+
+allow,naruhodo,naruhodo
+s,bored,It's a mystery to me too... but I remember when it started.
+
+# 原案小説で、「冴子の父親がアフリカから呪術師の仮面を持って帰ってきた、それをきっかけに超能力が開花した」という設定があります。
+# ただ、現代の感覚では若干ステレオタイプな感じがするので、ゲーム内のテキストとしては具体的な地域をボカしています
+allow,yes,yes
+s,normal,My father brought back a mask from an overseas business trip.
+
+allow,yes,yes
+s,normal,He probably just meant it as a surprise for his young daughter.
+
+# 初潮、ただし低年齢すぎるので絶対にボカす
+allow,yes,yes
+action,sway
+s,normal,"But on the next full moon, I suddenly fell ill..."
+
+action,think
+s,smile,And now I'm here.
+
+wait,smile,1
+
+action
+allow,sorry|shitenai,sorry|shitenai
+s,bored,...What? You look unsatisfied.
+
+allow,naruhodo,naruhodo
+s,normal,It's a mystery to me too. All of it.
+
+allow,yes,yes
+s,bored,But...
+
+action
+s,closed,"Even if I don't know the backstory, all of it started with me."
+
+action,think
+s,smile,I really enjoyed shrinking and eating people... And it's how I met you.
+
+jump,back
+
+label,5,q_seikaku
+s,tilted,"...Well, I'm a bad person."
+
+wait,tilted,1
+
+allow,yes|no,yes|no
+s,bored,Why ask when you already know? You must have already realized that in your time with me.
+
+allow,yes,yes
+s,closed,Besides that? Well...
+
+action
+allow,sou|naruhodo,sou|naruhodo
+s,normal,"I'm rather diligent, I think. I've never forgotten to do my homework."
+
+allow,yes,yes
+s,normal,"I usually do what people ask me to perfectly, though I haven't had any chance to show you that..."
+
+wait,normal,1
+
+action,sway
+s,closed,"And, hm... I like things to be harmonious."
+
+allow,yes,yes
+s,normal,Like with my room and Scriabin's melodies.
+
+action
+allow,yes,yes
+s,serious,"When everything I see is perfectly in order, with nothing out of line..."
+
+action,think
+s,closedsmile,I love it when the world is like that.
+
+jump,back
+
+label,5,over
+
+skit,10
+q,q_sukina|nothing,q_sukina|nothing
+s,normal,Anything else you want to ask?
+
+label,10,q_sukina
+allow,yes,yes
+action
+s,serious,Hey.
+
+allow,sorry,sorry
+s,angry,"We know each other a bit better now, but that doesn't mean you can ask anything you want."
+
+skit,13
+q,yes|sonna,yes|sonna
+action,sway
+s,angry,That question's off-limits. Got it?
+
+label,13,yes
+label,13,sonna
+wait,angry,2
+
+action
+allow,yes,yes
+s,serious,...I've never fallen in love with somebody like other girls.
+
+allow,sou|naruhodo,sou|naruhodo
+s,serious,"Kissing, holding hands, and having my heart race over that... I've never felt that way."
+
+wait,closed,2
+
+action,think
+allow,yes,yes
+s,normal,"But, well..."
+
+allow,yes,yes
+s,lookaway,If you put aside any ideas of romance...
+
+wait,closed,1
+
+action
+object,add,handmirror,g
+s,lookaway_smile,...there is somebody I don't want to let go of.
+
+wait,closed,3
+
+action,sway
+s,serious,"...That should be enough, right?"
+
+jump,next
+
+label,10,nothing
+action,sway
+s,lookaway_smile,Yes...
+
+action
+allow,yes,yes
+s,normal,That's enough for today.
+
+skit,14
+allow,yes,yes
+s,smile,"Thank you, Rin. Getting to talk to you today was fun."
+
+object,add,handmirror,g
+allow,oyasumi,oyasumi
+s,bored,Go sleep. ...We have an early morning tomorrow.
+
+goto,midnight,today

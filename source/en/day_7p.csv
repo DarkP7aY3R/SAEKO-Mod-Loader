@@ -1,0 +1,677 @@
+skit,1
+survivor,add,kazu
+item,add,cake
+bg,black
+m,I return to the center of the cold drawer.
+
+m,I hear neither the sound of the wind nor the waves lapping the shore. Only the terrible silence of the drawer.
+
+m,Even the faint sound of my heartbeat feels like it might stop at any moment.
+
+bg,room,fade,in
+
+m,...
+
+m,There is someone new in the drawer.
+
+rin,(Should I go talk to them like I always do...?)
+
+m,I get up and try to walk over.
+
+m,But I can't find the strength. I fall on my knees and then on to the floor.
+
+play,day,supervisor
+m,The wood is hard. Maybe I'll just lie down forever...
+
+show,kazu,shadow
+kazu,Hey.
+
+m,...
+
+kazu,"Heeey, you alright over there? I heard a huge thump."
+
+kazu,"You're not hurt, are you? I'll head over now to check on you! Don't force yourself to move or anything. Just wait right there."
+
+show
+m,"I hear loud, heavy footsteps. The footsteps of somebody who isn't used to living here yet."
+
+show,kazu,smile
+know,kazu
+kazu,How are you doing? I'm Kazu. It's nice to meet you. Are you doing okay?
+
+show,kazu,serious
+kazu,You look like you're down in the dumps. Why are you so depressed?
+
+rin,...
+
+rin,Sorry.
+
+show,kazu,surprised
+kazu,Huh? You don't have to apologize.
+
+show,kazu,smile
+kazu,"Oh, could you tell me your name? We'll be living here together, so I'm sure it'll come in handy."
+
+rin,...
+
+rin,Rin.
+
+# クララがリンを捜索していた、という話外の世界で広まっているため
+show,kazu,surprised
+kazu,"Rin! So, you're Rin. I guess you're the type that's popular with the ladies nowadays."
+
+rin,...?
+
+show,kazu,smile
+kazu,"Ah, don't worry about that. Just talking to myself."
+
+kazu,"Sorry to ask you this when you're down, but could you help me out a bit?"
+
+show,kazu,normal
+kazu,"I'm trying to profile Saeko. Wait, do I need to explain what profiling is? You know what I mean, don't you?"
+
+rin,...
+
+kazu,You don't know? My bad! Profiling is when you use things around a person to analyze their personality.
+
+kazu,"I want you to help me find something that'll help me understand her! Something she's used for a long time, which might show what she likes. That'd be perfect."
+
+rin,...
+
+skit,2
+pick
+m,"The newcomer, Kazu, wants me to find something that will show what Saeko likes. Apparently, he wants to profile her... But is there any point?"
+
+label,2,other,other
+show,kazu,surprised
+kazu,"Hey, Rin. Where on earth are you headed?"
+
+show,kazu,smile
+kazu,"I know you're tired, but I want you to bring me something. Help a man out!"
+
+rin,...
+
+jump,back
+
+label,2,kazu,other
+rin,...
+
+m,I look at what I have in my hands. How would this help somebody understand Saeko?
+
+rin,...
+
+rin,"(This is a pain. I want to just give him something and get this over with, but...)"
+
+show,kazu,smile
+m,I glance at Kazu. His eyes are filled with anticipation.
+
+show
+rin,(I guess I should do this properly.)
+
+jump,back
+
+label,2,kazu,ipod
+rin,...Here.
+
+show,kazu,smile
+kazu,"Oh, thanks! I know you're tired--I appreciate it. An iPod, eh?"
+
+kazu,"It's not as good as a cell phone, but it's still perfect for profiling. Music really shows a person's interests, you know."
+
+show,kazu,serious
+kazu,"Hmm, let's look at the song list... Oh, I see..."
+
+show,kazu,surprised
+kazu,Hm... Oh-ho... Interesting...
+
+show,kazu,smile
+kazu,"Well, that's just what I expected. There aren't any popular J-pop songs in here. No artists like SNAP or Azumi Hamamatsu."
+
+kazu,Only boring nameless instrumental songs. It fits right with the image of a lonely and introverted girl.
+
+rin,...
+
+kazu,"Thank you, Rin. By the by, you've been here for a while, right? What kind of girl does Saeko look like to you?"
+
+rin,...Who knows?
+
+show,kazu,serious
+kazu,"My, what happened to you? Oh, I know. You must have suffered from being here for so long."
+
+show,kazu,smile
+kazu,...But you don't have to worry. Saeko will be caught soon. Help will be here shortly.
+
+rin,...
+
+rin,...And?
+
+show,kazu,surprised
+kazu,"""And?"" That's all you have to say? Here I thought you'd be crying in happiness."
+
+show,kazu,serious
+kazu,"But let's put that aside for now. I'm actually a magazine reporter, and for a while, I've been following a series of disappearances... the Vanishing Incidents."
+
+kazu,"I'd gone to the house of somebody relevant to the case for an interview, but I ended up getting caught myself."
+
+rin,Somebody relevant to the case...?
+
+show,kazu,crazy
+kazu,"Oh, do you want to know? Of course, I mean Saeko. I say relevant, but the police are already calling her the culprit internally."
+
+show,kazu,serious
+kazu,You'll recall the incident three days ago where the Kotobishi girl vanished. That really got the investigation going.
+
+# SPは複数
+show,kazu,smile
+kazu,"I mean, she's the daughter of a very wealthy family. Even when she's walking around alone, she always has undercover security watching her."
+
+show,kazu,serious
+kazu,"When she disappeared, there wasn't anybody suspicious nearby, or any cars. Just a female university student."
+
+kazu,"No matter how you look at it, that girl's suspicious."
+
+kazu,But I can't believe somebody who'd covered her tracks so well is getting caught so easily...
+
+rin,...
+
+show,kazu,normal
+kazu,"It's still not clear how she does it, and there's no warrant or evidence..."
+
+show,kazu,serious
+kazu,But this is a clue for the Vanishing Incidents that have been tormenting the cops for years. They can't let this go.
+
+kazu,The investigation's perfect and the media are already in on it. The first search will probably start tomorrow morning.
+
+show,kazu,smile
+kazu,So? I bet you're pleased as punch. You'll finally be free! You can go see your family on the outside.
+
+rin,...
+
+show,kazu,serious
+kazu,"Or do you have a case of that--what's it called? Stockholm syndrome? If so, your head must be whirling right now."
+
+rin,"...I got it, but you're too loud. Could you go away for now?"
+
+flash
+show,kazu,crazy
+kazu,Hmph... It looks like you're in need of some counseling.
+
+show,kazu,normal
+kazu,"Well, I'm sure you need some time to organize your thoughts. I'll leave you alone for now."
+
+show,kazu,crazy
+kazu,"But come back when you've calmed down! The last act begins tomorrow morning, and I'm getting an interview with you before then!"
+
+play
+show
+m,"After shouting that, Kazu walks away."
+
+rin,...
+
+m,"I throw my back on to the flat floor and lie down. With Chio and Clara gone, the drawer feels multiple times larger than usual."
+
+m,Kazu frowns as he fiddles with the iPod in the distance. It has a playlist full of boring nameless songs that he can't understand.
+
+m,"According to him, the outside world is coming for Saeko, and the police will search the premises tomorrow morning."
+
+m,"That means, if I live through this night, Saeko will be caught tomorrow morning..."
+
+rin,(...Then what?)
+
+rin,(If I can go back to the outside world... What happens next?)
+
+rin,"(Plus, there are the others. And Saeko. What happens to us?)"
+
+play,day,sax
+rin,...
+
+rin,(But...)
+
+rin,"(Honestly, I don't want to think about anything.)"
+
+rin,"(If I could just disappear from this world, one sense blurring away at a time...)"
+
+m,...
+
+m,....................................
+
+show,akari,normal
+akari,...Rin.
+
+rin,...!
+
+akari,Morning. Were you listening to that guy?
+
+rin,That guy?
+
+show,akari,disgusted
+akari,"Yeah, that shady man calling himself a magazine reporter. I told him to get lost, but he kept talking to me anyway."
+
+akari,"He wore me down, and I ended up telling him what Saeko's done to me. He got all worked up. Said it was the obscenest torture in all of human history..."
+
+rin,...
+
+show,akari,normal
+akari,"...Rin, what are you going to do with him?"
+
+rin,What...?
+
+show,akari,disgusted
+akari,I hate him. I wish he'd die.
+
+
+flash
+akari,Why don't you give him that cake? Tell him it's a present. Then it'd be curtains for him this evening.
+
+show,akari,jitome
+akari,"He can get worked up all he wants in Saeko's stomach. ""EXCLUSIVE! View From the Delicate Insides of a Giant Man-Eating Girl"" or whatever."
+
+akari,"He can come up with a sensational title while shoulder-deep in stomach acid, but he can't think his way out of his brain cells getting melted."
+
+show,akari,smile
+akari,"The police are coming tomorrow morning. The two of us can escape then. He won't even leave a body. What do you think? The perfect plan, right?"
+
+rin,...
+
+show,akari,normal
+akari,"...Hey, Rin. What did you think of what I said just now?"
+
+rin,Um... About what to do with Kazu?
+
+show,akari,disgusted
+akari,No.
+
+flash
+show,akari,normal
+akari,"Even if we get out of here, we can't have a happy ending."
+
+rin,...!
+
+akari,I don't plan on lecturing you. I hate lectures myself.
+
+show,akari,disgusted
+akari,But if tomorrow comes and we get out of here safely... Can you really accept that? Can you return to your past life just like that?
+
+rin,...
+
+show,akari,normal
+akari,Just think about it.
+
+akari,The things you did here. How you might be able to get out of here tomorrow. And your current relationship with Saeko.
+
+akari,Then...
+
+akari,What do you think you should do now?
+
+rin,...
+
+show,akari,jitome
+akari,"...Anyway, that's all I wanted to say."
+
+akari,Think for yourself and make a decision that you can accept. I don't care even if we all end up dead because of it.
+
+skit,3
+pick
+play
+m,The time for me to feed somebody as the supervisor has come... The rules: Make a little person have at least 50 Appeal. Make sure no little people have 0 or worse Health. What should I do?
+
+label,3,kazu,cake
+m,I pick up the cake and approach Kazu.
+
+play,day,feed
+rin,...Kazu. Could you eat this for me?
+
+show,kazu,smile
+kazu,Oh! Oh-ho!
+
+kazu,"Thank you. I've had my eye on this since I got here. I've got a real sweet tooth, you see..."
+
+cutin,kazu_eating_cake
+effect
+item,remove,cake
+m,Kazu finishes speaking and puts his mouth on the sponge cake. The sweet smell of whipped cream fills the drawer.
+
+cutin
+show,kazu,smile
+kazu,I can't believe how huge this cake is. I could eat all day and I still wouldn't finish. This is heaven...
+
+rin,...
+
+show,kazu,crazy
+kazu,You could make a business out of shrinking people. I'm sure everyone's dreamed about a bathtub full of pudding.
+
+kazu,"After this whole thing is over and we find out how Saeko shrinks people, people could pay to get shrunk."
+
+show,kazu,smile
+kazu,You'd be able to eat your favorite snacks and fancy restaurant food hundreds of times larger than you... It'd be a riot!
+
+show,akari,normal
+flash
+akari,Interesting. You might even get eaten by accident.
+
+rin,...!
+
+show,kazu,surprised
+kazu,"Wh-What are you saying? I heard all about your titillating experiences earlier, Akari, b-but that's just..."
+
+show,akari,normal
+akari,...Rin. This is your choice.
+
+rin,...
+
+show,akari,disgusted
+akari,I...expected a different outcome. But your choice is...
+
+akari,...
+
+show,akari,normal
+akari,It's fine. I'm used to this.
+
+rin,...
+
+show,akari,jitome
+akari,We just have to wait for the usual routine now.
+
+show,akari,smile
+akari,"Kazu, sorry for cutting you off. I'll keep out of your way until you die, so rant all you want."
+
+show,kazu,feared
+kazu,Wha... Huh?!
+
+show,kazu,feared,akari,jitome
+kazu,Until I d-die? What are you saying?!
+
+show,kazu,feared
+kazu,"N-Now that I think about it, if this drawer's where everyone in the Vanishing Incidents has ended up, aren't there too few people here?"
+
+kazu,"I know Saeko has a personality problem, b-but where has everyone gone?!"
+
+show,kazu,fearangry
+kazu,"Hundreds--no, thousands--of people have disappeared over the years! It's a huge case! Wh-Why are there o-only three people here?!"
+
+m,Kazu's voice gets louder as he starts making a fuss.
+
+kazu,"What happened to everyone?! Rin, don't just keep your mouth shut. Say something!"
+
+m,Just as Kazu begins to shake my shoulders while wailing--
+
+jump,next
+
+label,3,akari,cake
+# アカリは元の魅力が5なので、ケーキで魅力を+35しても食べられない。よって、誰も殺さない選択になる
+m,I pick up the cake and approach Akari.
+
+m,"When I walk close enough to see her face, she smiles in satisfaction."
+
+show,akari,jitome
+akari,"...Teehee. You thought this through, Rin. I think this is the right choice too."
+
+show,akari,smile
+akari,But I haven't seen a cake in a while... This looks really sweet.
+
+cutin,akari_eating_cake
+effect
+achieve,AKARI_EATS_CAKE
+item,remove,cake
+play,day,emotion
+m,"As Akari speaks, she puts her mouth on the edge of the cake. The sweet smell of whipped cream fills the drawer."
+
+m,"One, two, then three bites... While at first she seemed to be holding back, she starts eating faster and faster."
+
+cutin
+show
+m,"Before I know it, the huge cake has disappeared, leaving only Akari, who lies down with a contented smile."
+
+show,akari,smile
+akari,"Ah, I'm so happy... I feel incredible."
+
+show,akari,jitome
+akari,My head feels so light... I don't care even if I die like this.
+
+rin,...
+
+show,akari,disgusted
+akari,"What? Why do you keep looking at me? You can look all you want, but I'm not saying anything."
+
+akari,...
+
+jump,3a2
+
+label,3,other,other
+
+m,I stare at the humongous object in my hand.
+
+m,"I'm used to my work as the supervisor by now, so I already know. This object won't raise anybody's Appeal."
+
+m,...
+
+# 失敗2回目
+if,383,flag,3_fail,1
+rin,(I know. Giving this to somebody won't mean anything to Saeko. But that's why I'm doing it.)
+
+rin,(That way I won't have to choose anyone today...)
+
+m,My eyes happen to meet Akari's as she stands by the wall.
+
+show,akari,normal
+akari,...
+
+play,day,emotion
+akari,I think that's the correct choice too.
+
+rin,...!
+
+jump,3a2
+
+else,383
+m,My eyes happen to meet Akari's as she stands by the wall.
+
+show,akari,normal
+akari,...
+
+rin,"(She keeps looking at me, then looking around the drawer... I wonder if she wants something.)"
+
+rin,(It's fine. I still have time. I'll think some more about what the correct choice is...)
+
+flag,3_fail,1
+
+jump,back
+end,383
+
+skit,3a2
+show,akari,disgusted
+akari,"You decided not to give anybody to Saeko today, didn't you?"
+
+show,akari,jitome
+akari,That's what I thought you should do too.
+
+akari,...
+
+akari,"Well, it might just get us killed, but I have no regrets."
+
+akari,...At least we can acknowledge our own sins this way.
+
+rin,...Yeah.
+
+rin,...I'm sure of it.
+
+m,"By acknowledging my sin of killing the other little people, I can finally move forward."
+
+show,akari,smile
+akari,...Teehee. That's enough talking. Let's wait for Saeko to come back.
+
+show,akari,normal
+akari,I'm heading to bed. Go somewhere else.
+
+show
+m,"Akari leaves it at that and lies down right there. I hear her breaths soften into sleep, as if nothing had happened..."
+
+m,"I've been watching her body rise and fall rhythmically for a few minutes, when--"
+
+jump,4
+
+skit,4
+play
+show
+bg,room,quake,light
+m,"A low, muffled vibration reverberates from a distance. The sound of heavy footsteps."
+
+bg,room,quake,heavy
+
+m,There's no mistaking it. Saeko has returned to her room.
+
+bg,room,quake,heavy
+
+m,Saeko walks through the room with even breaths. Every step she takes shakes the drawer like an earthquake...
+
+bg,room,quake,heavy
+
+m,Each tremor growing larger and more violent than the last.
+
+bg,room,quake,long
+
+m,"Soon, they become too strong for me to stand."
+
+m,I find myself crouching on the floor.
+
+m,"Next, I hear the creak of something moving."
+
+m,"Then, a tremendous commotion that shakes the whole room..."
+
+m,...as the room we're in--the second drawer of a desk--is pried open by Saeko's fingers.
+
+play,day,open
+interrupt,shift
+open
+interrupt,open_sliding_in
+pose,serious,normal
+
+saeko,"Hello, cute little people. Were you good today while I was away?"
+
+saeko,...A lot happened today. I'm tired.
+
+saeko,...
+
+saeko,I'll have my portion for today now.
+
+pose,serious,pick
+
+m,Saeko's hand comes down into the drawer.
+
+m,Her unthinkably large fingers fill our vision.
+
+m,"They wander for just a moment, as if carefully making a decision... "
+
+skit,5
+judge
+label,5,nop
+play
+pose,,black
+m,"And then return to the sky, empty-handed."
+
+pose,serious,normal
+saeko,"...Hey, Rin."
+
+saeko,Nobody in here looks yummy. Why?
+
+play,day,openslow
+rin,I...
+
+rin,I thought this was right.
+
+saeko,...
+
+rin,I've been a terrible person up until now.
+
+rin,"Tricking others, raising their Appeal, and feeding them to you..."
+
+rin,I'd even started to enjoy it.
+
+rin,"You're awful, but I've been just as awful."
+
+rin,I know I won't be forgiven even if I stop now. I'll have to be punished.
+
+rin,But I finally realized my own sins...
+
+rin,So I can't give you any more people.
+
+pose,grumpy,normal
+saeko,...What?
+
+saeko,Do you understand what you're saying? I could crush you under my finger like a bug.
+
+saeko,Don't go against my orders. Just act like a doll and do what I say without thinking.
+
+saeko,What I mean...
+
+pose,tearful,tearful
+saeko,What I mean is that you haven't done anything wrong.
+
+saeko,You're just as bad as me? You don't need to say that.
+
+saeko,...I don't want to hear it!
+
+pose,tearful,normal
+interrupt,teardrop
+
+pose,tearful,tearful
+interrupt,side_closed
+
+# 戻ってくる。もう涙は出てない
+pose,crysmile,normal
+saeko,"Ahaha... For some reason, I'm no longer hungry. You'll live to see another day."
+
+saeko,Enjoy it while you can. You'll only live until tomorrow night...
+
+saeko,Until tomorrow...
+
+saeko,...
+
+pose,side,side
+saeko,...I want to think about something. Bye.
+
+goto,night,7,7p
+
+label,5,kazu
+pose,,black
+m,"And then, they stop. Right in front of Kazu."
+
+kazu,"W-Wait! Saeko, what are you doing?"
+
+pose,serious,pick
+m,Her gigantic fingers wrap around Kazu's tiny arms and legs...
+
+pose,serious,pinch,kazu-1
+m,...and carry him up into the sky.
+
+kazu,"Hey, you have to be kidding me! Don't tell me all the Vanishing Incident victims..."
+
+pose,serious,pinch,kazu-2
+kazu,They can't have all...been e-eaten...by Saeko...
+
+pose,serious,pinch,kazu-3
+kazu,H-Help me! Please! Just until tomorrow morning--that'll be enough!
+
+kazu,Th-Then I'll be fine! I know it! J-Just let me go for now--
+
+pose,,covermouth
+
+interrupt,eat
+
+pose,serious,black
+fx,swallow
+survivor,remove,kazu
+interrupt,swallow
+
+saeko,Hmm... Mediocre.
+
+pose,serious,normal
+saeko,...
+
+saeko,"Tomorrow morning, huh?"
+
+saeko,...
+
+saeko,"...I want to think about something. Bye, Rin."
+
+goto,night,7,7p

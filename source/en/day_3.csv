@@ -1,0 +1,1243 @@
+skit,1
+bg,black
+survivor,add,yui
+item,add,pineapple
+m,I look around the drawer.
+
+bg,room,fade,in
+m,A tall ceiling and windowless wood-grain walls. Various items tower over me like art sculptures.
+
+m,"I'm used to this scenery now, but something feels off..."
+
+rin,(...Is it because Maru's no longer here?)
+
+play,day,supervisor
+show,chio,normal
+chio,Hey. Rin?
+
+rin,Ah...
+
+chio,Are you okay? Why do you keep looking around?
+
+flash
+show,chio,weaksmug
+chio,...Looking for a cute girl?
+
+rin,That's not it... I was just thinking about Maru.
+
+show,chio,normal
+chio,"Oh, the boy from yesterday. It makes sense he's on your mind."
+
+flash
+show,chio,smile
+chio,"...He was really interesting, after all."
+
+rin,Interesting...?
+
+show,chio,confused
+chio,"Ah, sorry. I should've put it a different way."
+
+chio,I sometimes look forward to seeing how the people here react to things.
+
+chio,...Maybe that's just me.
+
+rin,Maybe...
+
+show
+m,I recall how disturbed Maru had looked after drinking milk yesterday.
+
+show,chio,normal
+chio,I might've been here for too long. I feel like I'm used to it all now.
+
+chio,People come and go. I don't think much of it now...but I must have cared more in the beginning.
+
+show,chio,smile
+chio,But you shouldn't stress out so much. Just...enjoy making the choice.
+
+rin,How could I enjoy...
+
+show,chio,normal
+chio,"Of course, you shouldn't do anything that makes Saeko angry, but besides that, nothing's off-limits."
+
+chio,Responsibility? Guilt? No need for negative stuff like that.
+
+show,chio,smile
+chio,"Saeko's the one who told you to do this, and you're just following her orders. Okay?"
+
+rin,...
+
+show
+m,"I look around the drawer, unsure of what to say. Then, I notice somebody that hadn't been here yesterday."
+
+rin,There's someone new. Another person joined us today...
+
+m,I peer at her from afar. She seems ill at ease as she observes her surroundings.
+
+rin,"She looks troubled. Chio, is it okay if I go check on her?"
+
+show,chio,surprised
+chio,"What, you're going already? ...Guess you don't need my comforting embrace today?"
+
+m,"Memories of yesterday flood my mind, and my face heats up."
+
+show,chio,smug
+chio,"Aw, look at you getting all flustered... You're so young. I bet you want it every day."
+
+chio,You don't need to hold back. Jump right into my arms!
+
+rin,...
+
+show
+m,"I turn on my heels and walk away from Chio. I hear her shouting from behind me, telling me to stop..."
+
+skit,2
+select
+m,"A new little person has taken Maru's place in the drawer. I'm conflicted about it, but I should at least say hi, since she looks troubled."
+
+label,2,yui
+play
+m,"The newcomer wears a suit and stands deep within the drawer. When I approach, she looks at me with a bright smile."
+
+show,yui,surprised
+yui,Thank goodness!
+
+rin,Huh?
+
+play,day,house
+show,yui,smile
+yui,"Oh, right. I should say hi first. Hi!"
+
+show,yui,confused
+yui,I hate the dark. I was so worried that I'd gotten into some place I shouldn't have.
+
+show,yui,smile
+yui,"But I feel better now that I know somebody else is here too. Hehe, nice to meet you."
+
+know,yui
+show,yui,weaksmile
+yui,"My name's Yui, by the way. What's yours, if you don't mind me asking?"
+
+rin,Er... I'm Rin. Nice to meet you.
+
+show,yui,smile
+yui,"Rin, huh? Nice name!"
+
+show,yui,weaksmile
+yui,"I know we've just met, but could you help me out? There's something on my mind."
+
+rin,Of course. What is it?
+
+show,yui,confused
+yui,"I lost my phone. I had it in my work bag, but that's gone too..."
+
+show,yui,sad
+yui,"I didn't let the office know I'd be taking the day off, so I'm really worried! And there's my li'l Mr. Pet too..."
+
+rin,(Mr. Pet?)
+
+show,yui,weaksmile
+yui,"Ah, sorry. Slip of the tongue! Don't worry about it."
+
+show,yui,smile
+yui,So? Do you have a phone?
+
+rin,Hm...
+
+rin,I don't think so. I don't think anyone else has one either... Sorry I can't help.
+
+show,yui,confused
+yui,Aww... Guess that makes sense.
+
+yui,"I asked Saeko last night, actually. When I got here. Wanted her to call work for me."
+
+yui,But she flat-out refused.
+
+show,yui,serious
+yui,"Told me the whole world was having reception issues, so no phones were working. Can you believe her?"
+
+rin,Uh...
+
+show,yui,weaksmile
+yui,Though I guess we're all little now. A world with no reception could be a thing.
+
+show,yui,confused
+yui,Haaah... I still have the key box too. Everyone must be so worried right now.
+
+rin,"Um, could I help you with anything else? I'm actually the supervisor of this drawer."
+
+show,yui,smile
+yui,"Wow, the supervisor? Sounds pretty awesome."
+
+show,yui,weaksmile
+yui,"Help, huh? Hmmm..."
+
+show,yui,smile
+yui,Oh! Could you make me a phone?
+
+rin,Make a...phone?
+
+yui,"Yup. Since there's no phone in this drawer, you can just make one for me! That'd help everyone out."
+
+rin,B-But how am I supposed to do that?
+
+show,yui,surprised
+yui,"Well, you can just..."
+
+show,yui,serious
+yui,Hmmmm...
+
+flash
+show,yui,smile
+yui,No idea!
+
+rin,...
+
+yui,"But I bet you can figure it out, Rin! Come on! Give it a go!"
+
+skit,3
+pick
+m,"Yui needs a phone to call work. She says we can try making one, but can we really do that with what we have here?"
+
+label,3,yui,other
+rin,Do you think we could make a phone with this...?
+
+show,yui,surprised
+yui,Huh? How?
+
+show,yui,serious
+yui,"...Sorry, I don't really know how this could turn into a phone."
+
+yui,"Didn't mean to ask for something so hard. But you're still young, Rin! I'm sure you can use that malleable brain matter to figure out how to make a phone!"
+
+show,yui,smile
+yui,"Don't give up, okay? I'm counting on you!"
+
+jump,back
+
+label,3,yui,ipod
+rin,"Um, how about an iPod? Maybe we can use the parts inside the machine to broadcast to the outside world."
+
+show,yui,smile
+yui,"True! You're so smart, Rin. I knew I could count on you."
+
+show,yui,serious
+yui,"But how do we hack it together? Machines, circuits... That's all a mystery to me. How about you, Rin?"
+
+rin,"Uh, me...?"
+
+rin,I don't really know anything either...
+
+show,yui,smile
+yui,"Oh, guess hacking's out of the question. Hmmm, can't we make a phone in a more low-tech way?"
+
+jump,back
+
+label,3,other,other
+rin,"Er, how about this...?"
+
+show,yui,surprised
+yui,"Huh? Rin, why are you talking to somebody else?"
+
+show,yui,crazysmile
+yui,Shouldn't you be talking to me right now?
+
+yui,Why are you doing that? Heeey!
+
+rin,(Her smile doesn't reach her eyes... I should be bringing stuff to Yui! I better not get it wrong.)
+
+jump,back
+
+label,3,yui,cup
+
+rin,"Um, what do you think about these cups?"
+
+show,yui,smile
+yui,"Oh! Cups! And what do you want to do with these, Rin?"
+
+rin,"Well, you know those tin can telephones? I thought we could use these cups like that, as receivers. Cup phones."
+
+show,yui,serious
+yui,Ooooh...
+
+show,yui,smile
+yui,"That makes sense. Hehe, Rin, you're a genius!"
+
+item,remove,cup
+yui,"All we need to do is connect the receivers then. Go find us some string, Rin!"
+
+skit,4
+pick
+m,"I decide to make cup phones for Yui. We have the cups, so I just need to look for string."
+
+label,4,yui,rubberband
+rin,I brought an elastic. Do you think it could work as a string?
+
+show,yui,smile
+yui,"Ooh, an elastic! I thought that might work too!"
+
+show,yui,confused
+yui,But it might not be the best idea.
+
+rin,Huh? Why not?
+
+show,yui,weaksmile
+yui,My little sister actually made one of these phones before for a school project. Testing different cups and strings to see how well you can hear with them.
+
+yui,"And she said elastics just didn't work. Since they're so bouncy, the sound vibrations don't go through or something?"
+
+show,yui,smile
+yui,But I bet you can find some better string in here! Don't give up! You can do it!
+
+jump,back
+
+label,4,yui,other
+rin,Do you think this could work as a string...?
+
+show,yui,crazy
+yui,"Huh? ...Wait, you don't get it? Really?"
+
+rin,Huh?
+
+show,yui,weaksmile
+yui,"Nah, I know you're trying! Trying hard, I'm sure."
+
+show,yui,smile
+yui,But I'm sure there's something that'd work better. It shouldn't be that hard to find. Keep trying!
+
+jump,back
+
+label,4,other,other
+rin,"Er, how about this...?"
+
+show,yui,surprised
+yui,"Huh? Rin, why are you talking to somebody else? Shouldn't you be talking to me right now?"
+
+show,yui,crazysmile
+yui,Why are you doing that? Heeey!
+
+rin,(Her smile doesn't reach her eyes... I should be bringing stuff to Yui! I better not get it wrong.)
+
+jump,back
+
+label,4,yui,koma
+
+rin,"Umm, what do you think about this top? Maybe we could use the string attached to the handle."
+
+cutin,yui_handling_koma_pre
+m,A white string is connected to the handle of the top. It looks like we could take off the string if we untie the hard knot.
+
+show,yui,smile
+yui,"Ooh, true! Leave this to me--I'm good at this kind of thing."
+
+show
+cutin,yui_handling_koma
+m,"After saying that, Yui grabs the handle of the top with both hands. She puts her fingers between the knot and starts to unravel it."
+
+m,"A few minutes later, she waves at me with a satisfied expression."
+
+cutin,yui_stripped_string
+yui,See? I got the string off!
+
+cutin,cupphone_up
+yui,And look! The tip of the top is pointy.
+
+yui,I'll just use this to make holes in the cups...
+
+yui,Push the string through...
+
+item,remove,cup
+item,remove,koma
+item,add,komanostring
+item,add,cupphone
+show,yui,smile
+cutin,cupphone_tada
+yui,Aaaaand there! I did it!!!
+
+show
+m,Yui shows me the tool she made.
+
+m,Two large paper cups with a string connecting them. Just like the cup phones I feel like I've seen in the past.
+
+show
+cutin,cupphone_rin
+rin,"Wow! Then, I'll hold this end..."
+
+cutin,cupphone_rin_and_yui
+yui,And I'll hold this one.
+
+show
+cutin,rin_pulling_cupphone
+m,We each take a cup and step away from each other.
+
+m,"As we do, the string that had been on the floor begins to rise..."
+
+cutin,rin_pulled_cupphone
+m,"And when we reach opposite ends of the drawer, the string becomes taut. It won't stretch any farther."
+
+show
+rin,"(Okay... If this works, we should be able to hear each other's voices.)"
+
+# 特殊な文字のエフェクトが入る。ぶるぶる震えてる感じ
+cutin,phonetalk_yui-vocal
+letter,phone,start
+yui,Hello?
+
+yui,Can you hear my voice?
+
+cutin,phonetalk_rin-vocal
+rin,I can! I can h-hear you!
+
+rin,"Wow, it really worked!"
+
+cutin,phonetalk_yui-vocal
+yui,It did!
+
+yui,I can't believe you can really make a phone with low-tech stuff like this.
+
+yui,"Now, I just have to call my work and..."
+
+yui,And...
+
+play
+cutin
+yui,...
+
+letter,phone,end
+flash
+show,kina,disgusted
+kina,How dumb can you two get?
+
+rin,Ah...
+
+play,day,feelsright
+kina,Making phones with cups and string like brats on a playground. You gonna start a chatline next?
+
+rin,...
+
+show,kina,angry
+kina,Especially you! Acting all dumb!
+
+show,yui,surprised,kina,angry
+yui,...?
+
+kina,"Yeah, I'm talking about you! Don't blink those dumb eyes at me. Anybody with a brain can tell you're faking it."
+
+show,yui,surprised,kina,serious
+kina,"You obviously know a regular person can't just up and make a phone, but you pretended like you didn't to make that kid work for it."
+
+show,yui,surprised,kina,angry
+kina,"We don't have time to waste doing shit like this. At this rate, we're gonna..."
+
+show,kina,angry
+kina,We're...gonna...
+
+# memo:冴子の道具（お守り）により、小人は新入りに対して引き出しの本質に関わるネタバラシができない
+
+m,"Kina's mouth opens and closes like she wants to say something, but nothing comes out."
+
+show,yui,serious
+yui,"Um, what is it...? First you yell at us, then you go quiet."
+
+show,yui,sad
+yui,And saying I'm acting dumb...and pretending...
+
+show,yui,cry
+m,"Yui looks down. Her eyes glisten, just a little wet."
+
+yui,...
+
+show,yui,cry
+yui,"Sorry, Rin. I'm just going to go over there."
+
+slide,yui,out,left
+m,Yui's voice is faint. She walks off into the distance.
+
+show,kina,disgusted
+kina,"That's not... Dammit, why is this..."
+
+kina,"That bitch. She knew I couldn't say anything, so she..."
+
+show,kina,serious
+kina,"Whatever. I wanted to say something to you, Rin..."
+
+kina,...but I can't tell you in front of everyone else. There's no way around it. Come to the usual place.
+
+show,kina,smug
+kina,Where the two of us can really get in a good talk with just the two of us.
+
+show
+m,Kina finishes speaking and briskly walks away from me. The drawer is silent once more...
+
+skit,5
+select
+m,"Kina fought with Yui after we finished making the cup phone. Kina wants to talk, but she can't with people around. I'll go talk now that she's back by the wall."
+
+label,5,kina
+m,"Kina stands with a foot on the wall. When she sees me, she lets out an unimpressed snort."
+
+show,kina,disgusted
+kina,...Hmph. So it was all a lie.
+
+show,kina,serious
+kina,"The whole thing about us just happening to shrink, and that giant woman protecting us, I mean."
+
+show,kina,rolleyes
+kina,"The truth is that woman's just a pervert who shrunk us and took us home, right?"
+
+rin,Y-Yeah...
+
+show,kina,confused
+health,kina,-10
+kina,Ugh... That's seriously got me down. I haven't found a way out of here either.
+
+show,kina,rolleyes
+kina,I get why you and that woman are fucking. Getting off's probably the best way to keep your spirits up here...
+
+rin,...
+
+show,kina,rolleyes
+kina,"But seriously... Do you really think that stupid-looking office lady's a good person? Her name was Yui, right?"
+
+rin,Uhh... I don't know if Yui's a good person or not...
+
+m,But she's definitely easier to talk to than Kina.
+
+kina,Just gonna warn you... Nobody in the world's beautiful both inside and out.
+
+kina,"So watch it. The cuter someone looks, the darker whatever the hell's in their heart is."
+
+rin,You think so...?
+
+show,kina,serious
+kina,I know so.
+
+flash
+show,kina,disgusted
+kina,"...And we have a good example with Saeko, don't we?"
+
+rin,...
+
+show,kina,serious
+kina,Listen. Humans are born cruel.
+
+kina,I'm not talking about the thing with Maru yesterday--everybody stomps on ants for fun as a kid.
+
+rin,I don't know that I'd say...everybody...
+
+show,kina,rolleyes
+kina,Hah! Anybody who says they didn't is just trying to look good. Somewhere inside them was a desire to stomp.
+
+rin,(I don't know about that...)
+
+show,kina,serious
+kina,But people grow out of that. Since the outside world tells us violence is super bad and not okay.
+
+kina,But that impulse stays in our heads... And some people reveal that urge for violence in different ways.
+
+show,kina,disgusted
+kina,"Screaming to metal music at max volume like an idiot, making people sign shitty long contracts..."
+
+# クリスチャン・グレイの発表は2010年代らしいけど、言葉がかっこいいのでそのまま使う
+kina,"Contracts are all just like consent for BDSM, y'know. Ever heard of Christian Grey?"
+
+rin,Never...
+
+show,kina,rolleyes
+kina,Figures.
+
+show,kina,disgusted
+kina,"But being able to play pretend with violence is a good thing. Better than punching random people, anyway."
+
+show,kina,serious
+kina,But for girls--especially ones born extremely pretty--these impulses have nowhere to go.
+
+show,kina,disgusted
+kina,Everyone who says girls are cute just thinks of them as dolls.
+
+show,kina,disgusted
+kina,Nobody actually thinks there's an actual human with wants and needs underneath that perfect skin.
+
+show,kina,rolleyes
+kina,"Everyone treats them like delicate flowers. Ridiculous, right?"
+
+rin,...
+
+kina,"And in the worst cases, people force them to be all pure and nice...even when there's not a drop of that inside them."
+
+show,kina,rolleyes
+kina,Even when all they want to do is punch the wall and scream like any ol' pimple-faced teen.
+
+rin,...
+
+show,kina,disgusted
+kina,"Anyway. I hated shit like that, so I ran away from home and said goodbye to all of it."
+
+kina,"Got a closet of an apartment, stuffed a drum set inside, and even started a metal band."
+
+kina,Made stupid double bass drum beats and shouted like an idiot...
+
+show,kina,smirk
+kina,Scared away any potential listeners and broke up in two years though.
+
+show,kina,disgusted
+kina,"But if you're real pretty, like that giant woman--if you look too much like a doll..."
+
+kina,If people force you to be perfect and pure even in your everyday life...
+
+show,kina,rolleyes
+kina,"It makes complete sense that there'd be some crazy-ass impulses hidden deep inside you, right?"
+
+rin,...
+
+kina,Don't get me wrong. That doesn't mean I want to get eaten. I'm just saying...
+
+show,kina,confused
+kina,I get why that giant woman turned out the way she did. That's all.
+
+rin,...
+
+kina,...This isn't like me. All I wanted to do was scream at you to let off some steam.
+
+show,kina,laugh
+kina,"You escaped this time, punk! Gah ha ha!"
+
+show
+m,Kina leaves it at that and walks away quickly with a hand on her cheek.
+
+skit,6
+show
+play
+m,"A moment after, somebody taps my shoulder from behind."
+
+show,chio,normal
+chio,"Hey, Rin. Are you ready?"
+
+rin,Huh?
+
+play,day,ration
+show,chio,tense
+chio,Saeko will be back soon. You need to feed somebody while there's still time.
+
+rin,...
+
+show
+m,"I look around the drawer. Chio, Kina, and Yui. Everyone looks healthy."
+
+rin,"(Maru was obviously acting strange yesterday, so it was easy to decide who to give food to.)"
+
+rin,(But today...)
+
+show,chio,normal
+rin,"Um, could I look around a bit more? L-Like...to see if anybody looks off..."
+
+show,chio,tense
+chio,"No, Rin. There's no time. Plus..."
+
+flash
+chio,"It's better not to worry about it too much. It'd just hurt you more, wouldn't it?"
+
+rin,(I guess that's true...)
+
+m,...
+
+# 電話のエフェクト
+show
+letter,phone,start
+cutin,phonetalk_yui-vocal
+yui,Hellooo?
+
+cutin,phonetalk_rin-vocal
+rin,Y-Yui!
+
+cutin,phonetalk_yui-vocal
+yui,"Oh, you can hear me? Heyooo!"
+
+cutin,phonetalk_rin-vocal
+rin,Heyo...
+
+rin,U-Um... You look like you're doing okay. I'm glad.
+
+rin,I wasn't sure what to do if you were down after everything Kina said.
+
+cutin,phonetalk_yui-vocal
+yui,"Ahaha, that was nothing!"
+
+yui,"I mean, I was just acting."
+
+cutin,phonetalk_rin-vocal
+rin,Huh?
+
+cutin,phonetalk_yui-vocal
+yui,Heh! Did you see how that mean woman looked after I started crying?
+
+yui,"She was in suuuch a panic, like, ""What should I do?!"""
+
+yui,"All I did was cry a little, and she totally freaked out. She's kind of a wimp despite how she looks."
+
+cutin,phonetalk_rin-vocal
+rin,E-Er...
+
+cutin,phonetalk_yui-vocal
+yui,And like...she wasn't totally wrong.
+
+yui,"Like, I'd already figured out that a cup phone'd be completely useless."
+
+yui,"But I couldn't say anything, since you were trying so hard... So I'm sorry about that."
+
+cutin,phonetalk_rin-vocal
+rin,Oh...
+
+cutin,phonetalk_yui-vocal
+yui,But it was fun! Playing around like that was a good distraction.
+
+yui,"I've been so busy with work and life. Honestly, it was a breath of fresh air. Maybe you feel the same way, Rin?"
+
+cutin,phonetalk_rin-vocal
+rin,"...Yeah, I do."
+
+cutin,phonetalk_yui-vocal
+yui,"Yay! Then let's call each other again with this if we ever need it, Rin."
+letter,phone,end
+
+cutin
+m,I hear the sound of the cup being put down in the distance.
+
+show,chio,serious
+chio,"Hey, Rin. You really need to make a decision already... Saeko will be back soon."
+
+rin,Um... Right...
+
+show
+m,"I find my resolve and look around the drawer. Kina, Yui, and Chio. I need to choose one of the three little people now."
+
+play
+rin,Okay. I'll decide who to give food to.
+
+skit,7
+cue
+pick
+m,"The end of the day is approaching, which means Saeko is returning soon. Kina and Yui both look healthy... I need to decide who to feed."
+
+# 共通。誰にもご飯をあげなかった場合
+label,7,other,other
+play,day,feed
+if,1015,flag,6_fail,1
+flag,6_fail_badend
+show,chio,disgusted
+chio,Rin! What are you doing?!
+
+chio,"There's no time left. At this rate, Saeko will kill all of us..."
+
+rin,...Sorry.
+
+rin,After seeing how everyone I feed gets eaten by Saeko...
+
+rin,I just can't feed somebody else today...
+
+show,chio,normal
+chio,...I see.
+
+show,chio,tense
+chio,"I thought you were stronger than that. You did your job as the supervisor yesterday, but..."
+
+show,chio,normal
+chio,"This is your decision, so we'll have to live with it. Let's enjoy the rest of our time before Saeko comes back."
+
+chio,"Rin, could you leave me alone for a bit? I just need time to sort out my thoughts, so..."
+
+show,chio,confused
+chio,So...
+
+m,Just as Chio seems to be at a loss for words--
+
+jump,8
+else,1015
+show,chio,tense
+chio,"...Hey, Rin. What are you doing?"
+
+show,chio,normal
+chio,Saeko will want another little person with high Appeal today. You need to feed somebody to satisfy her.
+
+chio,Saeko will be back soon. Make the right decision so that we can all keep living... Don't waver. This is your last chance.
+
+rin,"I-I know that, but..."
+
+flag,6_fail
+
+jump,back
+end,1015
+
+
+label,7,kina,pineapple
+m,I bring the pineapple to Kina.
+
+play,day,feed
+rin,"K-Kina... Are you hungry, by any chance?"
+
+show,kina,confused
+kina,What?
+
+kina,"No, I'm not hungry. And..."
+
+rin,Just... Won't you eat this pineapple for me...?
+
+flash
+show,kina,angry
+kina,No! I won't!
+
+kina,"I don't want that creepy woman to eat me! Get that food away from me, got it?!"
+
+# 注: 「沈黙を作って譲歩を引き出してる」または「テキストに書けない性的なことをして無理やり食べさせてる」両方として解釈できるようにする
+# 後者については6日目昼、クララに食べ物を与えることにしたルート参照
+show
+rin,...
+
+kina,...
+
+m,Our eyes meet.
+
+rin,...........................
+
+kina,...........................
+
+show,kina,confused
+kina,*sigh*
+
+show,kina,disgusted
+kina,"...Fine. I'll eat that pineapple for you. Honestly, it doesn't look half bad."
+
+show
+item,remove,pineapple
+cutin,kina_eating_pineapple
+effect
+# カットイン: キナがパイナップル食べてる
+m,"After Kina mutters that, she puts her mouth on the edge of the giant pineapple."
+
+m,"Juice spills out from where she bites, filling the room with its sweet and sour aroma."
+
+kina,"Huh... Makes me think of sweet-and-sour pork. When you combine pineapple with meat, the pineapple's sour juices make the meat all tender..."
+
+cutin
+rin,...
+
+show,kina,rolleyes
+kina,...Haaah. What the hell am I doing? I didn't even want to eat this.
+
+kina,...
+
+flash
+play
+show,kina,smug
+kina,Whatever. I feel a bit better after eating. Maybe I'll sing one last song before I go.
+
+kina,"I have the deepest voice out of the women here, right? I'm pretty proud of it. Power's everything for metal vocals."
+
+kina,"I found some good instrumental stuff in the iPod for once. And I was good at writing lyrics, y'know."
+
+show,kina,smirk
+kina,Gonna start now. Clear those earholes and listen up.
+
+cutin,kina_karaoke_s
+play,day,kina_metal
+letter,karaoke,start
+kina,♪
+
+cutin,kina_karaoke
+kina,"♪ Where God dies and thunder stills, humankind will remain."
+
+kina,"♪ Where Babel falls and ideas die, the penis will stand tall."
+
+cutin,kina_karaoke_s
+kina,♪
+
+cutin,kina_karaoke
+kina,♪ Giant boobs raining down in the apocalypse of Sodom.
+
+kina,♪ Giant boobs raining down in the apocalypse of Gomorrah.
+
+cutin,kina_karaoke_s
+kina,♪
+
+cutin,kina_karaoke-vocal
+kina,♪ YEAH!!!!!!
+
+cutin
+letter,karaoke,end
+m,Kina finishes howling her song. Just as I had given a few claps--
+
+jump,next
+
+label,7,yui,pineapple
+m,I carry the pineapple closer to Yui.
+
+play,day,feed
+rin,Yui... W-Would you happen to be hungry?
+
+show,yui,weaksmile
+yui,"Hm... I guess I am a little, now that you mention it."
+
+rin,"If you'd like, I have this pineapple...and I'd like you to eat it."
+
+show,yui,smile
+yui,"What, really? Thanks! This pineapple is huge!"
+
+yui,And it's cut into such a nice round ring! Cool!
+
+show
+item,remove,pineapple
+cutin,yui_eating_pineapple
+m,"After saying that, Yui puts her mouth on the edge of the gigantic ring. She takes a bite, causing the juice to spill out..."
+
+play
+cutin,yui_eating_pineapple_2
+m,"Yui takes her hands off of the fruit, or maybe it slips out of her grip in her surprise. The pineapple hangs in the air for a moment--"
+
+cutin,yui_eating_pineapple_3
+m,--before falling neatly around Yui's neck.
+
+play,day,groove
+yui,"Ooh, look! I'm inside the pineapple!"
+
+yui,"Look at it around my neck... I'm like the mascot character for that donut shop! What was the slogan again? ""Happiness, coming right up!"""
+
+yui,Ah... It's been so long. I'm craving a sugary donut now.
+
+yui,"Hey, Rin, could you ask Saeko to buy some donuts?"
+
+rin,"Oh. Um, sure."
+
+rin,I'll ask...
+
+effect
+cutin
+yui,"Thanks! Anyway, everywhere I look is pineapple now. Kinda nice, really..."
+
+# 死亡会話:ユイ
+
+show,yui,weaksmile
+yui,"Hey, do you want to talk a little about love and stuff? I can talk and eat at the same time. Or maybe you're not interested?"
+
+rin,Er...
+
+show,yui,smile
+yui,"Like, what kind of people have you dated, Rin? I'm super curious about what the dating scene is like for younger people nowadays."
+
+rin,"Oh, about that..."
+
+rin,"I have amnesia, so I don't remember anything from before I came here... I don't really have anything to share."
+
+flash
+show,yui,kirakira
+yui,Hmm... Really?
+
+m,Yui stares at me with wide eyes. The corners of her lips are turned down in disappointment.
+
+rin,"U-Um, how about you, Yui? If you'd like to talk about it..."
+
+yui,Heh heh heh. That's a great question.
+
+flash
+show,yui,smile
+yui,"Okay, I swear I'm telling the truth--don't be shocked! But since about one month ago...I've been dating an idol!"
+
+rin,H-Huh...
+
+yui,What's with that reaction? You could be a little shocked at least!
+
+rin,"S-Sorry. I don't really know how to react, since I'm not that familiar with idols..."
+
+show,yui,weaksmile
+yui,"Huh, guess that makes sense. My boyfriend's not at the kind of talent agency that would get him on TV either."
+
+yui,"Have you heard of underground idols? They sing and dance like you'd expect, but at smaller places around town instead of, like, huge concert venues. But I like that. Makes the distance between us feel closer somehow."
+
+rin,"Hmm... Were you are a fan of the idol before you started dating, Yui?"
+
+show,yui,smile
+yui,"Hehe, bingo! I was a huge fan since his debut. I went to sooo many of his shows."
+
+show,yui,weaksmile
+yui,"Idols usually have a cool and collected image, right? But my boyfriend's got more of an innocent vibe."
+
+yui,"He tries so hard both with singing and dancing, but he's not that confident in either... Like, whenever I greeted him up close, he'd break eye contact right away."
+
+yui,He was just too cute. It made me want to see what he was like when he wasn't being an idol...
+
+flash
+show,yui,ripped
+yui,"So, I just took him home with me."
+
+rin,Wha?
+
+show,yui,smile
+yui,"You know how idols have handshake events where you can give gifts to them? Well, I gave him some homemade chocolate."
+
+yui,"He's such a good kid. When I asked him to eat the chocolates, he really just ate them then and there."
+
+show,yui,weaksmile
+yui,"So, after the show, he got sick...and what a coincidence. I was there just at the right time."
+
+yui,I moved him somewhere he could rest and was really gentle with him. I even took some photos for evidence.
+
+show,yui,smile
+yui,"A few days after, I told him how I felt...and wouldn't you know it! He said okay right there!"
+
+yui,"Now, he meets up with me whenever I ask, and he lets me do anything I want."
+
+show,yui,confused
+yui,We actually had plans to meet up this weekend...
+
+rin,...
+
+show,yui,smile
+yui,"So Rin, if you have someone you like, you can't hold back."
+
+show,yui,crazysmile
+yui,Do whatever it takes to express your feelings and seize true happiness. Promise me that...okay?
+
+m,"Yui's trembling hands, pale and unblemished, look completely different to me now. Just as they reach out toward my hands--"
+
+jump,next
+
+label,7,chio,pineapple
+show,chio,surprised
+chio,...!
+
+play,day,feed
+m,I approach Chio with the pineapple. Her eyes grow wide.
+
+rin,Chio... Would you eat this for me?
+
+show,chio,confused
+# 2日目と共通
+chio,...
+
+chio,...I see.
+
+chio,"If that's your decision, I'll accept it."
+
+chio,"Thank you, Rin. I'm sure it was a hard decision...
+You've given it your all."
+
+rin,...
+
+# ここから違う
+show
+m,"With resignation, Chio brings the pineapple closer to her face with both hands."
+
+effect
+item,remove,pineapple
+cutin,chio_eating_pineapple
+m,"Then, she nods, as if she has accepted her fate...and begins to take tiny bites out of the edge of the pineapple ring."
+
+# ここだけ2日目と共通
+cutin
+show,chio,confused
+chio,...What is it? I'll blush if you keep looking at me like that.
+
+# ここからまた違う(5日目までと共通)
+show,chio,normal
+chio,...
+
+show,chio,tense
+chio,"...You made this decision yourself, didn't you?"
+
+chio,So you can't look sad about it. I made the decision to accept whatever you chose.
+
+show,chio,confused
+chio,Though I don't really understand your intentions...
+
+show,chio,normal
+chio,"But you're going out of your way to raise my Appeal. I'm sure you have your reasons for that, even if I don't know what they are."
+
+show,chio,weaksmug
+chio,"...So I'll do what you tell me to. You've given it your all, Rin."
+
+rin,...
+
+show
+m,Just as I was wondering how to respond to Chio--
+
+jump,next
+
+# 2日目と共通になってる
+skit,8
+show
+play
+bg,room,quake,light
+m,"A low, muffled vibration reverberates from a distance. The sound of heavy footsteps."
+
+bg,room,quake,heavy
+
+m,There's no mistaking it. Saeko has returned to her room.
+
+bg,room,quake,heavy
+
+m,Saeko walks through the room with even breaths. Every step she takes shakes the drawer like an earthquake...
+
+bg,room,quake,heavy
+
+m,Each tremor growing larger and more violent than the last.
+
+bg,room,quake,long
+
+m,"Soon, they become too strong for me to stand."
+
+m,I find myself crouching on the floor.
+
+m,"Next, I hear the creak of something moving."
+
+m,"Then, a tremendous commotion that shakes the whole room..."
+
+m,...as the room we're in--the second drawer of a desk--is pried open by Saeko's fingers.
+
+# 共通終わり
+
+skit,9
+play,day,open
+interrupt,shift
+open
+interrupt,open_sliding_in
+pose,smile,normal
+saeko,"Hello, cute little people. Were you good today while I was away?"
+
+saeko,"I have something to do later today, but before that..."
+
+saeko,I'm going to enjoy another one of you today.
+
+# 2日目と共通
+pose,smile,normal
+interrupt,lick
+
+pose,smile,pick
+m,Saeko's hand comes down into the drawer.
+
+m,Her unthinkably large fingers fill our vision.
+
+m,"They wander for just a moment, as if carefully making a decision... "
+
+judge
+label,9,nop
+pose,,black
+m,"And then return to the sky, empty-handed."
+
+pose,serious,normal
+saeko,...*sigh*
+
+saeko,Nobody's making my mouth water today.
+
+saeko,"...Hey, Rin."
+
+saeko,I suppose you were just an ordinary human after all.
+
+rin,(...Huh?)
+
+saeko,...Whatever. I don't need any of you anymore.
+
+interrupt,gameover
+if,1408,flag,6_fail_badend,1
+    achieve,BADEND_PACIFIST
+end,1408
+center,"GAME OVER"
+dead
+
+# ここからは3日目独自
+label,9,yui
+pose,,black
+m,"And then, they stop. Right in front of Yui."
+
+yui,U-Uhhh... Saeko? Hello? Wh-What are you doing?
+
+pose,smile,pick
+m,Her gigantic fingers wrap around Yui's tiny arms and legs...
+
+pose,smile,pinch,yui-1
+m,...and carry her up into the sky.
+
+yui,"Wh-Why are you smiling? Ahaha, this is a bit scary!"
+pose,smile,pinch,yui-1
+yui,...
+
+# 顔に近づく。ユイがガミガミ噛みつき始める
+pose,smile,pinch,yui-2
+yui,"Um, why aren't you saying anything? Say something already!"
+
+pose,smile,pinch,yui-3
+yui,Let go of me! Hey! A brat like you's got nothing on me--
+
+pose,,covermouth
+
+interrupt,eat
+
+pose,smile,black
+fx,swallow
+survivor,remove,yui
+interrupt,swallow
+
+saeko,"Heehee, that was a yummy treat."
+
+pose,smile,covermouth
+saeko,"I thought she'd be all sweet, but there was a bit of a kick to her."
+
+saeko,And she was so full of energy...
+
+pose,smile,normal
+
+jump,next
+
+
+label,9,kina
+pose,,black
+m,"And then, they stop. Right in front of Kina."
+
+kina,"Finally came here then, giant woman?!"
+
+kina,"Nothing rock and roll about running! Boil me, bake me--do whatever the hell you want!"
+
+pose,smile,pick
+m,Her gigantic fingers wrap around Kina's tiny arms and legs...
+
+# 低めの場所でキナが掴まれてる
+pose,smile,pinch,kina-1
+m,...and carry her up into the sky.
+
+kina,"See ya, you giant creep. And Rin."
+
+kina,Neither of you's gonna see the pearly gates. Though neither am I...
+
+kina,"Anyway, it's bye-bye time. See ya in hell."
+
+pose,smile,pinch,kina-2
+interrupt,kina-2
+
+pose,smile,pinch,kina-3
+interrupt,kina-3
+
+pose,smile,normal
+interrupt,eat
+
+pose,smile,black
+fx,swallow
+survivor,remove,kina
+interrupt,swallow
+
+saeko,"Heehee, yum."
+
+pose,smile,covermouth
+saeko,I don't like how she was acting all tough...
+
+saeko,But she really fought back when I put her in my mouth. It made her fun to eat.
+
+jump,next
+
+skit,10
+pose,smile,normal
+saeko,"Thank you, Rin. You did a great job today too."
+
+saeko,"...By the way, Rin. It's been so long. Don't you want a breath of fresh air?"
+
+rin,...!
+
+saeko,"Let's go out now, the two of us. I have something I'd like you to help me with..."
+
+goto,night,3

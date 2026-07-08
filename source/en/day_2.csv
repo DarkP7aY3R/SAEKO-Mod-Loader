@@ -1,0 +1,1336 @@
+skit,1
+bg,black
+survivor,add,maru
+survivor,add,kina
+item,add,milk
+
+# 夢：冴子に飲み込まれるシーンの隠喩（口の中）
+
+m,"In the sea on a stormy night, I float alone on the surface of the dark waters."
+
+m,"Instead of stars, endless rows of cumulus clouds cover the sky."
+
+m,The pale light of the full moon peeks out from between two rows. Its brilliance makes me blink...
+
+m,"Then, several moons fill my vision. They form an arc, like beads on a string."
+
+m,"The water acts as a mirror, reflecting the round lights to encompass the world above and below with dozens of moons."
+
+m,"Suddenly, a huge wave appears. The current carries my body toward one of the moons."
+
+m,Just as the harsh white light pouring down is about to pierce through my body--
+
+m,The ocean floor opens up and I swirl down the whirlpool. I reach up with all my might and touch something soft...
+
+flash
+play,day,supervisor
+chio,"Rin... Ah, that's..."
+
+bg,room,quake,heavy
+rin,AAAHHH!!!!!!!
+
+m,I leap up with a start and find Chio plopped down on the flat floor in front of me.
+
+show,chio,smile
+chio,"Good morning, Rin. And..."
+
+show,chio,weaksmug
+chio,How was it sleeping with me?
+
+rin,...!!!
+
+m,The corners of Chio's lips turn up as she smooths out the creases in her long skirt.
+
+chio,Look at the mess you've made... Did sleeping with me feel that good?
+
+m,I hurriedly inspect myself. There are traces of saliva around my mouth.
+
+rin,"Um... I just had my head on your lap and fell asleep. That's all that happened, right?"
+
+show,chio,smug
+chio,"Teehee, let's go with that. It'd make you feel better, wouldn't it?"
+
+rin,No way...
+
+show,chio,weaksmug
+chio,...Pfft! Ahahahaha!
+
+show,chio,smile
+chio,It's just a joke. The only things that touched were your head and my lap. You can relax.
+
+chio,"It looked like you were having trouble sleeping, so I took matters into my own hands. So? Did you sleep a little better?"
+
+rin,"Er, I guess I slept fine, but I had a strange dream..."
+
+show,chio,normal
+chio,A strange dream?
+
+flash
+show,chio,normal
+chio,...Stranger than reality?
+
+rin,"Reality, huh..."
+
+m,I find myself at a loss for words.
+
+health,rin,-10
+rin,"Oh, right! I became the supervisor, Saeko came back, a-and then, Moko and Taki..."
+
+show
+m,"I can see two images vividly in my mind--the sudden deaths of Moko and Taki, who had grown familiar to me."
+
+m,"Moko had been tossed into Saeko's mouth like a snack. Taki had been crushed between Saeko's fingers, his remains promptly removed by a tissue."
+
+m,"I'd watched their lives end so swiftly from the drawer beneath them. To be honest, I still can't quite believe it."
+
+m,"But no matter how I search for them in the dim drawer, they are nowhere to be found..."
+
+rin,Are the two of them really dead...?
+
+flash
+show,chio,smile
+chio,What else would they be?
+
+rin,...Huh?
+
+chio,"You saw what happened to Taki, and Moko must be digested by now. There aren't any doctors here to perform an autopsy, let alone any bodies to be autopsied."
+
+m,Chio's tone is incredibly matter of fact.
+
+rin,How can you be so...
+
+chio,I mean... That's just how it is.
+
+rin,How can you say that?
+
+show,chio,normal
+chio,...*sigh* I suppose this is a good chance to explain things properly.
+
+chio,"I'm sure you already know this, but Saeko raises little people for her own purposes."
+
+chio,Protection? That's a bald-faced lie. She uses some kind of magic to shrink people that catch her eye around town and brings them back here.
+
+show,chio,tense
+chio,"Sometimes she just watches or plays with them, like dolls in a dollhouse, but her main goal is to eat them."
+
+chio,She stores the little people she catches in this drawer. Just like how you might clean sand from clams or keep crabs in a box.
+
+rin,Why are both of your examples seafood?
+
+show,chio,weaksmug
+chio,Because they're both better fresh.
+
+rin,...
+
+show,chio,normal
+chio,Do you remember what Taki said yesterday? About how the supervisor's job is to give items to the little people in the drawer.
+
+show,chio,tense
+chio,"It isn't completely true, but it isn't completely false either."
+
+show,chio,normal
+chio,The supervisor's main goal is to raise appealing little people that Saeko will want to eat right up.
+
+chio,"By appealing, I mean tasty."
+
+chio,"If you give a little person food, they'll become more appealing. Maybe they'll be more energetic, or they'll have a bit of extra flavor."
+
+chio,"When their Appeal reaches 50, Saeko will eat them."
+
+show,chio,tense
+chio,Fattening up a little person until they're yummy enough to give to Saeko--that's your real job as the supervisor.
+
+rin,...
+
+rin,"Yesterday, when Taki kept trying to make me give Moko the peanut..."
+
+show,chio,smile
+chio,Yup. That was to increase the glasses girl's Appeal and have Saeko eat her up.
+
+health,rin,-15
+rin,"Th-Then, if I hadn't given Moko the peanut, she wouldn't have been killed?"
+
+show,chio,serious
+chio,No. I already told you--it's the supervisor's job to raise appealing little people.
+
+chio,"If you don't do your job and nobody makes yummy little people, Saeko will get mad. And she'll kill all of us."
+
+chio,She threatened Taki with that before...and I don't think she was lying.
+
+rin,...
+
+show,chio,tense
+chio,Think of it this way.
+
+show,chio,smile
+chio,You chose the only method that could save the other little people without making Saeko angry.
+
+chio,Their deaths aren't your fault. They're nobody's fault. You just did the best you could in the situation you were put in.
+
+rin,B-But that's how I got Moko...
+
+show,chio,serious
+chio,You have to stop thinking like that. Nobody's to blame for anyone's death in this drawer. But...
+
+show,chio,normal
+chio,If you can't stop yourself from overthinking...
+
+show,chio,smile
+chio,Just relax those shoulders and let yourself loose.
+
+flash
+show,chio,smug
+chio,I'll teach you how to stop thinking about anything at all...
+
+show
+
+# 画面暗転する。ゲーム中には書かれないけど、実際にはチオとリンがセックスしている
+interrupt,fade
+
+bg,room
+health,rin,+10
+show,chio,weaksmug
+chio,"Oh, right. There are some little newcomers.
+Why don't you go say hi?"
+
+rin,Huh? Newcomers?
+
+rin,...Wait. Were other people near us this whole time?
+
+show,chio,smug
+chio,"Yup... Wait, you didn't notice? Here I thought
+you just liked having an audience."
+
+rin,OF COURSE NOT!!!!!
+
+show
+m,I push Chio's hand away and put distance between us. I can feel my cheeks growing hot...
+
+skit,2
+
+select
+
+m,I look around the drawer. There really are other little people here. I don't know how I feel about talking to new people right now...but I should say hi.
+
+label,2,maru
+
+m,"A quiet-looking boy stands in the corner of the drawer. He's fidgeting, like he can't relax."
+
+rin,Er... Hello.
+show,maru,surprised
+maru,...!
+
+m,The boy looks up in surprise.
+
+m,"But the moment his eyes meet mine, his cheeks flush, and he turns his head away."
+
+flash
+show,maru,ashamed
+maru,H-Hello...
+
+rin,"(Oh, nooo... He's super embarrassed!)"
+
+rin,Um... Did you see that whole thing earlier? Sorry if you did.
+
+show,maru,shy
+maru,"I-It's fine. I'm just, um, not used to this kind of thing, but maybe it's n-normal around here..."
+
+show,maru,ashamed
+maru,I-I wouldn't want to get in the way of anybody else's fun...
+
+rin,"Ah... Thanks for the consideration, I guess..."
+
+rin,"But, uh, could I ask your name?"
+
+show,maru,weaksmile
+know,maru
+maru,"M-My name is Maru. You're...Rin, right?"
+
+rin,Yes...but how do you know that?
+
+show,maru,shy
+maru,"Well, earlier..."
+
+flash
+show,maru,ashamed
+maru,...your voices were...so loud...that I heard...
+
+rin,...
+
+rin,"A-Anyway, could I help you with anything? I'm actually kind of in charge of this drawer."
+
+show,maru,shy
+maru,Anything I need help with? Hm...
+
+show,maru,weaksmile
+maru,"Oh, then, um, could I ask you for some advice? Only if you have the time..."
+
+rin,Of course. What is it?
+
+show,maru,shy
+maru,"I get chilly quite easily. When I stand around without moving, my hands and feet just get so cold."
+
+maru,I think I would be fine if I could just wear another layer. Is there anything I could use around here?
+
+rin,You mean some clothing? Maybe not. I've actually been having the same problem.
+
+maru,"Oh... Then, what does everyone do when they need to change clothes?"
+
+rin,"Well, I actually just got here yesterday..."
+
+m,I decide not to think about Chio.
+
+show,maru,weaksmile
+maru,I see... Things must be quite tough.
+
+show,maru,shy
+maru,"How about fabric? Maybe cloth or paper. Anything is fine, as long as it's thin and flexible."
+
+show,maru,smile
+maru,"I like to make clothes, so I could try using fabric to make something to wear."
+
+jump,2a
+
+skit,2a
+pick
+m,"The new boy, Maru, seems to like making clothes. I'll look for something that he can use as fabric to put together a warm outfit."
+
+label,2a,maru,tissue
+rin,I found some tissue... Would this work as a fabric?
+
+flash
+show,maru,surprised
+maru,Th-Thank you very much!
+
+show,maru,smile
+maru,"Let's see... Paper fibers keep warmth in well, and tissue doesn't crease easily. This is perfect."
+
+jump,2a-end
+
+label,2a,maru,other
+rin,Could you use this as a fabric?
+
+show,maru,confused
+maru,"Hmm... Sorry, I can't imagine using this to make clothing."
+
+show
+m,"From Maru's reaction, this won't be any good for clothing. I should look for something thinner and more flexible."
+
+jump,back
+
+label,2a,other,other
+rin,Could you use this as a fabric?
+
+show,maru,surprised
+maru,"Rin? Excuse me, but who are you talking to?"
+
+show,maru,confused
+maru,"I know I don't have much of a presence, but..."
+
+show
+m,"I gave it to the wrong person! I need to be more careful about who I talk to next, so that I don't hurt Maru further."
+
+jump,back
+
+
+skit,2a-end
+maru,I think I can make a good outfit with this. I'll start right now.
+
+maru,"With this shape, I can put these edges together, yes..."
+
+show
+m,"Maru moves both his hands skillfully. The tissue starts to build up into a complex shape, as if he is folding an origami crane."
+
+cutin,maru_made_cape
+m,"Before I know it, the tissue has become a comfortable cape. It even has cute frills and a bow."
+
+cutin
+variant,maru,clothed
+show,maru,weaksmile
+maru,Wh-What do you think?
+
+rin,Wow! You're nimble with your fingers.
+
+rin,"You look cute in that, Maru."
+
+show,maru,smile
+maru,"Hehe, I appreciate it..."
+
+maru,"I feel a bit warmer now, thanks to you. Would you like me to make you something too, Rin? Maybe a scarf?"
+
+maru,"With that petite face and lovely skin, I'm sure you look wonderful in anything you wear."
+
+# TODO: 名前を「？？？」として表示する
+slide,chio,in,right
+show,maru,smile,chio,shadow
+chio,...*gulp*
+
+rin,(I can feel a hungry gaze from the wall...)
+
+slide,chio,out,right
+rin,"Uh... I'm fine, thank you. I appreciate the offer."
+
+show,maru,smile
+rin,"So, um, what do you think? Have you gotten used to this place?"
+
+show,maru,weaksmile
+maru,"Yes, I think so. Though being shrunk so suddenly was a shock..."
+
+maru,"Saeko has been so kind. She told me she'd find a way to change me back, so I'm not too worried."
+
+rin,...
+
+maru,"A-And I was anxious at first since there are so many people here, but I think things will be fine."
+
+maru,Since everyone here...
+
+show,maru,ashamed
+maru,...seems to get along...really well...
+
+rin,Ah...
+
+rin,"(Well, as long as he's relaxed now, I guess...)"
+
+show
+m,I feel strangely anxious as I leave Maru to his clothes making. I hear a sigh from near the wall that seems to be equal parts relief and dismay.
+
+if,321,talked_to,kina
+jump,3
+else,321
+jump,2
+end,321
+
+label,2,kina
+play
+show,kina,serious
+m,"A woman leans on the wall of the drawer with one foot up against it. For some reason, she's glaring in my direction."
+
+rin,Er...
+
+kina,What? You want something?
+
+rin,"Um, I guess I don't really want anything..."
+
+play,day,feelsright
+show,kina,disgusted
+kina,Hmph. Could you not talk to me then?
+
+rin,Oh...
+
+rin,B-But we're going to be living here together. I think it'd be better...if I introduced myself...
+
+show,kina,disgusted
+kina,What for?
+
+kina,You think you're the boss of some part-timers or something? Acting all goody-goody and doing pointless stuff only you care about.
+
+flash
+show,kina,rolleyes
+kina,When you're just a precocious li'l fuckboi who'll hump anything anywhere.
+
+rin,...!
+
+rin,A pr-precocious li'l...wha...?
+
+kina,Fuckboi. Don't make me say it again.
+
+show,kina,rolleyes
+kina,I can't believe you did that in public. I'd rather die. That giant woman's nuts too. This place sucks.
+
+rin,Uh...
+
+show,kina,disgusted
+kina,What? You wanna say something? You thought I'd feel bad and say sorry if you looked all mopey?
+
+rin,"No, that's not what I... Uh..."
+
+rin,Could I ask for your name? I'm Rin.
+
+kina,Rin? What a weak-ass name.
+
+know,kina
+show,kina,smirk
+kina,"I'm Kina. Cool name, right? Cooler than yours, anyway."
+
+rin,(Is it...?)
+
+rin,"Um, so... Do you want anything? If there's anything you need, I'll get it for you."
+
+show,kina,disgusted
+kina,...And now you're trying to bribe me? You're the worst.
+
+kina,"Well, if you're offering, get me something that'll help me escape from here."
+
+rin,E-Escape?
+
+show,kina,rolleyes
+kina,What else would anyone stuck in here need? Is screwing all you have on your mind?
+
+rin,"No, but... You know..."
+
+rin,Saeko is...protecting us...
+
+m,My voice trails off. Kina's sharp gaze is focused on my face.
+
+show,kina,disgusted
+kina,Hm. That so?
+
+kina,"But she doesn't need to trap us in here to protect us, right?"
+
+show,kina,serious
+kina,"I hate quiet places like this. Plus, the music here stinks. I want to get outta here, and fast."
+
+kina,There must be a hole or a gap or something. Else we'd all choke and die.
+
+kina,"Can't see anything in the floor... Which means it's probably up there, but it's hard to see from here."
+
+kina,I want to check with my own eyes. Could you get me something big to climb up on?
+
+rin,U-Um...
+
+rin,(Saeko will probably get mad if I tell her I gave a little person something to help them escape...)
+
+rin,(But if Kina is just using it to look up... I'll just do what she says for now.)
+
+skit,2b
+pick
+m,"Kina thinks there must be some kind of gap in the ceiling. I don't want her mood to get any worse, so I'll find her something big to climb on."
+
+label,2b,kina,other
+rin,What do you think about this...?
+
+show,kina,serious
+kina,The hell am I supposed to do with this?
+
+show,kina,rolleyes
+kina,There must be something bigger than you and me in here. Go take another look around.
+
+jump,back
+
+label,2b,other,other
+show,kina,rolleyes
+kina,Who do you think you're talking to?
+
+show,kina,smirk
+kina,"That scared of talking to me? In that case... Ahaha, just give up already."
+
+show
+m,I gave the item to the wrong person! I need to give Kina something she can climb.
+
+jump,back
+
+label,2b,kina,ipod
+rin,How about this iPod? You could climb up using the cable.
+
+show,kina,smirk
+kina,Hm... Not bad. For you.
+
+rin,...
+
+show,kina,serious
+kina,You any good at climbing trees? Just asking.
+
+rin,Um... Probably not. I don't think I've even tried before.
+
+show,kina,smile
+kina,Figures. I'll go then. Get in a few push-ups while I'm gone.
+
+show
+cutin,kina_climbing_ipod
+m,"With that, Kina tucks the earphone cable between her legs..."
+
+m,...and climbs up the cable like it's a vine.
+
+cutin,kina_summitted_ipod
+m,Kina deftly reaches the top of the iPod in no time.
+
+cutin
+flash
+show,kina,laugh
+kina,HA! Look at that!
+
+rin,You look pleased...
+
+kina,Of course I am! But... Ah...
+
+show,kina,serious
+kina,I'm looking at the ceiling now...
+
+show,kina,confused
+kina,And there's nothing...
+
+show
+m,"Kina slides down the side of the iPod in disappointment. Then, she gets up like nothing happened at all."
+
+cutin
+show,kina,smile
+kina,No luck. There wasn't any gap up there.
+
+show,kina,smirk
+kina,"I'll have to think of something else. I'll let you know when I do, so go fuck all you want."
+
+rin,...
+
+if,475,talked_to,maru
+flag,2_last_kina
+jump,3
+else,475
+jump,2
+end,475
+
+skit,3
+play
+show,chio,normal
+chio,"Um, Rin... Are you free right now?"
+
+m,"I turn around in surprise at the voice from behind me. As expected, Chio stands there with a smile."
+
+chio,What's with that serious look? Don't tell me you've found somebody else to be your partner?
+
+rin,"No, but..."
+
+show,chio,normal
+chio,"...Oh, Rin. There's something I haven't told you about your job as the supervisor."
+
+play,day,ration
+show,chio,weaksmug
+chio,"I don't want to tell you here, so could you come over to the wall? ...And we can continue where we left off, if you like."
+
+if,663,flag,2_last_kina,1
+show,kina,smirk,chio,normal
+kina,Have fun!
+
+slide,kina,out,left
+rin,...
+
+show
+m,"Kina waves goodbye with a smirk, and I head back to the center of the drawer."
+
+else,663
+show,maru,ashamed,chio,normal
+maru,(G-Go ahead...)
+
+slide,maru,out,left
+rin,...
+
+show
+m,"Maru twists away in embarrassment, and I head back to the center of the drawer."
+end,663
+
+skit,4
+select
+
+m,"Chio says she wants to talk about my job as the supervisor. Honestly, I'm scared of hearing what she has to say, but I need to rack up the courage to go. It seems important."
+
+label,4,chio
+show,chio,smile
+chio,"Hey, how are you doing? I was worried you'd be feeling down."
+
+show,chio,smug
+chio,"But you seem full of energy. Your voice, your expression... Everywhere but down there, at least."
+
+rin,...
+
+show,chio,weaksmug
+chio,"Ahaha, sorry to tease you. Don't frown like that--it's a good thing."
+
+chio,"So, this might be hard, but I need to tell you about Health."
+
+rin,Health?
+
+show,chio,normal
+chio,"Exactly. So, some people are more energetic than others, right? And some days you're just more tired than normal. That's all part of Health."
+
+show,chio,normal
+chio,"You remember what I said about Saeko raising us for her own purposes, right? She wants us all to be healthy."
+
+chio,But little people whose Health drops to 0 or under will pretty much stop moving.
+
+show,chio,tense
+chio,"Like a puppet that's had its strings cut. And that's no fun for Saeko, right?"
+
+rin,I guess not...?
+
+show,chio,normal
+chio,Just keep an eye on everyone's Health. Make sure nobody's Health drops to 0 or worse.
+
+chio,If it looks like somebody might lose all their Health...
+
+show,chio,tense
+chio,"You'll need to deal with them, and fast. You get what I'm saying, right?"
+
+rin,...
+
+rin,You're telling me to hand over little people with lower Health to Saeko...right?
+
+rin,...Or they'll have no use.
+
+m,"Like how Taki made Moko eat the peanut yesterday, since Moko had lower Health than me."
+
+show,chio,smile
+chio,...Exactly. I knew you were a smart one.
+
+flash
+show,chio,weaksmug
+chio,Your head's still quick even after all that moving your body did.
+
+rin,...
+
+m,I fall silent again in the face of Chio's smirk. I don't know how many times that's been today.
+
+slide,kina,in,right
+show,chio,weaksmug,kina,serious
+kina,...Hey. You two got a minute?
+
+rin,"Hm? What is it, Kina?"
+
+kina,"Don't mean to interrupt your fun, but something's up. Maru's acting weird."
+
+flash
+kina,"I tried talking to him, but he's not responding. Could you take a look, Rin?"
+
+skit,5
+
+select
+m,"Kina calls out while I'm talking to Chio. Apparently, something is off about Maru. I don't know the details, but I should check on him."
+
+label,5,kina
+
+show,kina,angry
+kina,Weren't you listening? Maru's acting weird. Why are you talking to me?
+
+rin,"I heard you, but I thought I should learn more about the situation first."
+
+show,kina,serious
+kina,Hmph...
+
+kina,I guess that's true. Not that I know all the details or anything.
+
+kina,"Maru went into the corner, and now he won't even glance at me when I talk to him. Look..."
+
+show,maru,sweatfeared
+maru,...
+
+rin,Ah...
+
+show,kina,serious
+rin,"Um, you didn't do anything, did you, Kina?"
+
+kina,Of course I didn't. I was busy trying to think of a way to get out of here when Maru started mumbling to himself over there.
+
+show,kina,rolleyes
+kina,"I went to ask him about it, and then he just started shuddering."
+
+rin,Huh...
+
+kina,"Seems like he thinks I'm all scary, so go talk to him instead of me, Rin."
+
+show,kina,smirk
+kina,Nobody could be afraid talking to a limp beansprout like you.
+
+rin,(You could put it more nicely...)
+
+jump,back
+
+label,5,maru
+rin,"Hi, Maru. Are you okay? Did something bad happen?"
+
+show,maru,surprised
+maru,Rin...
+
+show,maru,feared
+maru,No...
+
+flash
+health,maru,-10
+show,maru,sweatfeared
+maru,I-I'm fine...
+
+m,Maru seems to be having trouble speaking. His feet tremble underneath him.
+
+rin,But you don't look fine... You're shivering even with that cape on for warmth.
+
+rin,What happened?
+
+show,maru,confused
+maru,Urgh...
+
+maru,I...just remembered...
+
+rin,Remembered what?
+
+show,maru,feared
+maru,"...A memory from my childhood, that I've always wished I could forget."
+
+maru,That's when I realized...
+
+flash
+show,maru,sweatfeared
+maru,Being shrunk and getting brought here--all of it was destiny.
+
+rin,Destiny...
+
+m,Maru's words ring through my head.
+
+rin,Could you tell me about what you remembered?
+
+bg,room,quake,heavy
+flash
+show,maru,sweatsurprised
+maru,N-No!
+
+rin,...!
+
+show,maru,confused
+maru,S-Sorry. I didn't mean to shout. But I can't tell anybody about this.
+
+maru,"I-I really can't explain, but this must be punishment for what I did in the past."
+
+rin,Punishment...?
+
+show,maru,feared
+maru,Yes. And I realized one more thing.
+
+maru,"Because of that, I... No, we..."
+
+flash
+show,maru,crazy
+maru,...will all be killed by Saeko.
+
+rin,...!
+
+rin,"I-I don't know wh-what you're talking about, but l-let's just calm down."
+
+show,maru,crazy,chio,normal
+chio,You're right.
+
+rin,Chio! When did you get here?
+
+chio,We should calm down.
+
+show,chio,tense
+chio,"Hey, Rin... Isn't it about time to eat?"
+
+show,chio,serious
+chio,Saeko will probably be back soon too. You don't have any time to waste.
+
+show,chio,tense
+chio,You need to choose who to feed... And I'm sure you'll make the right decision.
+
+rin,...
+
+show
+play
+m,I return to the center of the drawer.
+
+rin,(I know what Chio said. I'm sure that Saeko will kill us if I go against her will.)
+
+rin,(But can I really do the job of the supervisor as Chio's told me to?)
+
+rin,(...Saeko will be back soon. I need to make my decision carefully.)
+
+skit,6
+cue
+pick
+m,Chio says it's time to feed somebody. I need someone with at least 50 Appeal while making sure nobody has 0 or worse Health. What should I do?
+
+label,6,chio,milk
+show,chio,surprised
+chio,...!
+
+m,I approach Chio with the plate of milk. Her eyes grow wide.
+
+play,day,feed
+rin,"I'd like you to drink this milk, Chio. What do you think?"
+
+show,chio,confused
+chio,...
+
+chio,...I see.
+
+chio,"If that's your decision, I'll accept it."
+
+chio,"Thank you, Rin. I'm sure it was a hard decision...
+You've given it your all."
+
+rin,...
+
+show
+m,"With resignation, Chio draws her face closer to the rim of the milk plate."
+
+cutin,chio_drinking_milk
+effect
+item,remove,milk
+m,"Then, she nods, as if she has accepted her fate...and begins to lick up the milk."
+
+# ここだけ共通
+play
+chio,...What is it? I'll blush if you keep looking at me like that.
+
+rin,Oh... Sorry.
+
+jump,6a
+
+label,6,other,other
+if,1015,flag,6_fail,1
+flag,6_fail_badend
+# 拒否2回目、「誰も美味しそうな人がいない」バッドエンドへ
+show,chio,disgusted
+play,day,feed
+chio,Rin! What are you doing?!
+
+show,chio,confused
+chio,"There's no time left. At this rate, Saeko will kill all of us..."
+
+rin,...Sorry.
+
+rin,After seeing how Moko was eaten when I gave her the peanut yesterday...
+
+rin,I just can't feed somebody else today...
+
+show,chio,normal
+chio,...I see.
+
+chio,I know how you feel. The supervisor is really dealt a bad hand.
+
+show,chio,confused
+chio,I wish I could stand in for you...but I'm sure you remember what happened to Taki yesterday.
+
+chio,...
+
+chio,"This is your decision, so we'll have to live with it. Let's enjoy the rest of our time before Saeko comes back."
+
+chio,"Rin, would you lie down over there for me? There's this technique I've always wanted to try, so..."
+
+chio,So...
+
+m,Just as Chio seems to be at a loss for words--
+
+jump,7
+else,1015
+# 拒否1回目、もう一度選択画面に戻る
+show,chio,tense
+chio,"...Hey, Rin. What are you doing?"
+
+show,chio,normal
+chio,Saeko will want another little person with high Appeal today. You need to feed somebody to satisfy Saeko.
+
+chio,Saeko will be back soon. Make the right decision so that we can all keep living.
+
+chio,...Don't waver. This is your last chance.
+
+rin,"I-I know that, but..."
+
+flag,6_fail
+
+jump,back
+end,1015
+
+# マルにご飯をあげた場合（マルが食べられる、ゲーム続行）
+label,6,maru,milk
+rin,"Um, Maru... Are you thirsty? I brought a drink."
+
+show,maru,surprised
+play,day,feed
+maru,What is this?
+
+show,maru,feared
+maru,...Milk?
+
+rin,Y-Yes.
+
+rin,There was some milk in the drawer... Do you want it?
+
+show,maru,confused
+maru,Um...
+
+maru,Should I really be the one to drink this?
+
+rin,"...Yes, I'd like you to drink this, Maru. If you can."
+
+m,I can hear my heart thumping.
+
+show,maru,surprised
+maru,...
+
+show,maru,sweatfeared
+maru,Okay.
+
+show
+m,Maru bends down over the rim of the plate and timidly peers inside.
+
+m,"Then, he makes a small nod, as if he has drawn up his resolve..."
+
+effect
+item,remove,milk
+cutin,maru_drinking_milk
+play
+m,"...and laps up the liquid within with his tongue, like a cat would."
+
+m,"As Maru drinks, his trembling worsens. The eyes he had closed are now wide open."
+
+cutin
+show,maru,sweatfeared
+play,day,womb
+maru,I-I knew it...
+
+rin,What?
+
+show,maru,sweatsurprised
+maru,Th-This is no coincidence...
+
+flash
+maru,E-Everyone's going to be killed--all because of me...
+
+rin,Er...
+
+show,maru,sweatfeared
+maru,It's exactly like it was in my old memory...
+
+show,maru,sweatfeared,kina,disgusted
+kina,What do you keep yapping about? Stop talking about us getting killed. It's bad luck.
+
+show,maru,confused,kina,disgusted
+maru,...Urk. I guess I need to explain.
+
+show,maru,confused
+maru,It's embarrassing...but please prepare yourselves.
+
+flash
+show,maru,crazy
+maru,We're going to die here covered in pee. We'll be thrown into an ocean of yellow and drown...
+
+rin,What? P-Pee?
+
+show,maru,confused
+maru,I know it's embarrassing...and awful...
+
+show,maru,crazy
+maru,But it's going to happen. It's punishment for what I did in the past.
+
+show,kina,confused
+kina,Uh...
+
+show,maru,crazy
+maru,"When I was in elementary school, I drank a lot of milk. I think a cold was going around, so there was extra milk left over at lunch..."
+
+maru,"I used to love milk, so I drank a ton of it. But then, on the way home, I just couldn't hold it in..."
+
+maru,And I ran into the bushes and did my business.
+
+rin,...
+
+show,maru,weaksmile
+maru,I held it in as long as I could.
+
+maru,"But it kept coming out. I couldn't stop it. I was worried I'd get my feet wet, so I looked at the ground..."
+
+show,maru,confused
+maru,"...and it had turned into a little river, flowing down toward an anthill."
+
+maru,The liquid just swirled right into the hole. Like the drain in a bathtub.
+
+flash
+show,maru,confused
+maru,And then...I started using it as a target.
+
+maru,I can't make any excuses for what I did... I think it was just entertainment for me.
+
+maru,"Finally, the hole filled up, and the dirt collapsed to form a lake..."
+
+maru,"Before I'd noticed, a puddle had formed, and little bubbles started rising, along with what looked like white ant eggs."
+
+maru,That's when I realized.
+
+maru,"I had stolen the lives of a whole nest of insects. And enjoyed it, like a game."
+
+show,maru,confused
+maru,"Ever since then...I haven't been able to drink milk, and I grew to hate violence. Whenever the memory comes back to me, I'm filled with regret..."
+
+show,maru,feared
+maru,"But I'd forgotten recently. And now, I've been shrunk..."
+
+maru,"At first, I thought it was just a coincidence--but now, I know."
+
+flash
+show,maru,crazy
+maru,This is my punishment. Because I'd forgotten my past sin.
+
+show,maru,cry
+maru,Urgh... I'm so sorry. This is all my fault...
+
+rin,...
+
+show
+bg,room,quake,light
+play
+m,Maru starts sniffling. Just as I begin to wonder about how I should comfort him--
+
+jump,next
+
+# キナにご飯をあげた場合（マル衰弱、バッドエンド）
+label,6,kina,milk
+show,kina,smirk
+kina,Huh? What are you bringing me milk for?
+
+show,kina,smile
+play,day,feed
+kina,Trying to be nice? I don't actually like milk though.
+
+rin,"Uh... Yeah, trying to be nice."
+
+m,I can hear my heart thumping.
+
+rin,"You might not like the taste, but could you drink it all for me? To keep up your health."
+
+show,kina,rolleyes
+kina,Hm...
+
+show,kina,smile
+kina,"Fine, I'll give it a go. Health's important, like you say."
+
+show
+m,Kina bends down over the rim of the plate and brings her head closer to the milk inside.
+
+effect
+item,remove,milk
+cutin,kina_drinking_milk
+m,She laps up the liquid within with her tongue...like a cat would.
+
+kina,Uh...this pose is really embarrassing for me. Could you at least look the other way while I'm drinking?
+
+rin,Ah... Sorry.
+
+jump,6a
+
+skit,6a
+cutin
+m,"I turn my face down and away, just as I was told, but I look up when I notice a strange presence..."
+
+health,maru,-20
+show,maru,insanefeared
+m,"...and find Maru standing there, his face grim."
+
+rin,M-Maru? What's wrong? Why do you look like that?
+
+flash
+maru,...
+
+maru,Milk... I-I knew it...
+
+maru,This is a punishment...
+
+maru,Saeko's gonna kill all of us...
+
+m,Maru's voice is almost too quiet to hear. His whole body shakes violently.
+
+m,"Even after I call out to him, he just shakes his head slightly. His lips keep moving as he mumbles."
+
+show
+m,I don't know what to do. Just as I approach Maru to try to shake him out of it--
+
+jump,next
+
+skit,7
+show
+play
+bg,room,quake,light
+m,"A low, muffled vibration reverberates from a distance. The sound of heavy footsteps."
+
+bg,room,quake,heavy
+
+m,There's no mistaking it. Saeko has returned to her room.
+
+bg,room,quake,heavy
+
+m,Saeko walks through the room with even breaths. Every step she takes shakes the drawer like an earthquake...
+
+bg,room,quake,heavy
+
+m,Each tremor growing larger and more violent than the last.
+
+bg,room,quake,long
+
+m,"Soon, they become too strong for me to stand."
+
+m,I find myself crouching on the floor.
+
+m,"Next, I hear the creak of something moving."
+
+m,"Then, a tremendous commotion that shakes the whole room..."
+
+m,...as the room we're in--the second drawer of a desk--is pried open by Saeko's fingers.
+
+skit,8
+play,day,open
+interrupt,shift
+open
+interrupt,open_sliding_in
+pose,smile,normal
+saeko,"Hello, cute little people. Were you good today while I was away?"
+
+saeko,Sorry I'm late today. I took a little detour before coming back.
+
+saeko,"But the wind was strong, so now I'm cold..."
+
+saeko,And just a bit hungry.
+
+pose,,black
+saeko,Could I have another one of you today? As a treat.
+
+pose,smile,normal
+interrupt,lick
+
+pose,smile,pick
+m,Saeko's hand comes down into the drawer.
+
+m,Her unthinkably large fingers fill our vision.
+
+m,"They wander for just a moment, as if carefully making a decision... "
+
+judge
+
+# キナに食べ物をあげたルート。マル衰弱、ゲームオーバー
+label,8,kina
+pose,,black
+m,"And then, they stop. Right in front of Kina's body."
+
+kina,Wha?! Let me go!
+
+pose,smile,pick
+
+m,Her gigantic fingers wrap around Kina's tiny arms and legs...
+
+pose,smile,covermouth
+
+m,...and carry her up into the sky.
+
+interrupt,eat
+
+pose,smile,black
+fx,swallow
+survivor,remove,kina
+interrupt,swallow
+
+saeko,Yum... Hm?
+
+pose,serious,normal
+saeko,"Rin, what's up with him?"
+
+m,I look where Saeko is pointing and see Maru...
+
+m,"...whose expression is lifeless, as he stares out at nothing."
+
+maru,Everyone's gonna die...
+
+maru,We'll all be killed...
+
+maru,...
+
+saeko,...*sigh* He's useless to me like this.
+
+saeko,Rin. I need my dear little people to be full of energy.
+
+saeko,If you can't even do this much...
+
+saeko,...then I don't need you in my world.
+
+interrupt,gameover
+attempt,maru
+achieve,BADEND_INSANE
+center,GAME OVER
+
+dead
+
+label,8,nop
+pose,,black
+m,"And then return to the sky, empty-handed."
+
+pose,serious,normal
+saeko,...*sigh*
+
+saeko,Nobody's making my mouth water today.
+
+saeko,"...Hey, Rin."
+
+saeko,I suppose you were just an ordinary human after all.
+
+rin,(...Huh?)
+
+saeko,...Whatever. I don't need any of you anymore.
+
+interrupt,gameover
+
+if,1408,flag,6_fail_badend,1
+    achieve,BADEND_PACIFIST
+end,1408
+attempt,maru
+center,GAME OVER
+
+dead
+
+# マルにあげたルート、死んでキャラ選択画面に戻る
+label,8,maru
+
+pose,,black
+m,"And then, they stop. Right in front of Maru's body."
+
+maru,Aaaahh! Stop!
+
+# 手はまだ低め
+pose,serious,pinch,maru-1
+maru,"Please, S-Saeko! Please reconsider!"
+
+saeko,Hm?
+
+maru,I know the truth... You're planning on killing all of us!
+
+maru,You trapped us in this small place s-so that you can p-pee on top of us...
+
+maru,"A-And we'll all drown to death, stuck in this drawer!"
+
+maru,I'm sorry for what I did before! So please! Don't be so cruel!
+
+# 冴子の表情差分で驚き顔作ってもいいかも
+saeko,...
+
+pose,smile,pinch,maru-1
+saeko,...Teehee.
+
+pose,smile,pinch,maru-2
+maru,...Huh?
+
+maru,"Wait, this isn't what I tho..."
+
+pose,smile,pinch,maru-3
+maru,No! Stop! Aaaahhhhhh!
+
+pose,smile,normal
+interrupt,maru-4
+
+pose,smile,covermouth
+interrupt,eat
+
+pose,smile,black
+fx,swallow
+survivor,remove,maru
+interrupt,swallow
+
+pose,smile,covermouth
+
+saeko,Heehee. He was so full of energy. And fun.
+
+saeko,And that taste--a hidden flavor within a soft interior...
+
+pose,,black
+saeko,...Just scrumptious.
+
+pose,smile,normal
+
+saeko,"...Hey, Rin."
+
+saeko,You did wonderful today. I can tell you were really trying.
+
+saeko,Good job. Let's talk again later.
+
+goto,night,2

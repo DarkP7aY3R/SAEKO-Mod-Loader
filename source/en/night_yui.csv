@@ -1,0 +1,176 @@
+skit,1
+play,night,casual
+cake,desk-down
+action,study
+wait,,2
+
+skit,1a
+allow,yes,yes
+s,,By the way...
+
+skit,2
+q,ghost|oshare|tokuni,ghost|oshare
+s,normal,Did you notice anything when I headed out this morning?
+
+label,2,ghost
+cake,desk-up
+wait,,1
+
+allow,sorry,sorry
+s,serious,That's not what I meant.
+
+allow,sorry|no,sorry
+s,bored,Stop it with that scary talk...
+jump,next
+
+label,2,oshare
+cake,desk-up
+wait,,1
+
+allow,yes,yes
+s,normal,"...Teehee, correct. You've really got your eyes on me, haven't you?"
+jump,next
+
+skit,3
+cake,desk-down
+allow,yes|hee,yes|hee
+s,,I put on my makeup more nicely than usual.
+
+allow,hee|naruhodo,hee|naruhodo
+s,,I wanted to go to a clothing shop that's a little fancy. I saw it on TV.
+
+allow,silent,silent
+wait,,2
+
+cake,desk-up
+wait,,1
+
+skit,4
+q,shitenai|sorry,shitenai|sorry
+s,serious,Why did you make such an odd face just now?
+
+label,4,shitenai
+allow,yes|sorry,yes|sorry
+s,serious,...You did. I wish I'd taken a photo with my cell phone to show you.
+jump,next
+
+label,4,sorry
+wait,serious,2
+jump,next
+
+skit,5
+cake,desk-down
+action,idle
+allow,no|hee,hee
+s,serious,"When I look in the mirror, my reflection should look just right."
+
+allow,no|naruhodo,naruhodo
+s,,"The blush on my cheeks, the shape of my eyes... One little thing can change the mood of the whole day."
+
+skit,6
+action,tonton
+q,wakaruyo|jaa,wakaruyo|jaa|nop
+s,,"Maybe you wouldn't understand, Rin."
+
+label,6,wakaruyo
+s,normal,You do? I'm glad.
+jump,7
+
+label,6,jaa
+cake,desk-up
+action,sway
+wait,,1
+
+skit,6a2
+action,think
+q,bokumo|nothing,bokumo|nothing
+s,serious,What?
+
+label,6a2,nothing
+s,serious,Oh...
+
+jump,7
+
+label,6a2,bokumo
+wait,serious,2
+
+skit,6b
+action,think
+object,add,concealer
+q,sorry|why,sorry|why
+s,serious,...You can't.
+
+label,6b,sorry
+s,bored,Don't say strange stuff like that. You surprised me.
+jump,7
+
+label,6b,why
+s,bored,...I wonder why. I just know I'd hate it if a little person put on makeup.
+
+jump,7
+
+label,6,nop
+
+skit,7
+cake,desk-down
+action,idle
+wait,,2
+
+action,drink
+allow,yes,yes
+s,,"In the outside world, everyone lives their lives while hiding themselves."
+
+allow,yes,yes
+s,,"Using concealer to hide pimples, telling lies, pretending to be nice..."
+
+allow,yes|naruhodo,yes|naruhodo
+action,drink-down
+s,,"I don't think that's a bad thing, but having to doubt people can be tiring."
+
+allow,yes|naruhodo,yes|naruhodo
+action,idle
+s,,"""How much of this person's face is real?"" Things like that."
+
+cake,desk-up
+action,sway
+wait,,1
+
+allow,yes,yes
+s,normal,But when I pick up a little person...
+
+skit,7a
+q,yes,yes|nop
+s,normal,They always cry and shout so earnestly.
+
+label,7a,yes
+label,7a,nop
+allow,yes|naruhodo,yes|naruhodo
+s,normal,I love that. I know that the face they make then is real.
+
+allow,yes|soudane,yes|soudane
+s,normal,Though I haven't tried with you yet...
+
+wait,normal,1
+
+skit,8
+q,yes|no,yes
+s,tilted,"But you always tell me the truth, don't you, Rin?"
+
+label,8,yes
+skit,8a
+q,yes|uso|hontou,yes|hontou
+s,tilted,...Hehe. Really?
+label,8a,yes
+label,8a,hontou
+s,tilted,Hmmm...
+cake,desk-down
+wait,tilted,1
+
+allow,yes,yes
+s,,It's fine. I have a little test for you anyway.
+
+skit,9
+allow,oyasumi,oyasumi
+s,,"Good night, Rin. You should sleep well for tomorrow."
+
+goto,midnight,today

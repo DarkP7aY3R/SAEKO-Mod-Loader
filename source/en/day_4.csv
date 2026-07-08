@@ -1,0 +1,1669 @@
+skit,1
+survivor,add,shimon
+survivor,add,akari
+item,add,tamagoyaki
+item,add,clip
+bg,room
+m,"I have returned to the drawer, which has grown familiar to me. I lie on the bed and think."
+
+m,Amnesia... What past have I forgotten?
+
+m,"I squeeze my eyelids together and search my head for memories, thinking that if I wait..."
+
+m,...maybe something...will come to me...
+
+m,...
+
+bg,room,fade,out
+m,.....................
+
+# 女の子＝クララ、いわゆる潜在意識に縮められる前の記憶が残っている。
+# ただ、結局5日目には思い出すことができない。これは5日目の展開を予想外にするためのミスリード
+bg,black
+m,A girl is right by me.
+
+m,"She looks to be the same height as me, or just a little shorter. For some reason, I just know that we're the same age."
+
+m,"A shapeless shadow blocks her face from view. Strangely enough, just feeling her presence is enough to warm my heart."
+
+m,"Suddenly, an autumn wind blows. Fallen leaves glide across the ground."
+
+m,"The sunset above the hill is bright. The waves of the girl's long hair reflect the red light in vibrant, golden sparkles..."
+
+bg,room,quake,heavy
+show,shimon,bored
+play,day,sax
+shimon,"Heeey, are you still sleeping?
+You better wake up sooooon!"
+
+m,Somebody shouts in my ear and shakes my body violently.
+
+m,"When I open my eyes, I am back in the usual cold drawer, but there is a man I haven't seen before right next to me."
+
+show,shimon,boredsmile
+shimon,*sigh* Finally up? How can you even sleep in a big place like this? Everyone can see you.
+
+rin,Uh...
+
+rin,"(I feel like I was in the middle of an important dream, but I can't remember any details...)"
+
+show,shimon,confused
+shimon,"Hellooo, are you listening? Chio, don't you think this kid's head is too far up in the clouds?"
+
+show,chio,surprised,shimon,confused
+chio,R-Really?
+
+show,chio,confused,shimon,confused
+chio,He's probably tired today after going out yesterday. You need to give him a bit of time after he wakes up.
+
+show,shimon,disgusted
+shimon,What? You think HE'S tired?
+
+shimon,I just got dragged into here. The floor's hard and we have to share the bed--I'm exhausted just trying to get used to it all.
+
+show,shimon,bored
+shimon,But Mr. Supervisor's been here for ages. He should be used to sleeping side by side on this big mattress.
+
+show,shimon,disgusted
+shimon,I'm just saying--you should pop up and get to work already.
+
+rin,Er...
+
+show
+m,I stretch out both arms and get up from the soft bed.
+
+m,The man has already gone somewhere--maybe he's impatient. Only Chio remains.
+
+show,chio,confused
+chio,"Oh, Rin... G-Good morning. Sorry I couldn't give you a wake-up kiss today."
+
+rin,(You've never given me one...)
+
+show,chio,normal
+chio,"I'm sure you can already tell, but our latest newcomer is pretty pushy."
+
+chio,"I wanted to let you get some more rest in, since I know you must've had a hard time during yesterday's outing..."
+
+show,chio,confused
+chio,But we already woke you up. Sorry.
+
+rin,...It's fine. Thank you for thinking of me. But why did he wake me up?
+
+show,chio,normal
+chio,"Oh, he said he had a request for the supervisor. A very urgent one."
+
+show,chio,weaksmug
+chio,"When you're ready, Rin, could you head over to him? I'll let you do whatever you want when you come back."
+
+rin,You really don't need to...
+
+skit,2
+select
+m,"A man I don't know woke me up in the middle of an important dream. It seems like he has a request for the supervisor. I'll go talk to the new guy, though I don't really want to."
+
+label,2,shimon
+m,"The man has his back slumped and one elbow on the wood-grain wall. He has messy hair and a striking smile, and he is wearing a simple jersey."
+
+rin,"Um, hello..."
+
+show,shimon,boredsmile
+shimon,"Oh, you're finally awake. I thought you were going to sleep forever."
+
+rin,...
+
+show,shimon,confident
+shimon,In a bad mood already? Hope you won't be too harsh on me. I have a good reason to be in a hurry.
+
+rin,What is it?
+
+show,shimon,boredsmile
+shimon,"Just to check--you really are the supervisor, right?"
+
+rin,"...Yeah, though I've only been here a few days myself."
+
+show,shimon,normal
+shimon,"Hm. You'll help me out then, Supe? I heard you're the one to talk to 'round here if anybody needs a hand."
+
+flash
+show,shimon,boredsmile
+shimon,Maybe you can pull off a few simple magic tricks?
+
+rin,Magic?
+
+rin,I can't do anything like that. All I can do is give you things that are inside this drawer.
+
+show,shimon,confusedsmile
+shimon,Hmph... That's not much.
+
+rin,...
+
+m,"The task of giving someone something has a much heavier meaning here, but I probably shouldn't say that now."
+
+rin,Um... Could I ask for your name? Mine's Rin.
+
+know,shimon
+show,shimon,smile
+shimon,"Oh, right. I'm Shimon. What do you think? Sounds cool and intellectual, right?"
+
+rin,(Does it...?)
+
+show,shimon,boredsmile
+shimon,What's with that face? It's a perfect name for a cool and intellectual guy like me.
+
+rin,(I feel like people who call themselves intellectual actually aren't very...)
+
+rin,"What did you need help with? That's why you woke me up, isn't it?"
+
+show,shimon,confusedsmile
+shimon,"Ah, that."
+
+shimon,"To keep it short, I want something to write with. Pen, keyboard--anything's fine."
+
+rin,Oh... We probably don't have anything like that here. I've been wanting something to write notes on too.
+
+# ワープロは2000年代には消えてて、実際ここで言ってるのはパソコン。
+# ただ、この年代だと、シモンのように詳しくない人の中にはパソコンをワープロと呼ぶ人もいた（気がする）
+show,shimon,normal
+shimon,"Hmph. Not even a cell phone? I can type as fast as a teenage girl, so I don't need a full-on word processor or anything."
+
+rin,"Nope, not even a cell phone."
+
+if,110,survived,yui
+rin,"I made something for Yui before, but it's just two cups and a string, so it can't really type."
+else,110
+rin,"I made something for someone named Yui before, but it's just two cups and a string, so it can't really type."
+end,110
+
+flash
+show,shimon,confused
+shimon,"*sigh* You serious, Supervisor? What's even the point of that?"
+
+rin,...
+
+shimon,"I don't want to cause trouble for you, really. If I were just a regular guy, I'd give up here."
+
+show,shimon,confusedsmile
+shimon,"But I'm a special guy, see. Real busy. Lots to do. So my time's just more important than other people's."
+
+show,shimon,smile
+shimon,"So, now that you know that I'm special... Still no pen or keyboard?"
+
+rin,"Uh, yeah, still none. I'd have handed them over already if I had them."
+
+show,shimon,normal
+shimon,"So, you aren't just keeping them out of the hands of the plebes."
+
+rin,Yeah...
+
+rin,...
+
+rin,"You keep saying you're special, Shimon, but what specifically is so special about you?"
+
+show,shimon,confident
+m,"As soon as I ask the question, Shimon peers into my eyes. His nostrils flare and his eyes glitter brightly."
+
+shimon,"Oh, so you want to know? You're curious, eh?"
+
+rin,"Uh... To be honest, I don't really--"
+
+flash
+shimon,"I'm an author. It's an extremely intellectual and respectable profession. Surprised, right?"
+
+rin,Er...
+
+show,shimon,boredsmile
+shimon,"When you think of an author in your head, I'm sure you envision somebody paler and frailer."
+
+shimon,"But a guy like me? Who's cool and athletic and smart and creative? If authors like me were just walking around, you'd..."
+
+rin,You'd...what?
+
+flash
+show,shimon,confident
+shimon,"You'd piss your pants, I'm sure."
+
+rin,(What a choice of words...)
+
+show,shimon,normal
+shimon,"But why's everyone here such a downer? Just look. I tried talking to that woman there earlier, but she didn't even respond."
+
+rin,Which woman?
+
+shimon,You didn't notice her hiding over in the corner this whole time? Look over there.
+
+show,akari,normal
+akari,...
+
+m,"Shimon points to the right side of the room, where a girl I don't know is staring into nothing, her face blank."
+
+# アカリは変な匂いがするし見た目も少し汚い（冴子の玩具にされていたから）。だけどシモンは女の子に優しいので具体的には言わない。
+show,shimon,normal
+shimon,She gives me the creeps. She's quiet and unfriendly and... I don't know. She just feels off.
+
+rin,Ah...
+
+show,shimon,boredsmile
+shimon,"But anyway. Since I have nothing to write with, I've got some free time, which is rare for a busy man like me."
+
+shimon,Since our schedules are both open...
+
+show,shimon,confident
+shimon,I'll teach you how to sharpen that mind of yours. What do you think? Want a special lesson from an intellectual and imaginative guy like me?
+
+rin,"(Uh, that sounds really boring!)"
+
+shimon,"Normally, you couldn't buy a lesson like this with all the money in the world. You should appreciate each word out of my mouth for its incredible value..."
+
+rin,"Um, about that... Shimon, could you save that lesson for later?"
+
+rin,"Th-There's another newcomer, so I have to go say hi! As the supervisor!"
+
+show,shimon,confusedsmile
+shimon,"Hm? I'll wait then, but just for a bit. I can't say I don't understand. You can't just leave a girl alone."
+
+rin,(That's not it...)
+
+show,shimon,confident
+shimon,But make sure to come back when you're done! My lessons are priceless! Hurry before I change my mind!
+
+rin,"A-Ah, right. Got it."
+
+skit,3
+select
+show
+m,A listless girl that I don't recognize sits at a slight distance from me. I'm sure it'll be more fun talking to her than Shimon... I'll do my duty as the supervisor and check on her.
+
+label,3,akari
+play
+rin,H-Hello.
+
+show,akari,normal
+akari,...
+
+m,"Even after I approach the girl, her expression doesn't change. Her empty eyes are looking somewhere else."
+
+rin,It's nice to meet you...
+
+# 冴子の体液で濡れている（ゲーム中では明言しない）
+m,"Her clothes and hairpin are completely worn out. Her wild long hair is also wet, for some reason."
+
+rin,...
+
+m,"Just as the silence begins to make me feel antsy, the girl's lips move slightly to utter a short word."
+
+play,day,ration
+akari,Water.
+
+rin,Huh?
+
+akari,"I said, water."
+
+rin,...
+
+show,akari,disgusted
+akari,Hurry. Water. Bring me some.
+
+rin,F-Fine...
+
+skit,4
+pick
+m,"The unknown newcomer uttered one short request... ""Water."" I have many questions, but for now, I'll go bring the water she asked for."
+
+label,4,akari,other
+m,I take the tool I chose and slowly approach the new girl.
+
+show,akari,jitome
+m,"She takes just one look at me, but she does not become angry or sad. For some reason, a faint smile appears on her lips."
+
+akari,...I knew it. You're all worn out too.
+
+akari,You can't even do something this simple...
+
+rin,...!
+
+m,I look at what I brought. There isn't any of the liquid the girl asked for inside it.
+
+rin,"Sorry, I just made a mistake! I'll find something else."
+
+jump,back
+
+label,4,other,other
+m,I take the tool I chose and move through the drawer. I hear someone call out from directly behind me.
+
+akari,Rin. Where are you going?
+
+show,akari,jitome
+m,"I turn around and see the girl standing there. For some reason, a faint smile appears on her lips."
+
+akari,...I knew it. You're all worn out too.
+
+akari,You can't even tell people apart...
+
+rin,...!
+
+rin,"Sorry, I just made a mistake! I'll be right with you."
+
+jump,back
+
+
+label,4,akari,cupphone
+akari,...
+
+cutin,akari_raising_cup
+m,"The girl takes the cup and stands up tall. Then, just as she is about to pour the water inside on her head--"
+
+rin,W-Wait! Stop!
+
+#cutin,akari_bathing_water_2
+
+akari,...?
+
+m,"The girl cocks her head and looks my way, her face still blank. She is still holding the cup high above her head."
+
+rin,"Um, if you pour that out here, the walls and floor will get wet! I-I'll find you a better place. Just wait..."
+
+cutin
+
+skit,5
+pick,face-first
+m,"The girl tried to take a shower right there after getting the water, but we'll be in for it later if the floor or walls get wet. I'll take her somewhere that's okay to get wet."
+
+label,5,other,other
+m,I take the person I chose and move through the drawer. I hear someone call out from directly behind me.
+
+akari,Rin. Where are you going?
+
+show,akari,jitome
+m,I turn around and see the girl standing there. A strangely satisfied smile appears on her lips as she nods.
+
+akari,...I knew it. You're all worn out too.
+
+akari,You can't even tell people apart...
+
+rin,...!
+
+rin,"Sorry, I just made a mistake! I'll be right with you."
+
+jump,back
+
+label,5,akari,other
+rin,"Th-There! If you're going to sh-shower, do it on top of this!"
+
+show,akari,jitome
+akari,...
+
+m,"She takes just one look at me, but she does not become angry or sad. A strangely satisfied smile appears on her lips as she nods."
+
+akari,...I knew it. You're all worn out too.
+
+akari,"Taking a shower here will clearly ruin this thing, but you can't even understand that..."
+
+rin,...!
+
+rin,"Sorry, I just made a mistake! I'll find a better location!"
+
+jump,back
+
+label,5,akari,tissue
+rin,"Th-There! If you're going to sh-shower, do it on top of this tissue!"
+
+show,akari,normal
+akari,...
+
+show,akari,disgusted
+akari,Are you serious?
+
+rin,Huh?
+
+akari,Tissues have a more important purpose. And they aren't great at soaking up water.
+
+rin,Whuh?
+
+show,akari,normal
+akari,...There has to be a better place. Come on--take me there already.
+
+rin,...
+
+jump,back
+
+label,5,akari,napkin
+
+rin,"Th-There! If you're going to sh-shower, do it on top of this bed!"
+
+show,akari,normal
+akari,...
+
+m,A few seconds pass in silence.
+
+show,akari,jitome
+m,"Finally, she nods in understanding and moves to the center of the bed. The floor at her feet is slightly thicker and softer."
+
+cutin,akari_bathing
+
+m,The girl flips the cup upside-down and pours the water over her head. Her hair and clothes are all soaked...
+
+rin,"Wait--you can't get off that while wet! U-Um, should I get you a tissue?"
+
+akari,...I'm fine.
+
+cutin
+show
+m,"After saying that, she lies down right on the soft floor. She stretches out her arms and rolls back and forth on the bed..."
+
+show,akari,jitome
+m,"By the time she stands up again, the droplets that had clung to her clothes and hair were mostly gone, so she was just a little damp."
+
+rin,Wow... That's amazing.
+
+rin,This bed is good for soaking up water...but I'm impressed you realized that when you're new here.
+
+show,akari,normal
+akari,...
+
+rin,"Oh, I forgot to ask. What's your name, if you don't mind?"
+
+show,akari,disgusted
+akari,...
+
+m,She opens her eyes silently. She seems surprised when she finally speaks up.
+
+akari,You forgot?
+
+rin,Uh...
+
+akari,...
+
+show,akari,normal
+akari,...You forgot then.
+
+know,akari
+akari,I'm Akari. And...
+
+show,akari,jitome
+akari,"Rin, it's nice to meet you again."
+
+rin,...!
+
+show
+m,"Before I come back to my senses, Akari has already walked out of my eyesight. Right after that, somebody calls out from behind me."
+
+show,shimon,boredsmile
+shimon,"Hey, Rin! Looks like you're done."
+
+rin,...!
+
+flash
+show,shimon,smug
+shimon,"I could see you go straight for her, even from here. Bit early to invite her to bed, isn't it?"
+
+rin,Wh-What are you saying?! I just took her there so she wouldn't get the floor wet...
+
+show,shimon,confident
+shimon,"No worries, man. Everyone makes mistakes the first time around. And I like that go-getter attitude of yours."
+
+rin,"I'm telling you, that's not..."
+
+show,shimon,smug
+shimon,But you can't make mistakes forever. I'll help you out. Real intelligence is a turn-on for women too.
+
+show,shimon,confident
+shimon,"Guess it's time to begin one of my priceless lessons... You ready, my man?"
+
+rin,(Why does he keep calling me that?)
+
+rin,"Uhhh... Right! I, um, have something else to do."
+
+rin,"I talked to Chio and Akari, but there's still somebody I haven't talked to."
+
+rin,"I have to say hi, since I'm the supervisor. So let's save that lesson for later, Shimon! Sorry!"
+
+if,309,survived,kina
+show,shimon,confusedsmile
+shimon,Wait... Do you mean Kina?
+
+rin,...Huh?
+
+show,shimon,normal
+shimon,"You mean Kina, don't you? Since you talked to Chio and Akari, only Kina's left."
+else,309
+show,shimon,confusedsmile
+shimon,Wait... Do you mean Yui?
+
+rin,...Huh?
+
+show,shimon,normal
+shimon,"You mean Yui, don't you? Since you talked to Chio and Akari, only Yui's left."
+end,309
+
+rin,"I-I do, but you know everyone's names already?"
+
+show,shimon,smug
+shimon,"Obviously. If I see a woman, of course I'm going to talk to them."
+
+rin,...
+
+show,shimon,confusedsmile
+shimon,"I'm not trying to pick them up right away or anything. It's just weird saying nothing, so I went around to say hi."
+
+if,555,survived,kina
+show,shimon,confident
+shimon,"But that Kina woman? Unexpectedly easy. Sure, she's got a prickly attitude, but I can tell she's already fallen for me."
+
+else,555
+show,shimon,confident
+shimon,But that Yui woman? Unexpectedly easy. I saw that sweet smile of hers--I can tell she's already fallen for me.
+
+end,555
+
+rin,...
+show,shimon,smug
+shimon,"In any case, I'm not the kind of loser who needs to surround himself with women. Go for them if you want, Rin."
+
+show,shimon,confident
+shimon,"You'll understand how great my lessons are all the better if you have more experience under your belt. Go forth and make your mistakes, man!"
+
+rin,(I told you--that's not what I'm doing!)
+
+skit,7
+select
+m,"There's still a little person in the drawer I haven't talked to. Shimon says she's fallen for him... Anyway, I'll go see how true that is."
+
+label,7,kina
+play
+rin,Kina... Are you okay?
+
+show,kina,disgusted
+kina,Huh?
+
+flash
+show,kina,serious
+play,day,feelsright
+kina,"Oh, it's you, Rin. I'm fine. Or I was, until that shitty weirdo of a man started talking to me."
+
+rin,(Knew it...)
+
+show,kina,disgusted
+kina,"I told him to fuck off since I wasn't interested, but he kept smirking at me."
+
+kina,Guys like that only stop after a punch in the face. Words only work on people who actually know how to use their brains.
+
+rin,...
+
+health,kina,-10
+show,kina,rolleyes
+kina,"*sigh* Sure, somebody dies every night in the drawer, but at least I didn't have creeps trying to hit on me. But even that silver lining's gone now..."
+
+show,kina,serious
+kina,"Oh, right. Where did you go last night? ...You stink. Like woman's perfume that's too strong."
+
+rin,Ah...
+
+rin,I went shopping with Saeko yesterday. She wanted me to help her choose an accessory.
+
+show,kina,rolleyes
+kina,"Heh, so she put you in her pocket and now you smell like her ass or her boob or something?"
+
+rin,...
+
+show,kina,disgusted
+kina,...Hmph. That huge woman needs to hear somebody else's advice before picking out some jewelry?
+
+show,kina,rolleyes
+kina,Can't even choose her own appearance without caring about other people's opinions of her... Pathetic.
+
+rin,Pathetic...?
+
+show,kina,rolleyes
+kina,Looks are a kind of curse. Things are way easier if you can live your life without worrying about how people see you.
+
+show,kina,smirk
+kina,Though you can end up like me--caring too little and getting into trouble that way. Wanna hear a fun story?
+
+rin,"Uh, not really..."
+
+flash
+show,kina,laugh
+kina,"You wanna hear it, right?"
+
+rin,R-Right...
+
+show,kina,smile
+kina,Of course. Good answer.
+
+kina,"So, I used to collect old jeans from the US. I played drums a lot in them, so they got worn out after a while."
+
+show,kina,smirk
+kina,"But I kept wearing them, since I thought it was cool. Didn't even wash them... And after one show, I just left 'em in a locker backstage."
+
+show,kina,smile
+kina,"It was an old venue. Didn't even have locks. When I got back, I saw a boy from the other band had opened my locker."
+
+show,kina,smug
+kina,So I took a look. What do you think that kid was doing?
+
+rin,Uh...
+
+flash
+kina,He'd stuck his thing through the hole in my worn-out jeans and was jerking off with it.
+
+rin,"(Ugh, that's awful...)"
+
+kina,"I took the jeans back from him, changed right there and went home. Those were my favorite jeans--I felt like if I threw them out, I'd be letting him win."
+
+show,kina,smug
+kina,"We ran into each other a few days after... But when he saw me in the same jeans, his face went bright red and he was gone, just like that."
+
+show,kina,laugh
+kina,"He screwed up his show, and his band broke up some time after that. So yeah, not reacting won that for me. Kina 1, loser boy 0. Gah ha ha!"
+
+rin,...
+
+rin,E-Er...
+
+rin,"Just a question, but those pants you're wearing now... Are they...?"
+
+kina,"Oh, man! They are!"
+
+# リーバイス501の66モデル(前期)のつもり。参考: https://primadondon.com/honjo/2022/02/28/%e6%9c%80%e5%be%8c%e3%81%ae%e3%83%b4%e3%82%a3%e3%83%b3%e3%83%86%e3%83%bc%e3%82%b8%e3%80%8166%e3%83%a2%e3%83%87%e3%83%ab%e3%81%ae%e9%ad%85%e5%8a%9b%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/
+kina,"My '66 501s! They're the jeans I was wearing then! Man, that's hilarious! Ah ha ha ha!"
+
+rin,...
+
+show,kina,smile
+kina,"Don't worry--I've definitely washed them at least once since then. Look. No stains, see?"
+
+rin,(I don't want to look...)
+
+show,kina,laugh
+kina,"Anyway, I'm just saying you shouldn't worry about how other people see you! Wear whatever you want!"
+
+rin,...
+
+show
+rin,(Is that really the moral of that story?)
+
+m,"After Kina happily showed me her worn-out jeans, I run away to the corner of the room."
+jump,next
+
+label,7,yui
+play
+rin,"U-Um... Yui, are you doing okay?"
+
+show,yui,surprised
+yui,Ah... R-Rin!
+
+play,day,house
+show,yui,crazy
+yui,"Y-Yeah, I'm okay."
+
+show,yui,serious
+yui,"Wh-What is it? Um, why are you talking to me all of a sudden?"
+
+rin,"Oh, um... I was a bit worried, so I wanted to check on you."
+
+show,yui,crazy
+yui,I see. Thanks...
+
+show,yui,serious
+yui,...
+
+yui,"To be honest, I'm not really okay. L-Like, yesterday was really surprising..."
+
+show,yui,sad
+yui,And then this long-haired guy just came out of nowhere to talk to me this morning...
+
+rin,...
+
+show,yui,weaksmile
+yui,"Oh, but how are you doing, Rin? You disappeared last night."
+
+show,yui,crazy
+health,yui,-10
+yui,"I was so worried, I couldn't even sleep..."
+
+rin,Oh...
+
+m,There are dark shadows under Yui's eyes. They look a bit worse than they did yesterday.
+
+rin,"Sorry. I just went out to shop with Saeko last night, to help her choose an accessory."
+
+flash
+show,yui,surprised
+yui,...What?
+
+flash
+yui,Shopping? W-With her?
+
+m,Yui's voice jumps up an octave. Her eyes are sparkling with curiosity.
+
+show,yui,kirakira
+yui,"Oooh, so Saeko and you went shopping! Wow! How nice!"
+
+rin,(She seems to be having fun...)
+
+show,yui,weaksmile
+yui,"Hey, what kind of fashion does Saeko like? She's ten out of ten both for her face and her style--I bet she'd look good in anything!"
+
+rin,"Hm, it seemed like she wasn't sure herself. That's why she told me to help her choose, and I think I did the best I could."
+
+show,yui,smile
+yui,"Ooooh. Hehe, that sounds so nice! I felt some of my exhaustion go away just listening to you."
+
+rin,You did...?
+
+yui,Yup! Two young people going out and having fun? Hearing about that is enough to charge anyone's battery back up!
+
+# 元ネタ：あいのり https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%84%E3%81%AE%E3%82%8A
+yui,"Have you heard of Joint Journey? It's a show where single men and women travel together. After they get close, they declare their love to each other! Isn't that sooo nice?"
+
+slide,shimon,in,right
+show,yui,smile,shimon,smug
+shimon,I love Joint Journey.
+
+slide,shimon,out,right
+rin,Wha--Shimon?!
+
+show,yui,smile
+yui,"Oh, sorry! Here I am talking about romance, but you and Saeko aren't that far along yet, right?"
+
+show,yui,weaksmile
+yui,I always do this! I just say too much. Relationships like these are always the best right before people realize their feelings for each other...
+
+# シモン現れる
+
+slide,shimon,in,right
+show,yui,smile,shimon,normal
+shimon,*silent nod*
+
+# 隠れる
+slide,shimon,out,right
+rin,...
+
+show,yui,smile
+yui,"But as you spend t-time together, i-if you really do think you like her..."
+
+show,yui,crazy
+yui,"You absolutely can't hold back, okay? Do whatever it takes to make her yours. You got it?"
+
+rin,Er... G-Got it.
+
+show,yui,smile
+yui,O-Okay! I'm holding you to that promise!
+
+show,yui,kirakira
+yui,"A-And if it does work out, you have to tell me everything, including all the steps you take. I-I'll listen to eeeverything..."
+
+# シモン現れる
+slide,shimon,in,right
+show,yui,kirakira,shimon,normal
+shimon,Tell me too.
+
+# シモンはなれる
+slide,shimon,out,right
+rin,"(Why are you even here, Shimon?)"
+
+show,yui,kirakira
+rin,(Are there more romantics in this drawer than I'd thought?)
+
+show
+m,"After more interrogation about last night's shopping, I finally escape from Yui..."
+
+jump,next
+
+skit,8
+play
+rin,Ah...
+
+m,"Suddenly, the iPod display fills my vision. The digital clock on the screen lets me known that evening approaches."
+
+show,chio,tense
+chio,...
+
+m,I look away from the clock and meet Chio's eyes. I give a quiet nod to accept her wordless message.
+
+show
+rin,(It's almost time for Saeko to return. I'm still not used to this...)
+
+rin,(...but I need to decide who to feed today.)
+
+skit,9
+cue
+pick
+m,"Time has passed before I know it, and now it is evening. My heart is restless, and I don't think I can get used to this...but I still need to give food to somebody."
+
+label,9,akari,tamagoyaki
+m,I approach Akari with the rolled omelet.
+
+play,day,feed
+rin,"Um, Akari, are you hungry?"
+
+rin,This rolled omelet looks yummy. Would you eat it for me?
+
+show,akari,disgusted
+akari,...
+
+akari,Are you sure I should have it?
+
+rin,Er... What do you mean by that?
+
+show,akari,normal
+akari,No...
+
+show,akari,disgusted
+akari,"If that's how it is, it's fine."
+
+rin,...
+
+item,remove,tamagoyaki
+effect
+cutin,akari_eating_tamagoyaki
+m,Akari brings the rolled omelet to her mouth and fills her cheeks. The sweet aroma of the egg and seasoning waft over to where I am.
+
+m,"As Akari eats silently, her cheeks deflate with every bite. Color steadily comes back to her skin, which had looked unhealthily pale."
+
+m,The change makes it look like she has just awoken from a long slumber.
+
+cutin
+show,akari,smile
+akari,...It's delicious.
+
+rin,I'm glad. You seemed kind of down.
+
+akari,"You could say that, but..."
+
+akari,"Rin, it seems like you're the one whose spirits are up."
+
+rin,U-Umm...
+
+akari,"...Or more like you've returned to normal. So much happened, but you're back to how you were after forgetting everything... I'm envious."
+
+show,akari,normal
+akari,...I wonder why Saeko didn't do the same thing to me.
+
+rin,...
+
+show,akari,smile
+akari,"No, I know why. Saeko is testing you."
+
+akari,"And it looks like you've cleared the first stage... Congratulations, Rin."
+
+show,akari,disgusted
+akari,"But the second stage... I think you've failed today. You can tell, can't you, Rin? I don't look even the slightest bit delicious."
+
+rin,...!
+
+show,akari,jitome
+akari,It's unfortunate that we'll all have to die here. We've been through a lot.
+
+akari,At least I had something nice to eat in the end.
+
+flash
+show,akari,smile
+akari,"Rin, thank you for the fun memories. Let's have a nice death together."
+
+rin,...
+
+show
+play
+m,"I'm still flustered, but just as I try to find out the truth behind Akari's words--"
+
+jump,next
+
+label,9,shimon,tamagoyaki
+m,I approach Shimon with the rolled omelet.
+
+play,day,feed
+rin,"Um, Shimon, are you hungry?"
+
+rin,This rolled omelet looks yummy. Would you eat it for me?
+
+show,shimon,normal
+shimon,"Hm? Ah, a rolled omelet."
+
+show,shimon,smile
+shimon,"Sorry, I don't like my food to be sweet, though I've eaten desserts for research."
+
+rin,"Huh, what kind of research?"
+
+show,shimon,normal
+shimon,"...I can't say. That's connected to the very core of my artistry. Sorry, but just forget what I said."
+
+rin,Huh...
+
+rin,...So you're not going to eat the rolled omelet? I think Saeko made it.
+
+show,shimon,surprised
+shimon,Wha? Saeko's homemade cooking?
+
+# 考え込む顔
+shimon,...
+
+shimon,"Okay, let me eat it. I'm sure this will become a very important note for my fieldwork."
+
+item,remove,tamagoyaki
+effect
+cutin,shimon_eating_tamagoyaki
+m,"After saying that, Shimon puts his hand on the edge of the rolled omelet. The smell of the fluffy egg and its seasoning fill the drawer."
+
+play
+m,"One bite, then another. With each bite, the egg slowly shrinks...and for some reason, Shimon's brows furrow."
+
+cutin
+show,shimon,surprised
+shimon,...It's not sweet.
+
+rin,Huh?
+
+shimon,"It's not as sweet as I thought. Is Saeko actually from Kansai? They prefer salty rolled omelets in the west, right?"
+
+rin,I don't know...but I don't think she is.
+
+shimon,Hmm. Here I thought all women cooked things with far too much sugar...
+
+play,day,groove
+show,shimon,normal
+shimon,But it looks like I'll need to reconsider that belief. Huh...
+
+rin,...
+
+# シモン共通
+show,shimon,smug
+shimon,"Now, I'm still eating, but I remember my promise. I said I'd teach you how to sharpen your mind."
+
+rin,(Dang it!)
+
+show,shimon,confident
+shimon,Why do you keep making that face? You worried somebody like you can't ever become an intellectual?
+
+rin,"No, that's not it... Not exactly..."
+
+show,shimon,boredsmile
+shimon,"Heh, then you've got nothing to worry about. Rin, what do you think's the most important thing you need to get smarter?"
+
+rin,(It's begun...)
+
+rin,Uh... Studying?
+
+flash
+show,shimon,confusedsmile
+shimon,Huh?
+
+show,shimon,confused
+shimon,You really think you can get smarter by studying? You'll just turn into some nerdy four-eyes who's got nothing going for him except his grades.
+
+rin,Really...?
+
+show,shimon,smile
+shimon,Anyway. The best way to get smarter...is to understand other people's feelings. That's it.
+
+rin,...Huh?
+
+show,shimon,smug
+shimon,"No matter how much you study, all you can use is your own head. Maybe you'll get better at adding and subtracting, but so what?"
+
+shimon,"On the other hand, if you understand other people's feelings, you can use other people's heads. You can take in how other people think and feel."
+
+show,shimon,smile
+shimon,"Then, you can always look at anything from multiple perspectives. That's the best shortcut to getting smarter."
+
+rin,(I didn't expect that from Shimon...)
+
+rin,"I didn't think you'd say something like that, Shimon, though I don't know if that's really a way to get smarter..."
+
+show,shimon,confident
+shimon,Really? You need this skill to be an author--it's a career that requires high intelligence. And it helps you talk to women.
+
+rin,Huh?
+
+show,shimon,confusedsmile
+shimon,"Maybe you're still learning...but normally, you can't just invite a woman to bed straight off the bat."
+
+rin,I told you--that's not what I was doing!
+
+show,shimon,smug
+shimon,"Now, now. I can understand why you're embarrassed, but once you get smarter like me, you'll stop making mistakes like that."
+
+rin,B-But do you really think you know how other people feel?
+
+if,1021,survived,kina
+rin,"I talked to Kina earlier, but she said she was angry that a weird man hit on her."
+
+flash
+show,shimon,confident
+shimon,"Sure she did, but she was actually happily angry, right?"
+else,1021
+rin,"I talked to Yui earlier, but she said she was scared after a strange man talked to her."
+
+flash
+show,shimon,confident
+shimon,"Sure she did, but she was actually happily scared, right?"
+end,1021
+
+rin,...
+
+shimon,Listen up. Women love men who come on strong. Just think of the first refusal as practice.
+
+show,shimon,smug
+shimon,"Having an arrogant boy fall in love with you, having strong guys fight over you--the rankings are filled with stories like that."
+
+rin,(Rankings?)
+
+rin,...Hey. Do you mind if I ask something that's been on my mind?
+
+show,shimon,boredsmile
+shimon,Not at all. What is it?
+
+rin,"Shimon, you said you're an author...but do you write cell phone novels?"
+
+flash
+show,shimon,surprisedsweat
+shimon,Whugh?!
+
+show,shimon,feared
+shimon,What are you--?! O-Of course not! Wh-Why would you even think that?
+
+rin,I just had a feeling...
+
+rin,"Both Saeko and I have fun reading them every day. If you write cell phone novels, I thought we could have fun talking about it."
+
+show,shimon,surprisedsweat
+shimon,...!
+
+show,shimon,surprised
+shimon,...Oh.
+
+show,shimon,disgusted
+shimon,"Hey, my man. There's something I have to tell you."
+
+shimon,"It's just as you say. The truth is, I write--"
+
+show
+play
+m,Just as Shimon starts speaking in a serious tone I've never heard from him before--
+
+jump,next
+
+label,9,kina,tamagoyaki
+m,I approach Kina with the rolled omelet.
+
+# 3日目と共通
+play,day,feed
+rin,"K-Kina... Are you hungry, by any chance?"
+
+show,kina,disgusted
+kina,What?
+
+kina,"No, I'm not hungry. And..."
+
+# ここだけ違う
+rin,Just... Won't you eat this rolled omelet for me...?
+
+# また共通
+show,kina,angry
+kina,No! I won't!
+
+kina,"I don't want that creepy woman to eat me! Get that food away from me, got it?!"
+
+show
+rin,...
+
+kina,...
+
+m,Our eyes meet.
+
+rin,...........................
+
+kina,...........................
+
+# ここまで
+
+show,kina,disgusted
+kina,*sigh*
+
+show,kina,rolleyes
+kina,"...Fine. I'll eat that rolled omelet for you. Honestly, it doesn't look half bad."
+
+item,remove,tamagoyaki
+effect
+cutin,kina_eating_tamagoyaki
+m,"After Kina mutters that, she brings herself closer to the rolled omelet and begins to eat it in silence."
+
+m,The aroma of the fluffy egg and its seasoning fill the drawer...
+
+show,kina,smile
+kina,Not bad for my last meal. I had something like this before I ran away from home.
+
+show,kina,smirk
+kina,"Sausages, cherry tomatoes, two layers of nori seaweed and rice, and rolled omelets. I didn't hate it, but it's some kind of irony having this as my last supper."
+
+rin,...
+
+cutin
+show,kina,rolleyes
+kina,...Haaah. What the hell am I doing? I didn't even want to eat this.
+
+kina,...
+
+flash
+show,kina,smug
+kina,Whatever. I feel a bit better after eating. Maybe I'll sing one last song before I go.
+
+kina,"I have the deepest voice out of the women here, right? I'm pretty proud of it. Power's everything for metal vocals."
+
+kina,"I found some good instrumental stuff in the iPod for once. And I was good at writing lyrics, y'know."
+
+play
+show,kina,smirk
+kina,Gonna start now. Clear those earholes and listen up.
+
+cutin,kina_karaoke_s
+play,day,kina_metal
+letter,karaoke,start
+kina,♪
+
+cutin,kina_karaoke
+kina,"♪ Where God dies and thunder stills, humankind will remain."
+
+kina,"♪ Where Babel falls and ideas die, the penis will stand tall."
+
+cutin,kina_karaoke_s
+kina,♪
+
+cutin,kina_karaoke
+kina,♪ Giant boobs raining down in the apocalypse of Sodom.
+
+kina,♪ Giant boobs raining down in the apocalypse of Gomorrah.
+
+cutin,kina_karaoke_s
+kina,♪
+
+cutin,kina_karaoke-vocal
+kina,♪ YEAH!!!!!!
+
+cutin
+letter,karaoke,end
+m,Kina finishes howling her song. Just as I had given a few claps--
+
+jump,next
+
+
+label,9,yui,tamagoyaki
+m,I approach Yui with the rolled omelet.
+
+play,day,feed
+m,Her eyes snap wide open when she sees what I'm holding.
+
+rin,"Um, Yui... I brought you a rolled omelet."
+
+rin,Would you eat it for me?
+
+show,yui,surprised
+yui,...
+
+show,yui,smile
+yui,...Guess that's how it is.
+
+yui,"Hehe, I figured this is how things would go. I mean, I know what happened yesterday..."
+
+show,yui,crazysmile
+yui,"So, it's me today?"
+
+show
+rin,...
+
+yui,...
+
+m,Our gazes meet.
+
+rin,...........................
+
+yui,...........................
+
+show,yui,confused
+yui,"Okay, I'll eat it. I don't want to trouble you, Rin..."
+
+item,remove,tamagoyaki
+effect
+cutin,yui_eating_tamagoyaki
+m,"After saying that, Yui puts her mouth on the gigantic rolled omelet. The aroma of the fluffy egg and its seasoning fill the drawer..."
+
+play
+yui,"...Yum. Rolled omelet's actually one of my best dishes, but this is good too. Did Saeko make this?"
+
+play,day,groove
+rin,Probably.
+
+yui,I guess nobody else can cook anything this big.
+
+cutin
+show,yui,smile
+yui,But this rolled omelet is completely different from mine. Do you think Saeko's actually from Kansai?
+
+rin,"No, she probably isn't."
+
+show,yui,weaksmile
+yui,"Right. I'm actually from there, so my parents make their rolled omelets salty..."
+
+show,yui,smile
+yui,But I like to put lots of sugar in mine. Make them reeeal sweet.
+
+yui,"After all, sweet stuff is a better hit with the boyfriends. Boys like it when girls are obvious like that..."
+
+slide,shimon,in,right
+show,yui,smile,shimon,normal
+shimon,You're right.
+
+slide,shimon,out,right
+rin,(Why is Shimon here again...?)
+
+# 死亡会話:ユイ
+
+show,yui,smile
+yui,"Hey, do you want to talk a little about love and stuff? I can talk and eat at the same time. Or maybe you're not interested?"
+
+rin,"Um, not really..."
+
+yui,"Hahaha, you don't have to look so nervous! Come on--it'll be better to talk about fun stuff until the end, don't you think?"
+
+rin,...
+
+yui,"Like, what kind of people have you dated, Rin? I'm super curious about what the dating scene is like for younger people nowadays."
+
+rin,"Oh, about that..."
+
+rin,"I have amnesia, so I don't remember anything from before I came here..."
+
+rin,I don't really have anything I can share.
+
+flash
+show,yui,kirakira
+yui,Hmm... Really?
+
+m,Yui stares at me with wide eyes. The corners of her lips are turned down in disappointment.
+
+rin,"U-Um, how about you, Yui? If you'd like to talk about it..."
+
+show,yui,smile
+yui,Heh heh heh. That's a great question.
+
+flash
+yui,"Okay, I swear I'm telling the truth--don't be shocked! But since about one month ago...I've been dating an idol!"
+
+rin,H-Huh...
+
+yui,What's with that reaction? You could be a little shocked at least!
+
+rin,"S-Sorry. I don't really know how to react, since I'm not that familiar with idols..."
+
+show,yui,weaksmile
+yui,"Huh, guess that makes sense. My boyfriend's not at the kind of talent agency that would get him on TV either."
+
+yui,"Have you heard of underground idols? They sing and dance like you'd expect, but at smaller places around town instead of, like, huge concert venues. But I like that. Makes the distance between us feel closer somehow."
+
+rin,"Hmm... Were you are a fan of the idol before you started dating, Yui?"
+
+show,yui,smile
+yui,"Hehe, bingo! I was a huge fan since his debut. I went to sooo many of his shows."
+
+show,yui,weaksmile
+yui,"Idols usually have a cool and collected image, right? But my boyfriend's got more of an innocent vibe."
+
+yui,"He tries so hard both with singing and dancing, but he's not that confident in either... Like, whenever I greeted him up close, he'd break eye contact right away."
+
+yui,He was just too cute. It made me want to see what he was like when he wasn't being an idol...
+
+flash
+show,yui,crazysmile
+yui,"So, I just took him home with me."
+
+rin,Wha?
+
+show,yui,smile
+yui,"You know how idols have handshake events where you can give gifts to them? Well, I gave him some homemade chocolate."
+
+yui,"He's such a good kid. When I asked him to eat the chocolates, he really just ate them then and there."
+
+show,yui,weaksmile
+yui,"So after the show, he got sick...and what a coincidence. I was there just at the right time."
+
+yui,I moved him somewhere he could rest and was really gentle with him. I even took some photos for evidence.
+
+show,yui,smile
+yui,"A few days after, I told him how I felt...and wouldn't you know it! He said okay right there!"
+
+yui,"Now, he meets up with me whenever I ask, and he lets me do anything I want."
+
+show,yui,sad
+yui,We actually had plans to meet up this weekend...
+
+rin,...
+
+show,yui,smile
+yui,"So Rin, if you have someone you like, you can't hold back."
+
+show,yui,crazysmile
+yui,Do whatever it takes to express your feelings and seize true happiness. Promise me that...okay?
+
+play
+m,"Yui's trembling hands, pale and unblemished, look completely different to me now. Just as they reach out toward my hands--"
+
+jump,next
+
+# チオ死亡会話：汎用
+label,9,chio,tamagoyaki
+show,chio,surprised
+chio,...!
+
+# ここだけ独自
+play,day,feed
+m,"I approach Chio with the rolled omelet. Her eyes snap wide open when she sees what I'm holding."
+
+rin,Chio... Would you eat this for me?
+
+show,chio,confused
+chio,...
+
+chio,...I see.
+
+chio,"If that's your decision, I'll accept it."
+
+chio,"Thank you, Rin. I'm sure it was a hard decision...
+You've given it your all."
+
+rin,...
+
+show
+m,"With resignation, Chio brings the rolled omelet closer to her face with both hands."
+
+effect
+item,remove,tamagoyaki
+cutin,chio_eating_tamagoyaki
+m,"Then, she nods, as if she has accepted her fate...and begins to take tiny bites out of the edge of the fluffy egg."
+
+# ここから汎用
+cutin
+show,chio,confused
+chio,...What is it? I'll blush if you keep looking at me like that.
+
+show,chio,normal
+chio,...
+
+show,chio,tense
+chio,"...You made this decision yourself, didn't you?"
+
+chio,So you can't look sad about it. I made the decision to accept whatever you chose.
+
+show,chio,confused
+chio,Though I don't really understand your intentions...
+
+show,chio,normal
+chio,"But you're going out of your way to raise my Appeal. I'm sure you have your reasons for that, even if I don't know what they are."
+
+show,chio,weaksmug
+chio,"...So I'll do what you tell me to. You've given it your all, Rin."
+
+rin,...
+
+show
+play
+m,Just as I was wondering how to respond to Chio--
+
+jump,next
+
+label,9,other,other
+m,I take another look at what I tried to hand over. An incredibly normal item that wouldn't raise Appeal at all.
+
+rin,(No... This won't make Saeko want to eat anybody.)
+
+rin,"(I still don't know what to do, to be honest...but I've given food to somebody both yesterday and the day before.)"
+
+rin,(It's too late to go back now. I need to find my resolve and choose who to feed...)
+
+jump,back
+
+# 冴子帰ってくる
+
+# 2日目と共通になってる。変えるかも？
+skit,10
+show
+bg,room,quake,light
+play
+m,"A low, muffled vibration reverberates from a distance. The sound of heavy footsteps."
+
+bg,room,quake,heavy
+
+m,There's no mistaking it. Saeko has returned to her room.
+
+bg,room,quake,heavy
+
+m,Saeko walks through the room with even breaths. Every step she takes shakes the drawer like an earthquake...
+
+bg,room,quake,heavy
+
+m,Each tremor growing larger and more violent than the last.
+
+bg,room,quake,long
+
+m,"Soon, they become too strong for me to stand."
+
+m,I find myself crouching on the floor.
+
+m,"Next, I hear the creak of something moving."
+
+m,"Then, a tremendous commotion that shakes the whole room..."
+
+m,...as the room we're in--the second drawer of a desk--is pried open by Saeko's fingers.
+
+# 共通終わり
+
+skit,11
+play,day,open
+interrupt,shift
+open
+interrupt,open_sliding_in
+pose,smile,normal
+saeko,"Hello, cute little people. Were you good today while I was away?"
+
+saeko,Sorry I'm in such a rush. A little something came up.
+
+saeko,But it looks like I have time to change clothes...
+
+saeko,I'll have one of you as a snack before I head out.
+
+pose,smile,normal
+interrupt,lick
+
+pose,smile,pick
+m,Saeko's hand comes down into the drawer.
+
+m,Her unthinkably large fingers fill our vision.
+
+m,"They wander for just a moment, as if carefully making a decision... "
+
+judge
+label,11,nop
+pose,,black
+m,"And then return to the sky, empty-handed."
+
+pose,serious,normal
+saeko,...*sigh*
+
+saeko,Nobody's making my mouth water today.
+
+saeko,"...Hey, Rin."
+
+saeko,I suppose you were just an ordinary human after all.
+
+rin,(...Huh?)
+
+saeko,...Whatever. I don't need any of you anymore.
+
+interrupt,gameover
+
+center,GAME OVER
+
+dead
+
+label,11,yui
+pose,,black
+m,"And then, they stop. Right in front of Yui."
+
+yui,S-Saeko... Won't you think this over...?
+
+pose,smile,pick
+m,Her gigantic fingers wrap around Yui's tiny arms and legs...
+
+# 低めの場所でユイが掴まれてる
+pose,smile,pinch,yui-1
+m,...and carry her up into the sky.
+
+pose,smile,pinch,yui-1
+yui,"Wh-Why are you smiling? Ahaha, this is a bit scary!"
+
+yui,...
+
+# 顔に近づく。ユイがガミガミ噛みつき始める
+pose,smile,pinch,yui-2
+yui,"Um, why aren't you saying anything? Say something already!"
+
+pose,smile,pinch,yui-3
+yui,Let go of me! Hey! A brat like you's got nothing on me--
+
+pose,,covermouth
+
+interrupt,eat
+
+pose,smile,black
+fx,swallow
+survivor,remove,yui
+interrupt,swallow
+
+saeko,"Heehee, that was a yummy treat."
+
+pose,smile,covermouth
+saeko,"I thought she'd be all sweet, but there was a bit of a kick to her."
+
+saeko,And she was so full of energy...
+
+pose,smile,normal
+
+jump,next
+
+
+label,11,kina
+# 3日目と共通
+pose,,black
+m,"And then, they stop. Right in front of Kina."
+
+kina,"Finally came here then, giant woman?!"
+
+kina,"Nothing rock and roll about running! Boil me, bake me--do whatever the hell you want!"
+
+pose,smile,pick
+m,Her gigantic fingers wrap around Kina's tiny arms and legs...
+
+# 低めの場所でキナが掴まれてる
+pose,smile,pinch,kina-1
+m,...and carry her up into the sky.
+
+kina,"See ya, you giant creep. And Rin."
+
+kina,Neither of you's gonna see the pearly gates. Though neither am I...
+
+kina,"Anyway, it's bye-bye time. See ya in hell."
+
+pose,smile,pinch,kina-2
+interrupt,kina-2
+
+pose,smile,pinch,kina-3
+interrupt,kina-3
+
+pose,smile,normal
+interrupt,eat
+
+pose,smile,black
+fx,swallow
+survivor,remove,kina
+interrupt,swallow
+
+saeko,"Heehee, yum."
+
+pose,smile,covermouth
+saeko,I don't like how she was acting all tough...
+
+saeko,But she really fought back when I put her in my mouth. It made her fun to eat.
+
+jump,next
+
+label,11,shimon
+pose,,black
+m,"And then, they stop. Right in front of Shimon."
+
+shimon,"Uh... Saeko, what are you doing?"
+
+bg,room
+pose,smile,pick
+
+m,Her gigantic fingers wrap around Shimon's tiny arms and legs...
+
+pose,smile,pinch,shimon-1
+m,...and carry him up into the sky.
+
+shimon,What? Do you want to talk alone?
+
+shimon,"I'm happy to, of course. I'm great at talking to girls."
+
+pose,smile,pinch,shimon-2
+
+shimon,W-W-Wait! Wh-What are you planning on doing with me?!
+
+shimon,"I'll do anything I can, so..."
+
+shimon,"R-Right! Saeko, you read cell phone novels, don't you?!"
+
+shimon,Ever heard of Cola Float? I'm the writer! So...
+
+shimon,"Y-You want to know what happens next, right? Please--just let me go for now--aaaAAAHHH--"
+
+pose,smile,covermouth
+
+interrupt,eat
+
+pose,smile,black
+fx,swallow
+survivor,remove,shimon
+interrupt,swallow
+
+saeko,"Teehee, how yummy."
+
+pose,smile,covermouth
+
+saeko,I can't believe he was writing the novel I'm reading.
+
+saeko,Maybe that was a bit of a waste...
+
+saeko,...
+
+pose,smile,normal
+saeko,But I can't do anything now that he's in my stomach. Anyway...
+
+jump,next
+
+
+skit,12
+pose,smile,normal
+saeko,"You were perfect again today, Rin. It looks like you've gotten used to your work by now."
+
+saeko,"...I'm going out for an errand, so be good and wait for me."
+
+saeko,Let's talk again when I return.
+
+if,1378,killed,kina
+goto,night,4,kina
+else,1378
+if,1381,killed,yui
+goto,night,4,yui
+else,1381
+goto,night,4,shimon
+end,1381
+end,1378

@@ -1,0 +1,291 @@
+skit,1
+play,night,shop
+cake,shop-around
+action
+
+wait,walk,2
+s,walk,...Haaah. It's gotten quite cold out lately.
+
+s,walk,Look at that mannequin. Isn't it kind of cute?
+
+s,walk,I bet you'd look good in that knit cap.
+
+action,stand
+wait,stand,1
+
+s,stand,You can poke your head out a bit more.
+
+action,rin_appear
+wait,stand,2
+
+s,stand,Perfect. I'm sure anyone looking will think you're just a doll...
+
+action,walk|rin_on
+s,walk,"...and I'd deal with any trouble anyway, so don't worry."
+
+wait,walk,1
+
+skit,2
+cake,shop-down
+
+allow,yes,yes
+s,normal,"...Teehee, we're finally here."
+
+skit,3
+q,yes|no,yes
+s,normal,"You can see the mirror okay from there, can't you?"
+
+label,3,yes
+wait,normal,2
+skit,4
+q,yes|no,yes|no
+s,normal,...Hey. Do you know much about fashion?
+
+label,4,yes
+skit,4a
+# 「ありがとう」追加する
+q,yes|why,why|nop
+s,normal,...Really? I didn't expect that.
+
+label,4a,nop
+jump,5
+
+label,4,no
+skit,4b
+q,yes|why,why|nop
+s,normal,"...Heehee, that's a nice, honest answer."
+
+label,4b,nop
+jump,5
+
+label,4a,why
+label,4b,why
+skit,4c
+q,datte|soudane,datte|soudane|nop
+s,normal,"Well, you're always wearing the same hoodie."
+
+label,4c,datte
+skit,4c2
+q,nothing,nothing
+s,normal,"What?"
+
+label,4c2,nothing
+s,normal,Hm...
+
+label,4c,soudane
+label,4c,nop
+jump,5
+
+skit,5
+wait,,1
+allow,yes,yes
+s,normal,...Hey.
+
+allow,yes|naruhodo,yes|naruhodo
+s,normal,...I'm thinking of wearing earrings when I go out from now on.
+
+allow,yes,yes
+s,normal,But I don't know what to pick myself...
+
+skit,6
+q,yes|no|of_course,yes|of_course
+s,normal,Won't you pick something with me?
+
+label,6,yes
+action,yes
+s,normal,...Good.
+jump,next
+
+label,6,of_course
+skit,6a
+q,yes|no|sorry,no|sorry
+s,normal,...Do you think you're funny?
+
+label,6a,no
+label,6a,sorry
+action,no
+s,normal,*sigh*
+
+jump,7
+
+#「ピンク」→「メタル」→「なし（すごい気を使う必要あり）」→（循環）
+
+skit,7
+cake,shop-up
+
+skit,7a
+action,fitting_a
+wait,side_normal,1
+
+allow,yes,yes
+s,side_normal,What do you think?
+
+allow,yes,yes
+s,side_normal,"It's understated, but it's still a little girly."
+
+q,kawaii|uun,kawaii
+s,side_asking,...Cute?
+
+label,7a,kawaii
+s,side_grin,...Really? I'm happy to hear that.
+
+skit,7aa
+allow,yes|sou,yes|sou
+s,side_normal,A magazine I read said that cute styles are the most appealing.
+
+q,koreni|betsunomo,koreni|betsunomo
+s,side_asking,"Hm, maybe I'll go with this one?"
+
+label,7aa,betsunomo
+jump,7b
+
+label,7aa,koreni
+object,add,jewelrybox,a
+jump,9
+
+
+skit,7b
+action
+s,side_serious,Hmm...
+
+action,fitting_b
+allow,uun,
+s,side_normal,"Then, how about this one?"
+
+allow,yes|no,yes
+s,side_normal,"The metal might look a bit harsh, but that's what gives it style."
+
+q,iketeru|uun,iketeru
+s,side_asking,...So? What do you think? Look cool?
+
+label,7b,iketeru
+allow,yes,yes
+s,side_grin,...Teehee. Thank you.
+
+allow,yes|naruhodo|uun,yes|naruhodo
+s,side_grin,"I guess cool styles match me better, just like I thought."
+
+skit,7bb
+q,koreni|etto,koreni|etto
+s,side_asking,Hm... Maybe I'll choose this one?
+
+label,7bb,etto
+jump,7c
+
+label,7bb,koreni
+object,add,jewelrybox,b
+jump,9
+
+skit,7c
+action
+s,side_asking,Why are you making that face?
+
+skit,7c1
+q,yes|anosa,yes|anosa
+s,front_smug,"Oh, you're concentrating so hard for me. Want to look at them again?"
+
+label,7c1,yes
+allow,yes|thanks,yes|thanks
+s,front_smile,Okay...
+jump,7a
+
+label,7c1,anosa
+skit,7d
+
+skit,7d
+q,nothing|nanimo,nothing|nanimo
+s,front_angry,...?
+
+label,7d,nothing
+allow,yes|thanks,yes|thanks
+s,front_smug,...Oh. Then let's take another look.
+jump,7a
+
+label,7d,nanimo
+jump,8c1
+
+skit,8c1
+# 前者選ぶと死
+
+q,akuse|sonomama,akuse|sonomama
+s,front_angry,What do you mean?
+
+label,8c1,sonomama
+s,front_angry,"Oh, you..."
+
+skit,8c2
+q,hontou,hontou
+s,front_angry,...
+
+label,8c2,hontou
+skit,8c3
+q,no_akuse,no_akuse
+s,front_angry,...
+
+label,8c3,no_akuse
+skit,8c4
+q,kirei,kirei
+s,front_sad,...
+
+label,8c4,kirei
+s,front_sad,...*sigh*
+
+skit,8c5
+q,sorry,sorry
+s,front_sad,...Why do you think we even came here?
+
+label,8c5,sorry
+allow,yes|sorry,sorry
+s,front_sad,That's actually really rude.
+
+object,add,beanie
+s,front_embarassed,...Though I'm happy to hear it.
+
+skit,8cc
+q,yapparimitai|yes,yapparimitai|yes
+s,side_serious,Be honest. Are you really okay not seeing me with earrings on?
+
+label,8cc,yapparimitai
+allow,yes,yes
+s,side_smile,...Heehee. I knew it.
+
+allow,yes|thanks,thanks
+s,front_smug,Let's go through them again. Though I'm glad I got to hear that.
+
+jump,7
+
+label,8cc,yes
+s,side_smile,...Hmm. Fine.
+
+allow,yes|thanks,yes|thanks
+s,side_smile,"If you're that sure, I won't buy any earrings today."
+
+allow,yes_exclamation|thanks,yes_exclamation|thanks
+s,side_grin,I'll go buy that outfit from earlier instead.
+
+skit,8cd
+q,yes|wakatta,yes|wakatta
+s,front_smile,"Let's head out then, Rin. You can hide in my hair for now..."
+
+label,8cd,yes
+label,8cd,wakatta
+
+jump,10
+
+skit,9
+action
+allow,yes,yes
+s,side_smile,...Good. I'll choose this.
+
+q,yes|no,yes
+s,side_smile,"Thank you, Rin. It's fun shopping with someone."
+
+q,yes|wakatta,yes|wakatta|nop
+s,front_smile,I'll go pay. You can hide in my hair for now...
+
+skit,10
+
+action,rin_hide
+wait,front_smile,2
+
+goto,midnight,3

@@ -1,0 +1,240 @@
+skit,1
+play,night,casual
+cake,desk-down
+action,study
+wait,,2
+
+s,,Hey.
+
+action,patapata
+skit,1a
+q,soukamo|no,soukamo|no
+s,,Have you become a bit more honest lately?
+
+label,1a,soukamo
+s,,You have...
+
+jump,1b
+
+label,1a,no
+cake,desk-up
+wait,bored,1
+
+skit,1a1
+q,yes|usodesu,usodesu
+s,bored,Hm... Do you really think that?
+
+label,1a1,usodesu
+skit,1a2
+q,narimashita,narimashita
+s,bored,...
+
+label,1a2,narimashita
+s,normal,...Teehee. Of course I'm right.
+
+jump,1b
+
+skit,1b
+wait,,2
+
+skit,2
+cake,desk-down
+q,yes,yes
+action,nearhand
+s,,"Oh, could you look this way?"
+
+label,2,yes
+fx,kina_jumpscare
+action,dekopin
+wait,,4
+
+cake,desk-up
+wait,smile,1
+
+skit,3
+q,yes_scared|silent|iya,yes_scared|silent|iya|nop
+s,smile,Well? Were you surprised?
+
+label,3,yes_scared
+allow,yes,yes
+s,bored,"Teehee, looks like you were."
+
+jump,next
+
+label,3,silent
+label,3,nop
+allow,silent|yes,silent|yes
+s,bored,"Wow, you were that surprised?"
+
+jump,next
+
+label,3,iya
+allow,yes|sorry,sorry
+s,bored,Hmm...
+
+skit,3a
+q,yes|no,yes
+s,smile,But your voice is trembling.
+
+label,3a,yes
+jump,4
+
+skit,4
+q,why|naruhodo,why|naruhodo|nop
+s,bored,"Sorry, I just wanted to surprise you a little."
+
+label,4,why
+skit,4a2
+action,patapata
+q,hidoi|naruhodo,hidoi|naruhodo|nop
+s,bored,"Hm, I wonder why? Stress relief, maybe."
+
+label,4a2,naruhodo
+label,4a2,nop
+jump,4b
+
+label,4a2,hidoi
+cake,desk-up
+skit,4a3
+q,sorry,sorry
+s,serious,...
+
+label,4a3,sorry
+jump,4b
+
+skit,4b
+wait,bored,2
+jump,5
+
+label,4,naruhodo
+label,4,nop
+jump,5
+
+skit,5
+allow,yes,yes
+s,bored,I didn't think a little prank would scare you so much...
+
+action,idle
+allow,sonna|silent,sonna|silent
+s,normal,Being around little people is so relaxing.
+
+cake,desk-down
+action
+wait,,2
+
+allow,yes,yes
+s,,I sometimes head to Shibuya or Harajuku after classes.
+
+action,patapata
+allow,yes|hee,yes|hee
+s,,"Relaxation goods are in right now. Aromatherapy, fidget toys..."
+
+allow,sou|yes,sou|yes
+action,patapata|study
+s,,There'll be people with tans and heavy makeup. You can't even see their faces under all of it.
+
+skit,6
+action,patapata
+q,soudane|no,soudane
+s,,I'm sure they all want to forget who they used to be and get reborn as someone else.
+
+label,6,soudane
+cake,desk-up
+action,sway
+wait,serious,3
+
+allow,yes,yes
+s,normal,Hey.
+
+allow,yes,yes
+s,normal,If you could be reborn as anything you want...
+
+skit,7
+action,think
+q,kobitoigai|onnnanoko|ikemen,kobitoigai|onnnanoko|ikemen
+s,normal,What kind of human would you want to be?
+
+label,7,kobitoigai
+s,serious,Hmmm...
+
+action
+s,serious,Then I'll help you be born again now. I hope you get your wish.
+
+dead
+
+label,7,onnnanoko
+allow,yes,yes
+s,bored,That so?
+
+wait,bored,3
+
+allow,thanks|yes,thanks|yes
+s,normal,"If that's what you want, I won't stop you."
+
+action,sway
+allow,thanks|yes,thanks|yes
+s,normal,It might be nice to have another girl for a friend.
+
+jump,9
+
+label,7,ikemen
+allow,yes,yes
+s,normal,"Oh, that sounds nice."
+
+skit,8b1
+q,hisasiburi|etto|konnichiwa,hisasiburi|etto|konnichiwa
+s,normal,Try flirting with me. What would you say first if you ran into me?
+
+label,8b1,hisasiburi
+label,8b1,konnichiwa
+skit,8b2
+action
+q,gomen_matta|etto,gomen_matta
+s,normal,...
+
+label,8b2,gomen_matta
+skit,8b3
+q,etto|uun|niatterune,niatterune
+s,lookaway,...
+
+label,8b3,niatterune
+s,lookaway_smile,...Ahem.
+
+allow,sorry|yes,sorry|yes
+s,lookaway_smile,I-I get it already. You can stop. I feel embarrassed just listening to you.
+
+object,add,sunglasses
+
+jump,9
+
+skit,9
+cake,desk-down
+action,drink
+allow,yes,yes
+s,,No point thinking about this anyway. I don't believe in reincarnation.
+
+action,drink-down
+allow,yes|sugoi,yes|sugoi
+s,,And I quite like who I am now.
+
+skit,10
+cake,desk-up
+wait,normal,1
+q,no|yes,yes
+action,sway
+s,normal,"You feel the same way, don't you?"
+
+label,10,yes
+s,smile,"Teehee, I'm glad to hear it."
+
+cake,desk-down
+wait,smile,2
+
+wait,,3
+allow,yes,yes
+s,,It's gotten late. Let's sleep for today.
+
+allow,oyasumi,oyasumi
+s,,"See you, Rin. Rest well until tomorrow."
+
+goto,midnight,today

@@ -1,0 +1,47 @@
+id,name,left,top,right,bottom,has_shift_animation,description,speaker_1,statement_1,speaker_2,statement_2,appeal
+ipod,iPod,802,42,999,374,,"An older model of a music player. At this size, the earphones double as speakers.",moko,No block-breaker games? I'm pretty good at those.,,,
+ipod,,,,,,,,shimon,"This model is from a few years ago, but it's not scuffed up or dirty at all...",,,
+ipod,,,,,,,,rin,I don't know any of these songs...,yui,She'd have a hard time at karaoke!,
+ipod,,,,,,,,rin,I don't know any of these songs...,kina,"Huh, she's got a taste for music.",
+ipod,,,,,,,,chio,"...So, pushing buttons on that li'l thing's more fun than playing with me?",,,
+ipod,,,,,,,,rin,I don't know any of these songs...,akari,"Well, yeah. You have amnesia.",
+stamp,Stamp,645,115,689,162,,An unused 80-yen stamp. It depicts a gentle landscape of mountains and rivers.,yui,"Ooh, how relaxing.",kina,You gotta be kidding. This blurry picture does it for you?,
+stamp,,,,,,,,moko,Did Saeko put this up...?,taki,Why do you want to know?,
+stamp,,,,,,,,chio,"I don't know who put this up, but it's lovely. It looks like a painting.",,,
+stamp,,,,,,,,rin,Takarayama Park. What kind of place was it actually...?,,,
+cup,Cup,470,281,512,322,true,A paper cup in a stack. It is filled with fresh water every day.,moko,"Hm, I hope it'll turn into coke tomorrow.",taki,We can't wash our faces with coke.,
+cup,,,,,,,,yui,Huh? It's almost empty.,kina,Should I not have taken a shower earlier?,
+cup,,,,,,,,kazu,Can I really use the water in here to wash?,rin,Yeah. This is all for Saeko.,
+cup,,,,,,,,rin,I wonder if this could be used like a bath.,chio,Good idea. You'll have to show me in full.,
+cupphone,Cup,470,270,540,323,true,"Paper cups connected by string. The clean water is refilled every day.",chio,Even PHS is easier to use than this.,yui,Huhhh? What's a PHS?,
+cupphone,,,,,,,,rin,Nobody's on the other side of this phone now...,chio,"If this is giving you flashbacks, you should take it apart.",
+cupphone,,,,,,,,rin,Is the water in here actually clean?,akari,"Yup. It doesn't smell, and the liquid is clear.",
+napkin,Bed,93,335,529,444,,A highly absorbent and convenient scrap of paper. It is soft and it quickly dries out any night sweats.,kazu,"What was this before, actually?",akari,I'm sure you wouldn't know.,
+napkin,,,,,,,,clara,"Eep! Rin, you have to sleep somewhere else from now on!",,,
+napkin,,,,,,,,shimon,...Let me know if there's anything I can help you with.,,,
+napkin,,,,,,,,rin,What is this actually used for?,kina,...Brats like you should just play on the playground.,
+napkin,,,,,,,,rin,What is this actually used for?,chio,Looks like you'll need a special lesson.,
+koma,Top,182,167,280,281,true,A simple wooden top. It spins in the same spot until it falls.,rin,(What's fun about this? It only spins.),taki,...It only spins. That's why it's fun.,
+koma,,,,,,,,rin,"I thought this was a boring hobby, but now, I kind of get it.",,,
+komanostring,Top,182,167,278,265,true,A simple wooden top. It spins in the same spot until it falls.,rin,"I thought this was a boring hobby, but now, I kind of get it.",,,
+tissue,Tissue,45,271,208,355,,A pocket-sized pack of tissues. It has a faint and pleasant aroma.,rin,Your hair is wet. Shouldn't you dry it off?,akari,...It's fine. I'm used to it.,
+tissue,,,,,,,,taki,Make sure to fold the paper properly after using it. Saeko likes things to be neat.,,,
+tissue,,,,,,,,rin,It says it won't hurt your nose when you blow it.,maru,You'd use this wonderful thing for just one runny nose?,
+tissue,,,,,,,,yui,The white bunny on the package is so cute!,chio,...I like the seal design more.,
+rubberband,Hair Tie,623,264,704,302,,A stretchy hair tie. Saeko uses it when tying her hair up in her room.,rin,This elastic is for tying up hair?,shimon,What? There's nothing unusual about that.,
+rubberband,,,,,,,,yui,I bet I could find a good use for this...,rin,(Her eyes are scary...),
+rubberband,,,,,,,,moko,Looks like it's from a 100-yen shop. Probably for home use...,chio,"I hope so, with how it looks...",
+rubberband,,,,,,,,akari,"Like a boneless ham, heh heh...",kazu,*sigh* That joke is old.,
+rubberband,,,,,,,,rin,...Boneless ham.,kazu,"Rin, why are you laughing?",
+rubberband,,,,,,,,rin,Why is there a hair tie here?,chio,I knew you'd be curious about that too.,
+clip,Clip,246,295,312,312,true,A clip for keeping papers together. It is unexpectedly light and portable for its size.,rin,Huh? Was this always here?,chio,Who knows? It might have been put in here at some point.,
+clipspear,Clip,255,294,331,309,true,"A clip for keeping papers together. The coating on the tip has come off.",rin,"Make sure to stay away, everyone--it's dangerous. I've done what I can to deal with it for now.",,,
+peanuts,Peanut,623,325,735,372,true,A hard-shelled peanut. Just looking at it makes the back of my head hurt.,moko,"If I eat this, Rin won't have a pillow...",rin,It's fine. You really don't have to worry about that.,20
+milk,Milk,334,279,427,321,true,A little saucer of milk. It has to be finished today.,maru,The shape of this saucer makes me want to sit in it...,kina,Ugh. Don't. You'll make it dirty.,20
+pineapple,Pineapple,593,189,661,262,true,A slice of canned pineapple. It is a little sticky with fruit juice.,yui,Guess you can't whistle with a slice this big!,kina,"First of all, you can't do that with the actual fruit.",20
+tamagoyaki,Rolled Omelet,660,316,758,374,,A home-made rolled omelet. It smells sweet up close.,shimon,"You know, I like cracking eggs.",kina,Wow. I hate it since it gets all sticky.,25
+tamagoyaki,,,,,,,,shimon,"You know, I like cracking eggs.",yui,I bet you get a lot out of that when cooking sukiyaki!,
+cherry,Cherry,652,292,744,326,,A cherry with the other half of the stem torn off. Be careful of juice gushing out.,clara,It's smaller than the cherries overseas.,chio,Hmph! That's what makes it so sweet and yummy.,25
+takuan,Pickled Daikon,609,335,729,380,,A sweet daikon radish pickle. It has a unique smell when you get close to it.,clara,I'm not fond of the smell of pickles. How about you?,akari,...It doesn't bother me. I'm used to it.,30
+cake,Cake,336,208,405,280,true,A bite-sized shortcake. The strawberry looks cute cut in half.,chio,R-Rin... It looks like there used to be a candle here...,rin,"Yup, it was Saeko's birthday yesterday.",35
+cake,,,,,,,,akari,"Rin, did Saeko say anything to you? It looks like there was a candle here.",,,

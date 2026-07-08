@@ -1,0 +1,1049 @@
+skit,1
+item,add,takuan
+bg,room,quake,heavy
+show,clara,disgusted
+clara,"Rin! Hey, Rin!"
+
+m,Somebody grabs my shoulder and shakes my whole body forcefully.
+
+m,"Clara is in front of me, her face fervent as she shouts."
+
+play,day,ration
+bg,room,quake,heavy
+clara,"Come on, Rin! Say something already!"
+
+clara,Yesterday was too much... One of us is gone from the drawer...
+
+bg,room,quake,heavy
+show,clara,angry
+clara,How can you be okay with this?! I couldn't sleep a wink!
+
+rin,...
+
+m,I recall the events of yesterday.
+
+m,"I hadn't told Clara about the reality of this drawer, so she saw a little person disappear without knowing anything in advance."
+
+rin,...Sorry. It must have been really hard on you.
+
+rin,"You must have been terrified seeing that. For now, you should rest--"
+
+flash
+clara,Stop that! That's not what I want to hear right now!
+
+clara,"Don't you have anything else to say, Rin? About what you did before Saeko came back yesterday evening."
+
+clara,"I saw you hand out that huge cherry, and I watched it get eaten up."
+
+show,clara,disgusted
+clara,"And right after that, Saeko came back, and she took the person who ate the cherry and--and she--"
+
+show,clara,feared
+clara,I just can't... How could she e-eat somebody...
+
+flash
+show,clara,angry
+clara,"Even in my wildest dreams, I'd never think something like this could happen! And even if it did, I thought you'd try to stop it!"
+
+clara,"But you just stood there, watching without a word..."
+
+health,clara,-5
+clara,"What's happened to you, Rin?! Come on--say something!"
+
+show,akari,disgusted
+flash
+akari,...Shut up.
+
+clara,What?
+
+akari,...Shut up. Why are you so loud? It's morning.
+
+akari,I don't care about your hysterics.
+
+show,akari,normal
+akari,Just turn the volume down. Got it?
+
+show,clara,confused
+clara,...
+
+show,clara,disgusted
+clara,What are you--
+
+show,chio,serious
+chio,"I've got a thing to say too. Clara, stop making trouble for Rin."
+
+show,clara,disgusted
+clara,Wha--! Trouble?
+
+show,chio,serious
+chio,Yup. Getting angry and then shouting at Rin because of principles from the outside world... Have you even thought about how Rin feels?
+
+show,clara,angry
+clara,I know Rin's feelings much better than you do! How long do you think I've known him?!
+
+clara,Everyone here is the worst! Awful! You're all crazy!
+
+show,clara,disgusted
+clara,"Rin, you won't tell me the same thing as the rest of them, will you? You wouldn't do that..."
+
+clara,Telling me to shut up or that I'm being hysterical--even after something...so awful...happened right before my eyes...
+
+show,clara,feared
+clara,How can you all be okay with this...?
+
+rin,...
+
+show
+m,I feel multiple gazes on me. I ponder over what I should say.
+
+show,clara,feared
+rin,"First of all, Clara, let me say sorry for not telling you something so important. I should have let you know about the situation yesterday."
+
+rin,"I know it was shocking, and I'm sure you can't trust me now, but it's my fault for not telling you about Saeko or this drawer."
+
+rin,"I'm sure there's more you want to talk about, but everyone's watching here. Let's talk in private later."
+
+rin,Where nobody else can hear us... Okay?
+
+show,clara,confused
+clara,...
+
+show,clara,determined
+clara,...Okay. But we have to talk.
+
+show
+m,"With those words, Clara turns on her heels and walks away..."
+
+m,...leaving just Chio and Akari in my sight.
+
+show,akari,disgusted
+akari,I don't think she'll live long.
+
+rin,...
+
+show,akari,normal
+akari,I'm heading back to bed. Night.
+
+rin,"What? Oh, uh, good night then..."
+
+show
+m,"Akari lets out a huge yawn and walks off. A few seconds later, I can hear her breathing peacefully in her sleep."
+
+show,chio,normal
+chio,"Rin, I'm going to repeat myself."
+
+flash
+chio,Get rid of that Clara girl. And fast.
+
+rin,...
+
+chio,"Forget hysterics. She's attacking you, the supervisor. If you keep her around, she'll start causing problems for everyone else."
+
+show,chio,tense
+chio,"And you remember what I told you about Health, right?"
+
+rin,Yeah...
+
+chio,"To me, that Clara girl looks like she could break anytime. Maybe today."
+
+chio,"If you don't send Clara to Saeko today, she might lose all her Health. And then we'll all be killed."
+
+chio,"Maybe she was your ex, your girlfriend--but you don't have any memories of that now. There's no reason to treat her differently."
+
+show,chio,serious
+chio,"Stop thinking so much. Just get rid of the person who's hurting everyone else, so that we can all live longer. Got it?"
+
+rin,...
+
+rin,Sorry. Just let me think for a bit...
+
+show
+m,Chio's anger still hasn't calmed as I leave her side. I feel the electric tension in the stagnant air of the drawer.
+
+
+skit,2
+select
+m,"Though Clara was shocked, I put some distance between us to avoid a fight with the other little people. I can't keep ignoring her. I should go talk to her soon."
+
+label,2,clara
+m,I walk away from the others and head toward Clara. She seems just a little less agitated than before.
+
+show,clara,relieved
+clara,"...Thank you, Rin. You actually came."
+
+clara,...
+
+show,clara,confused
+clara,"Sorry for shouting at you earlier. You were just so calm, even though somebody had died."
+
+clara,I was shocked. I thought you'd become somebody I didn't know while in this drawer.
+
+clara,"The Rin I knew was a boy who had a kinder and stronger heart than anyone else, who'd never abandon anybody..."
+
+rin,...
+
+show,clara,relieved
+clara,"This location won't do. Let's go somewhere with a better view. Would you lead the way, Rin?"
+
+rin,A better view? In this drawer?
+
+clara,Yes. I want to talk with you somewhere just a little bit calmer... Can't we?
+
+rin,(Is there a place like that in here...?)
+
+rin,"Okay, I'll go look."
+
+skit,3
+show
+pick,face-first
+m,"I'm supposed to take Clara somewhere with a better view so we can have a calm talk, but where can I find a place like that in this drawer?"
+
+label,3,clara,other
+rin,How about this view?
+
+show,clara,surprised
+clara,Huh? Here? ...The view doesn't look that great to me.
+
+show,clara,relieved
+clara,"Rin, you had a good sense for this when you were a kid. Won't you trust yourself and think about this more seriously?"
+
+rin,Alright...
+
+jump,back
+
+label,3,other,other
+show,clara,surprised
+clara,"Excuse me, Rin. Who on earth are you talking to?"
+
+rin,...!
+
+show,clara,feared
+clara,"You've even forgotten what I look like... You really have changed, Rin."
+
+rin,"Sorry, I just made a mistake. Give me a moment--I'll be right there."
+
+jump,back
+
+label,3,clara,stamp
+play
+m,I take Clara's hand and walk to the wall.
+
+m,The barren wood-grain wall has one lone stamp stuck on it. The drawing of nature looks almost like a nice view from a little window.
+
+show,clara,smile
+clara,...Lovely. You really do have a good sense for these things.
+
+# 元ネタなし
+clara,"It doesn't hold up to a real view, but the gentle touch of this forest and river makes me remember that day we spent at Takarayama Park."
+
+rin,Takarayama Park?
+
+play,day,groove
+show,clara,relieved
+clara,...Yes. I see you've also forgotten that name.
+
+clara,...
+
+show,clara,weaksmile
+clara,I was a rather sheltered young lady growing up. I spent every day taking lessons.
+
+clara,"Piano, ballet, studying...even horse riding. I was forced to do everything I could to better fit the role of the daughter of a wealthy family."
+
+clara,"I know now that I was lucky to be born in my position, but at the time, I was always suffering."
+
+show,clara,confused
+clara,Why couldn't I take detours on the way home and play when I wanted like my classmates? I didn't understand.
+
+rin,...
+
+show,clara,weaksmile
+clara,"One day, after a harsh scolding by my piano tutor, I finally reached my boiling point."
+
+clara,I opened the side door in the rear garden and went outside on my own for the first time. I even left a little note in my room to say I was running away.
+
+clara,"But I'd always been driven around by car, even back and forth from school. I didn't recognize any of the roads..."
+
+show,clara,relieved
+clara,"I just walked and walked until I found myself in a large park on a hill--Takarayama Park. And that's where I met you, Rin."
+
+rin,Oh...
+
+clara,"When you saw me crying on a bench, you called out to me--it was so sweet."
+
+clara,"And after you heard what I had to say, you just stood up. You were still so young then, but you decided to go to my house."
+
+clara,"You stood up for me to my parents and the staff, saying that they weren't treating me right, how you felt sorry for me...all while holding my hand."
+
+clara,"We kept meeting after that, with you protecting me from any dangers I came up against. You were always my hero, Rin."
+
+rin,Wow...
+
+show,clara,weaksmile
+clara,"You were. And with time, our relationship deepened... But then, my family decided that I should go to a high school in Germany."
+
+clara,"We spent so many days together then, because we didn't want to split up. Do you remember?"
+
+clara,"But when I returned to Japan a few days ago, I heard that you'd gone missing..."
+
+clara,"And that's when I knew. This time, it was my turn to protect you. I would protect you no matter what obstacles I faced."
+
+show,clara,determined
+clara,That's why I'm going to fight Saeko.
+
+rin,...!
+
+clara,"I don't care how large she is. No matter how strong they are, the villain always loses. I know that."
+
+show,clara,confused
+clara,I don't know what the other people in here are thinking. I don't even know for certain what you're thinking now.
+
+clara,But there's one thing I am sure about.
+
+show,clara,determined
+clara,"Rin, what's happening here isn't normal. I can't just accept this without a fight."
+
+clara,I'll escape from here and help you get back to your kind former self. That's my wish.
+
+show,clara,disgusted
+clara,I'll do whatever is necessary to make it happen. I don't care about any of the other little people.
+
+flash
+show,clara,weaksmile
+clara,"So, Rin... Won't you join me?"
+
+play
+show
+m,I return to the middle of the room and look around the edges of the drawer.
+
+m,"Clara has decided to fight Saeko after the shocking events of yesterday. Conversely, Chio and Akari are trying to protect the peace we have now."
+
+m,"Honestly, my current self doesn't know which of them is right. There is a large daikon radish pickle in the middle of the drawer."
+
+m,...
+
+m,I feel like today's decision will be a very important one.
+
+m,"Before I decide everything, I should talk to the other little people once more."
+
+skit,4
+select
+play,day,house
+m,"Clara wants to defeat Saeko, and Chio and Akari are against her. I need to choose somebody out of these three to offer to Saeko again today. I'll talk to everyone before making this important decision."
+
+label,4,clara
+m,"I head towards Clara. When she sees me, her expression brightens."
+
+show,clara,smile
+clara,"Perfect timing, Rin! I have something I want to ask of you."
+
+rin,You do?
+
+clara,"Yes, I want to borrow something in this drawer. My first request for the supervisor."
+
+rin,A request...
+
+rin,"(I'm happy she's relying on me, but I'm a bit scared, since she's in the middle of fighting with the other little people.)"
+
+rin,"I'll listen to your request, but just to check... It's nothing dangerous, right?"
+
+show,clara,surprised
+clara,"Hm? Of course it isn't. Rin, could you bring me a clip?"
+
+rin,(Huh? A clip?)
+
+rin,"(I don't know what she'll use it for, but it should be fine...)"
+
+skit,4a
+pick
+m,"Clara's request to me, the supervisor, is to bring her a clip. I'll do as she asks, since it doesn't sound dangerous."
+
+label,4a,other,other
+show,clara,determined
+clara,"Rin, who on earth are you talking to? I asked you to bring me a clip."
+
+show,clara,confused
+clara,Have you truly changed into somebody else? I really do have to defeat Saeko...
+
+show,clara,determined
+clara,"Rin, please. Bring me the clip--quick. Do you understand me?"
+
+rin,...
+
+rin,Alright...
+
+jump,back
+
+label,4a,clara,other
+m,I pick up the item I chose and approach Clara. Her expression clouds over.
+
+show,clara,determined
+clara,"Rin, I told you to bring me a clip."
+
+show,clara,confused
+clara,Have you truly changed into somebody else? I really do have to defeat Saeko...
+
+show,clara,determined
+clara,"Rin, please. Bring me the clip--quick. Do you understand me?"
+
+rin,...
+
+rin,Alright...
+
+jump,back
+
+label,4a,clara,clip
+item,remove,clip
+m,I hold the clip in both hands and approach Clara. She smiles brightly at me.
+
+show,clara,smile
+clara,"Wow, thank you! You really brought it to me."
+
+clara,Could you keep holding that half? Keep that looped part still with both hands.
+
+show
+m,"I hold down half of the clip with both hands, just as instructed. Clara quickly takes the other half in her hands."
+
+clara,Okay... Hold on tight.
+
+m,Clara takes the edge of the clip--the tip of the stick poking out of the loop--with both hands.
+
+cutin,clara_making_spear
+m,"Then, she uses her whole body to force the metal loop to bend, turning half of the clip into a sharp wire."
+
+clara,"Thank you. Now, I'm ready."
+
+cutin
+rin,"Wait! Clara, what are you going to do with that wire?"
+
+show,clara,smile
+clara,Hm? You need to ask? I'm obviously making this into a weapon to defeat Saeko.
+
+rin,...!
+
+rin,Defeat...Saeko...?
+
+show,clara,weaksmile
+clara,"Yes. Didn't you hear me earlier? I'm going to defeat Saeko and protect who you used to be, Rin."
+
+show,clara,smile
+clara,This is the weapon I'll use. I'll take the wire and stab Saeko's finger when it gets close.
+
+rin,...
+
+rin,"But Saeko's so big. Even if you can stab her finger, it won't be enough..."
+
+show,clara,determined
+clara,...Do you have any better ideas?
+
+rin,Wha...
+
+clara,"If you have any better ideas, feel free to tell me. What's a sure-fire method to stop that giant body of Saeko's from taking another breath?"
+
+show,clara,disgusted
+clara,"Poison would be the most effective. For example, adding a lethal poison or drug to the clothes of the person she'll eat today."
+
+clara,"But we don't have anything like that here, do we? So I made a plan with the next best thing."
+
+rin,...
+
+show,clara,determined
+clara,"But I should make this tip pointier, like a needle. Do you have anything hard, Rin? Perhaps I could sharpen this on the wall..."
+
+show
+m,Clara takes her handmade weapon and walks away.
+
+m,I watch her back as she starts sharpening the wire against the wall. I don't think there's anything I can do to stop her.
+
+if,405,talked_to,chio
+if,406,talked_to,akari
+jump,5
+else,406
+jump,4
+end,406
+else,405
+jump,4
+end,405
+
+label,4,chio
+m,I quietly walk toward Chio. She is looking down silently with her brows furrowed.
+
+rin,"Hi, Chio..."
+
+show,chio,confused
+chio,...What? You want to ask me something?
+
+chio,...
+
+show,chio,serious
+chio,"You were talking with Clara earlier, weren't you? What did you think?"
+
+rin,"Well, I..."
+
+chio,You know she's trying to fight Saeko. But you also know it's pointless--completely reckless.
+
+chio,"I've seen many people try the same thing in the past, and they all died meaningless deaths."
+
+show,chio,tense
+chio,"We can fight as hard as we want, but we can't even win against a single finger of Saeko's."
+
+rin,...
+
+show,chio,serious
+chio,Don't get me wrong. I don't hate Clara or anything...though I might be a bit jealous.
+
+show,chio,tense
+chio,"But more than that, I'm worried about you."
+
+show,chio,confused
+chio,"You don't want to see somebody you like get killed for fighting a pointless fight, right?"
+
+rin,...
+
+show,chio,normal
+chio,And Rin... Do you really want to defeat Saeko?
+
+rin,...
+
+chio,"To be honest, I can't get myself to hate her. Out of all the people I've met until now, she's the most innocent, genuine, and adorable."
+
+chio,"Sure, it was surprising seeing people getting eaten at first, but can you really say you still think it's unforgivable?"
+
+chio,"The laws and rules of the outside world make me feel bad about it, but that's about it."
+
+show,chio,smile
+chio,"Honestly, I even enjoy it sometimes when I see Saeko toss somebody in her mouth without a care..."
+
+show,chio,serious
+chio,"Tell me the truth, Rin. You feel the same way, don't you?"
+
+rin,...
+
+show,chio,smile
+chio,"If you do, there's no need to go out of your way to try to defeat Saeko."
+
+chio,What you need to do is protect the peace in this drawer and make whatever decision is the best for Saeko.
+
+chio,"You understand, don't you, Rin? Trust your true feelings and make the right choice."
+
+if,458,talked_to,clara
+if,459,talked_to,akari
+jump,next
+else,459
+jump,back
+end,459
+else,458
+jump,back
+end,458
+
+label,4,akari
+
+m,I approach Akari. She woke up at some point. She stares at me as I walk closer.
+
+show,akari,normal
+akari,What? Do you need something?
+
+rin,No...
+
+akari,"You don't know who to offer up today? Well, don't choose me."
+
+show,akari,disgusted
+akari,I'm not going to make anybody hungry with how I look.
+
+rin,...
+
+show,akari,normal
+akari,"I meant that as a joke, but..."
+
+show,akari,disgusted
+akari,...
+
+rin,What?
+
+akari,...Well.
+
+akari,"I think that maybe you don't need to give anybody up."
+
+akari,"There's no point in staying alive in here anyway. Might as well..."
+
+akari,...
+
+show,akari,smile
+akari,"...Forget it. Maybe I just want to get offed in a weird way."
+
+rin,...
+
+show,akari,normal
+akari,"Seriously, forget it. Just decide what you want to do without my input. I don't care even if we all end up getting killed together."
+
+rin,...
+
+if,491,talked_to,clara
+if,492,talked_to,chio
+jump,next
+else,492
+jump,back
+end,492
+else,491
+jump,back
+end,491
+
+skit,5
+show
+play
+m,I've finished talking with everyone.
+
+m,"Clara is making a weapon with the wire to fight Saeko. If I want to fight at her side, I should offer Chio to Saeko."
+
+m,"Chio just wants things to stay the same. If I want to stay alive with her, I should offer Clara to Saeko."
+
+m,"Akari...doesn't seem to want anything. But like she said, her Appeal is low. I probably can't offer her to Saeko."
+
+m,What should I do? I need to think hard on my decision...
+
+skit,6
+cue
+pick
+
+m,I've finished talking with everyone. Clara is making a weapon to fight with Saeko. Chio wants to keep things the same. Akari is a mystery. I need to choose somebody to offer to Saeko.
+
+label,6,other,other
+show,chio,tense
+chio,"...Hey, Rin. What are you doing?"
+
+show,chio,normal
+chio,"Saeko will want another little person with high Appeal today. You have to feed somebody to satisfy her."
+
+rin,"(...She's right. I can't do what Akari said right now.)"
+
+rin,"(As the supervisor of the little people, I need to gather my resolve and choose somebody today.)"
+
+jump,back
+
+label,6,akari,takuan
+item,remove,takuan
+m,I find my resolve and slowly approach Akari.
+
+rin,"Sorry, Akari... Could you eat this for me?"
+
+show,akari,normal
+akari,...
+
+akari,Are you sure I should have it?
+
+rin,Er... What do you mean by that?
+
+akari,No...
+
+akari,"If that's how it is, it's fine."
+
+rin,...
+
+effect
+m,Akari brings the pickled daikon to her mouth and bites down. The large pickle is slowly shaved down...
+
+akari,...Ew.
+
+rin,...
+
+akari,"I'm sure you don't need me to tell you this, but I was obviously the wrong choice."
+
+akari,"I mean, I don't look even the slightest bit yummy."
+
+rin,...!
+
+akari,It's unfortunate that we'll all have to die here. We've been through a lot.
+
+# アカリにとって漬物の匂いは馴染みがあり、死とも結びついている
+akari,I guess my last meal being a pickle is a fitting end...
+
+flash
+akari,"Rin, thank you for the fun memories. Let's have a nice death together."
+
+rin,...
+
+m,"I'm still flustered, but just as I try to find out the truth behind Akari's words--"
+
+jump,next
+
+label,6,chio,takuan
+item,remove,takuan
+play,day,feed
+m,I find my resolve and slowly approach Chio.
+
+m,"When she sees the food in my hands, her eyes grow wide."
+
+show,chio,normal
+chio,...Rin.
+
+rin,...
+
+m,I silently hold out the pickled daikon radish in both hands. The unique and tantalizing sour scent hangs over the drawer.
+
+rin,"...Sorry. I'd like you to eat this, Chio."
+
+show,chio,tense
+chio,...
+
+show
+m,"Chio silently looks back and forth between the pickled daikon and me. Then, she slowly closes her eyes."
+
+play
+show,chio,smug
+m,"I tense up on reflex, thinking she might yell or hit me, but the next moment, Chio is grinning like she always does."
+
+play,day,emotion
+chio,"...I get it. You're good, Rin."
+
+effect
+cutin,chio_eating_takuan
+m,Chio opens her mouth wide and chomps down on the yellow pickled daikon. She crunches away at the large pickle...
+
+cutin
+show
+chio,I had a feeling this would happen ever since that girl came.
+
+show,chio,weaksmug
+chio,You've been glued at the hip since she came here. I guess that's just the regular distance between lovers? I'm jealous.
+
+show,chio,smile
+chio,"When you get as old as me, you can just tell what's risky, even looking in from the outside. *sigh* Nothing good comes out of living longer..."
+
+rin,...
+
+show,chio,weaksmug
+chio,I mean it. I never even had the choice to fight against Saeko.
+
+chio,I've seen too much. People disappearing doesn't have much of an impact on me anymore. The need to obey Saeko's been engraved into my brain.
+
+show,chio,normal
+chio,"Even now, though I want to support you, all I can think of is how it'll just get us killed..."
+
+show,chio,smile
+chio,"That's why it's the right decision to take me out here. You really are the best supervisor, Rin."
+
+rin,...
+
+rin,Sorry. And...
+
+rin,Thank you so much for helping me every day. I'm really...grateful.
+
+show,chio,smile
+chio,...Hehe. Don't look so sad. I don't like it when things get too serious.
+
+chio,"Oh, but before your girlfriend gets here..."
+
+flash
+show,chio,smug
+chio,Want to do it one last time? I'll let you come as many times as you want today.
+
+rin,...
+
+m,Just as I'm pondering how to respond to Chio's tasteless suggestion--
+
+jump,next
+
+label,6,clara,takuan
+item,remove,takuan
+m,"I find my resolve and slowly approach Clara. When she sees me, she starts to smile."
+
+play,day,feed
+m,"However, her eyes go wide when they notice the food in my hands."
+
+show,clara,determined
+clara,"Rin, you can't..."
+
+rin,...
+
+m,I silently hold out the pickled daikon radish in both hands. The unique and tantalizing sour scent hangs over the drawer.
+
+rin,"Here. Clara, I'd like you to eat this pickled daikon."
+
+show,clara,feared
+clara,"You can't be serious, Rin..."
+
+clara,"I told you this morning, didn't I? I saw what happened to the person you gave food to yesterday."
+
+clara,And you're still telling me to eat this? You're telling me to...
+
+rin,...
+
+rin,"...Sorry. If you fight Saeko, we'll all get killed."
+
+rin,This is the only thing I can do to protect everyone in this drawer.
+
+flash
+show,clara,confused
+clara,...You're the worst.
+
+show,clara,angry
+bg,room,quake,heavy
+clara,"The worst! I trusted you, Rin! Even if you'd lost your memories, I thought you'd stay the same. I thought you'd understand me."
+
+bg,room,quake,heavy
+clara,But it looks like it was all a misunderstanding on my end. You changed here!
+
+bg,room,quake,heavy
+clara,They took advantage of your kindness and broke you! The way you think is all wrong!
+
+rin,I get it. Just eat.
+
+show,clara,feared
+clara,...!
+
+m,I push Clara up against the wall. We're just about the same height.
+
+rin,"Eat this. Come on, Clara. It's a request from the person you've liked for so long."
+
+clara,No--stop! Let me go--
+
+show
+rin,...
+
+clara,...
+
+m,Our eyes meet.
+
+play
+effect
+cutin,rin_kissing_clara_1
+m,I force open Clara's mouth and slip my tongue in. I push the thin pieces of pickled daikon deep into her mouth.
+
+m,"Gulp. Clara's throat moves, and the liquid goes down. She must have had to swallow because her mouth was filled with saliva and my tongue."
+
+cutin,rin_kissing_clara_2
+m,"It keeps going. Another bite, and another. Chew, then push. My chin and lips hurt, but this is the only way."
+
+m,"As this continues, Clara's eyelids grow heavy. The strength leaves her body, her mouth goes slack, and she swallows the food without resisting."
+
+cutin,rin_kissing_clara_3
+m,"After it's all over, there is no more pickled daikon in the room...and Clara lies motionless on the floor."
+
+cutin
+rin,...........................
+
+clara,...........................
+
+rin,...Well? Are you full now?
+
+clara,...
+
+m,"She doesn't answer my question. Her breaths are ragged, her chest heaving."
+
+m,"As I watch her, I wipe the saliva stuck to the edge of my lips with the expensive-looking fabric she's wearing. It'll be gone soon anyway."
+
+rin,Now then...
+
+m,Just as I'd taken a moment to brush the dust off my clothes--
+
+jump,next
+
+skit,7
+play
+show
+bg,room,quake,light
+m,"A low, muffled vibration reverberates from a distance. The sound of heavy footsteps."
+
+bg,room,quake,heavy
+
+m,There's no mistaking it. Saeko has returned to her room.
+
+bg,room,quake,heavy
+
+m,Saeko walks through the room with even breaths. Every step she takes shakes the drawer like an earthquake...
+
+bg,room,quake,heavy
+
+m,Each tremor growing larger and more violent than the last.
+
+bg,room,quake,long
+
+m,"Soon, they become too strong for me to stand."
+
+m,I find myself crouching on the floor.
+
+m,"Next, I hear the creak of something moving."
+
+m,"Then, a tremendous commotion that shakes the whole room..."
+
+m,...as the room we're in--the second drawer of a desk--is pried open by Saeko's fingers.
+
+play,day,open
+interrupt,shift
+open
+interrupt,open_sliding_in
+pose,serious,normal
+saeko,"Hello, cute little people. Were you good today while I was away?"
+
+saeko,Now then...
+
+pose,serious,normal
+saeko,...
+
+saeko,I'll enjoy another one of you today.
+
+pose,serious,normal
+
+# 真顔舌なめずり差分欲しい
+# interrupt,lick
+
+pose,serious,pick
+
+m,Saeko's hand comes down into the drawer.
+
+m,Her unthinkably large fingers fill our vision.
+
+m,"They wander for just a moment, as if carefully making a decision... "
+
+skit,8
+judge
+label,8,nop
+pose,,black
+m,"And then return to the sky, empty-handed."
+
+pose,serious,normal
+saeko,...*sigh*
+
+saeko,Nobody's making my mouth water today.
+
+saeko,"...Hey, Rin."
+
+saeko,I suppose you were just an ordinary human after all.
+
+rin,(...Huh?)
+
+saeko,...Whatever. I don't need any of you anymore.
+
+interrupt,gameover
+center,GAME OVER
+
+dead
+
+label,8,chio
+pose,,black
+m,"And then, they stop. Right in front of Chio."
+
+chio,...Looks like the time's finally come.
+
+pose,serious,pick
+m,Her gigantic fingers wrap around Chio's tiny arms and legs...
+
+pose,serious,pinch,chio-p1
+m,...and carry her up into the sky.
+
+chio,"Saeko, thank you for everything."
+
+pose,serious,pinch,chio-p2
+chio,And...
+
+pose,serious,pinch,chio-p3
+chio,"Bye, Rin. Keep living for my sake too."
+
+pose,,covermouth
+
+interrupt,eat
+
+pose,serious,black
+fx,swallow
+survivor,remove,chio
+interrupt,swallow
+
+saeko,...Yum.
+
+pose,serious,covermouth
+
+saeko,I wish there'd been a bit more movement...
+
+saeko,But it is what it is.
+
+pose,serious,normal
+clara,W-Wait!
+
+saeko,...?
+
+clara,Do you think you can get away with this?
+
+clara,"You ate a living being! A human with a life, just like you!"
+
+clara,And you're even enjoying the cruelty of it--you're a terrible human being!
+
+pose,serious,pick
+saeko,...
+
+pose,serious,pinch,clara-p1
+interrupt,clara-p1
+
+pose,serious,pinch,clara-p2
+interrupt,clara-p2
+
+pose,serious,pinch,clara-p3
+interrupt,clara-p3
+
+survivor,remove,clara
+pose,serious,pinch,clara-p4
+fx,squeeze_clara
+interrupt,clara-p4
+
+pose,serious,wipehands_clara
+saeko,It really was a mistake to let her live.
+
+saeko,*sigh* Now my mood is ruined.
+
+pose,serious,normal
+saeko,"...Hey, Rin. Want to do something different?"
+
+saeko,The moon's really bright tonight.
+
+saeko,Let's go enjoy the night breeze.
+
+goto,night,6
+
+label,8,clara
+pose,,black
+m,"And then, they stop. Right in front of Clara."
+
+clara,...
+
+pose,serious,pick
+m,Her gigantic fingers wrap around Clara's tiny arms and legs...
+
+pose,serious,pinch,clara-g1
+m,...and carry her up into the sky.
+
+clara,...
+
+pose,serious,pinch,clara-g2
+clara,...
+
+pose,,covermouth
+
+interrupt,eat
+
+pose,serious,black
+fx,swallow
+survivor,remove,clara
+interrupt,swallow
+
+saeko,Delicious.
+
+pose,serious,covermouth
+
+saeko,A soft and refined taste.
+
+saeko,It's too bad she didn't have the energy to fight back...
+
+pose,smile,covermouth
+saeko,"But I'm just happy you got her all ready for me, Rin."
+
+rin,...
+
+pose,serious,normal
+saeko,"...Hey, Rin. Want to do something different?"
+
+saeko,The moon's really bright tonight.
+
+pose,smile,normal
+saeko,Let's go enjoy the night breeze.
+
+item,add,clipspear
+
+goto,night,6
