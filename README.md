@@ -1,40 +1,127 @@
-# SAEKO Mod Loader
+<p align="center">
+  <img src="assets/banner.png" alt="SAEKO Mod Loader banner" width="100%">
+</p>
 
-Universal DLL loader for adding a custom SAEKO translation as a separate language.
+<h1 align="center">SAEKO Mod Loader</h1>
 
-This version does **not** require a `pl/` folder to install. The loader can be installed first, and translation CSV files can be added later.
+<p align="center">
+  An unofficial mod loader and translation helper for <strong>SAEKO: Giantess Dating Sim</strong>.
+</p>
 
-## Install without translation files
+<p align="center">
+  <a href="https://store.steampowered.com/app/2492120/SAEKO_Giantess_Dating_Sim/">
+    <img src="https://img.shields.io/badge/Steam-SAEKO%3A%20Giantess%20Dating%20Sim-1b2838?logo=steam&logoColor=white">
+  </a>
+  <a href="https://saekogame.com/en/index.html">
+    <img src="https://img.shields.io/badge/Official%20Site-SAEKO-7b4ab8">
+  </a>
+  <a href="https://safehavn.dev/">
+    <img src="https://img.shields.io/badge/Developer-SAFE%20HAVN%20STUDIO-6f42c1">
+  </a>
+  <img src="https://img.shields.io/badge/Status-Experimental-orange">
+  <img src="https://img.shields.io/badge/Platform-Windows-blue">
+</p>
 
-1. Keep this folder anywhere outside the game directory.
-2. Run `install.bat`.
-3. Start the game from Steam.
+> [!WARNING]
+> This is an unofficial fan-made project. It is not affiliated with, endorsed by, or supported by SAFE HAVN STUDIO or HYPER REAL.  
+> Back up your game files before installing mods. Humanity has survived worse, but your save folder may not.
 
+<<<<<<< HEAD
 If no `translation/` folder exists, the installer only installs the DLL loader, config, EXE bootstrap, and launcher. It does not copy CSV files.
+=======
+---
+>>>>>>> d957242 (Add GitHub banner and official links)
 
-If auto-detection fails, run:
+## ✨ Features
 
-```powershell
-python .	ools\install_dll_loader.py --install --dll ".\saeko_mod_loader.dll" --config ".\saeko_mod_loader.ini" --game-dir "X:\SteamLibrary\steamapps\common\SAEKO Giantess Dating Sim" --no-translation-copy
+- Installs the SAEKO mod loader DLL.
+- Supports optional translation folders.
+- Does **not** require a `pl/` folder.
+- Includes tools for validating translation CSV files.
+- Designed to be easy to version-control on GitHub.
+
+---
+
+## 🔗 Official SAEKO links
+
+| Link | Description |
+|---|---|
+| [Steam Store](https://store.steampowered.com/app/2492120/SAEKO_Giantess_Dating_Sim/) | Official Steam page for the game |
+| [Official Website](https://saekogame.com/en/index.html) | Official SAEKO website |
+| [Official X / Twitter](https://twitter.com/saekogame) | Official SAEKO social account |
+| [Official Discord](https://discord.gg/3U7H7CjgxP) | Community Discord linked on the official site |
+| [SAFE HAVN STUDIO](https://safehavn.dev/) | Developer blog |
+| [HYPER REAL](https://hyperreal.jp/) | Publisher website |
+| [HYPER REAL X / Twitter](https://twitter.com/HYPERREAL_jp) | Publisher social account |
+
+---
+
+## 👥 Original game credits
+
+SAEKO: Giantess Dating Sim was developed by **SAFE HAVN STUDIO** and published by **HYPER REAL**.
+
+| Person / Team | Role | Link |
+|---|---|---|
+| SAFE HAVN STUDIO | Developer | [Development blog](https://safehavn.dev/) |
+| HYPER REAL | Publisher | [Official site](https://hyperreal.jp/) |
+| kyp | Story, programming, music, graphics | [@_newkyp](https://twitter.com/_newkyp) |
+| koh | Graphics | [@koh9083](https://twitter.com/koh9083) |
+| maztani | Design | [@k_maztani](https://twitter.com/k_maztani) |
+
+---
+
+## 📦 Installation
+
+1. Download or clone this repository.
+2. Put the files next to the game executable, or use the included installer.
+3. Run:
+
+```bat
+install.bat
 ```
 
-## Install with translation files
+To install the loader without copying any translation folder:
 
-Put your CSV translation in one of these folders:
+```powershell
+python .\tools\install_dll_loader.py --install --dll ".\saeko_mod_loader.dll" --config ".\saeko_mod_loader.ini" --no-translation-copy
+```
+
+---
+
+## 🗂️ Project structure
 
 ```text
+<<<<<<< HEAD
 translation/
+=======
+SAEKO_Mod_Loader/
+├─ assets/
+│  ├─ banner.png
+│  └─ social-preview.png
+├─ source/
+│  └─ en/
+├─ tools/
+├─ install.bat
+├─ uninstall.bat
+├─ saeko_mod_loader.dll
+├─ saeko_mod_loader.ini
+└─ README.md
+>>>>>>> d957242 (Add GitHub banner and official links)
 ```
 
-`install.bat` will validate and copy the first folder it finds. You can also choose a folder manually:
+---
+
+## 🛠️ Development notes
+
+Before committing changes, check what Git sees:
 
 ```powershell
-python .	oolsalidate_translation.py --translation ".	ranslation"
-python .	ools\install_dll_loader.py --install --dll ".\saeko_mod_loader.dll" --config ".\saeko_mod_loader.ini" --translation-dir ".	ranslation"
+git status
 ```
 
-## Uninstall
+Then commit and push:
 
+<<<<<<< HEAD
 Run `uninstall.bat`.
 
 ## Modder Notes
@@ -62,19 +149,16 @@ The title version string uses a fixed loader-owned label:
 
 ```text
 V2.1.3 modded
+=======
+```powershell
+git add .
+git commit -m "Update README and assets"
+git push
+>>>>>>> d957242 (Add GitHub banner and official links)
 ```
 
-Diagnostic log:
+---
 
-```text
-<game folder>\saeko_mod_loader.log
-```
+## ⚠️ Legal note
 
-## What The Installer Changes
-
-- Backs up `saeko_win64.exe` as `saeko_win64.original.exe`.
-- Adds a tiny `.plldr` bootstrap section and imports `saeko_mod_loader.dll`.
-- Copies CSV files only when a translation folder exists or `--translation-dir` is passed.
-- Sets SAEKO settings `Lang` to the configured language code.
-
-No game assets are packed into the EXE; translations stay as loose CSV files.
+This repository is for modding and translation tooling. Do not upload copyrighted game assets, paid game files, or redistributed game content unless you have permission. Keep it clean, because GitHub is not a magical copyright laundromat.
