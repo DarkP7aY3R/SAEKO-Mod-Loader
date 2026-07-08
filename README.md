@@ -33,7 +33,6 @@ Back up your game files before installing mods. Humanity has survived worse, but
 
 - Installs the SAEKO mod loader DLL.
 - Supports optional translation folders.
-- Does **not** require a `pl/` folder.
 - If no `translation/` folder exists, the installer only installs the DLL loader, config, EXE bootstrap, and launcher.
 - Includes helper tools for translation validation.
 
