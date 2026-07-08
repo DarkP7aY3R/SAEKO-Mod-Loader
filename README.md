@@ -24,7 +24,6 @@ Put your CSV translation in one of these folders:
 
 ```text
 translation/
-pl/
 ```
 
 `install.bat` will validate and copy the first folder it finds. You can also choose a folder manually:
