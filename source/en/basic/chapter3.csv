@@ -1,9 +1,0 @@
-chapter,3
-achieve,CHAPTER_3
-center,"CHAPTER 3
-Nice Ways to Die"
-if,5,has_object,horagai,g
-goto,day,7,7g
-else,5
-goto,day,7,7p
-end,5
