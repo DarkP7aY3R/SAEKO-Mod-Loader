@@ -4,8 +4,25 @@ __pycache__/
 *.pyc
 target/
 build/
+release/
+dist/
 *.exe
 *.pdb
 *.exp
 *.lib
 saeko_win64.original.exe
+saeko_win64.exe
+*.zip
+*.7z
+*.rar
+
+# Locally generated game assets. Do not publish these.
+texture_packs/default/
+texture_packs/real_world*/
+texture_packs/*_experiment*/
+**/_AI_PROMPT_MANIFEST.tsv
+
+# Local translation workspaces are user/mod-specific.
+translation/
+pl/
+source/

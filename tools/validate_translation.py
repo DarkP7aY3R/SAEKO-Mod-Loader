@@ -115,7 +115,12 @@ def validate_file(base: Path, translated: Path, rel: Path) -> list[str]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--base", type=Path, default=DEFAULT_BASE)
-    parser.add_argument("--translation", type=Path, default=DEFAULT_TRANSLATION, help="Translation CSV folder to validate. Defaults to ./translation.")
+    parser.add_argument(
+        "--translation",
+        type=Path,
+        default=DEFAULT_TRANSLATION,
+        help="Translation CSV folder to validate. Defaults to ./translation.",
+    )
     args = parser.parse_args()
 
     base = args.base.resolve()
@@ -124,7 +129,10 @@ def main() -> int:
     if not base.exists():
         raise SystemExit(f"Missing source folder: {base}")
     if not translated.exists():
-        raise SystemExit(f"Missing translation folder: {translated}\nPass --translation <folder> or create ./translation first.")
+        raise SystemExit(
+            f"Missing translation folder: {translated}\n"
+            "Pass --translation <folder> or create ./translation first."
+        )
 
     base_files = rel_csvs(base)
     translated_files = rel_csvs(translated)

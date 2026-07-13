@@ -26,6 +26,7 @@ FALLBACK_GAME_DIR = Path(r"L:\SteamLibrary\steamapps\common\SAEKO Giantess Datin
 DEFAULT_TRANSLATION_DIRS = (ROOT / "translation", ROOT / "pl")
 DEFAULT_DLL = ROOT / "dll_loader" / "target" / "release" / "saeko_mod_loader.dll"
 DEFAULT_CONFIG = ROOT / "saeko_mod_loader.ini"
+DEFAULT_MODS_DIR = ROOT / "mods"
 CONFIG_FILE = "saeko_mod_loader.ini"
 DLL_NAME = "saeko_mod_loader.dll"
 LEGACY_DLL_NAMES = ("saeko_pl_loader.dll",)
@@ -37,6 +38,8 @@ SECTION_LOADER = 0xE0000060
 VERSION_NEEDLE = "V2.1.3"
 DEFAULT_MODDED_LABEL = "modded"
 DEFAULT_GAME_TRANSLATION_DIR = "saeko_mod_loader/lang"
+MODS_FOLDER = Path("saeko_mod_loader") / "mods"
+TEXTURE_PACKS_FOLDER = Path("saeko_mod_loader") / "texture_packs"
 
 
 @dataclass(frozen=True)
@@ -91,8 +94,8 @@ def read_mod_config(path: Path | None) -> ModConfig:
             key, value = line.split("=", 1)
             values[key.strip().lower()] = value.strip().strip('"').strip("'")
 
-    language_code = values.get("language_code") or values.get("target_lang") or "pl"
-    language_label = values.get("language_label") or values.get("label") or "Polski"
+    language_code = values.get("language_code") or values.get("target_lang") or "custom"
+    language_label = values.get("language_label") or values.get("label") or "Custom"
     game_translation_dir = values.get("translation_dir") or DEFAULT_GAME_TRANSLATION_DIR
     version_label = version_label_for_language(language_code)
 
@@ -427,6 +430,101 @@ def copy_translation(translation_dir: Path, game_dir: Path, config: ModConfig) -
     return target
 
 
+def ensure_mods_folder(game_dir: Path) -> Path:
+    mods_dir = game_dir / MODS_FOLDER
+    mods_dir.mkdir(parents=True, exist_ok=True)
+    readme = mods_dir / "README.txt"
+    if not readme.exists():
+        readme.write_text(
+            "\n".join(
+                [
+                    "SAEKO Mod Loader mods folder",
+                    "",
+                    "Put extra mod DLL files here.",
+                    "Optional config files can use the same base name, for example:",
+                    "  ExampleMod.dll",
+                    "  ExampleMod.ini",
+                    "",
+                    "Disable a DLL by renaming it to:",
+                    "  ExampleMod.dll.disabled",
+                    "",
+                    "Config-only INI files are shown in the Mods menu status panel but are not toggled.",
+                    "",
+                ]
+            ),
+            encoding="utf-8",
+            newline="\n",
+        )
+    return mods_dir
+
+
+def copy_optional_mods(source: Path | None, target: Path) -> int:
+    if source is None or not source.exists():
+        return 0
+    copied = 0
+    for item in source.iterdir():
+        if item.name.lower() == "readme.txt" or not item.is_file():
+            continue
+        lower = item.name.lower()
+        if not (
+            lower.endswith(".dll")
+            or lower.endswith(".dll.disabled")
+            or lower.endswith(".ini")
+        ):
+            continue
+        dst = target / item.name
+        if dst.exists() and dst.read_bytes() == item.read_bytes():
+            continue
+        shutil.copy2(item, dst)
+        copied += 1
+    return copied
+
+
+def ensure_texture_packs_folder(game_dir: Path) -> Path:
+    packs_dir = game_dir / TEXTURE_PACKS_FOLDER
+    packs_dir.mkdir(parents=True, exist_ok=True)
+    readme = packs_dir / "README.txt"
+    if not readme.exists():
+        readme.write_text(
+            "\n".join(
+                [
+                    "SAEKO texture_packs folder",
+                    "",
+                    "Use the in-game Mods popup button \"Generate textures\" to export vanilla PNG files to:",
+                    "  default/",
+                    "",
+                    "Create a sibling folder, edit PNG files there, then set active_packs in:",
+                    "  saeko_mod_loader/mods/saeko_texture_packs.ini",
+                    "",
+                    "Do not redistribute the generated default folder unless you have rights to the game assets.",
+                    "",
+                ]
+            ),
+            encoding="utf-8",
+            newline="\n",
+        )
+    return packs_dir
+
+
+def copy_optional_texture_packs(source: Path | None, target: Path) -> int:
+    if source is None or not source.exists():
+        return 0
+    copied = 0
+    for item in source.iterdir():
+        if item.name.lower() == "default":
+            continue
+        dst = target / item.name
+        if item.is_dir():
+            shutil.copytree(item, dst, dirs_exist_ok=True)
+            copied += 1
+        elif item.is_file():
+            if dst.exists() and dst.read_bytes() == item.read_bytes():
+                continue
+            shutil.copy2(item, dst)
+            copied += 1
+    return copied
+
+
 def write_saeko_lang(lang: str) -> Path | None:
     appdata = os.environ.get("APPDATA")
     if not appdata:
@@ -557,6 +655,7 @@ def install(args: argparse.Namespace) -> int:
     config_path = (args.config or DEFAULT_CONFIG).resolve()
     config = read_mod_config(config_path)
     translation_dir = resolve_translation_dir(args, config)
+    copy_language_files = translation_dir is not None
 
     if not live_exe.exists():
         raise SystemExit(f"Missing game EXE: {live_exe}")
@@ -578,13 +677,19 @@ def install(args: argparse.Namespace) -> int:
     print(f"Language:        {config.language_code} ({config.language_label})")
     print(f"Version label:   {config.version_label}")
     print(f"Game CSV dir:    {config.translation_dir}")
-    print(f"Translation dir: {translation_dir if translation_dir else '(none; CSV copy skipped)'}")
+    print(f"Translation dir: {translation_dir if copy_language_files else '(disabled)'}")
 
     if args.dry_run:
         print("Dry-run OK: no files were written.")
         return 0
 
-    patch_import_table(source_exe, live_exe, config)
+    try:
+        patch_import_table(source_exe, live_exe, config)
+    except PermissionError as err:
+        raise SystemExit(
+            f"Could not patch {live_exe}: access denied. "
+            "Close SAEKO/Steam's running game process and run the installer again."
+        ) from err
     shutil.copy2(dll_path, game_dir / DLL_NAME)
     for legacy_name in LEGACY_DLL_NAMES + LEGACY_ARTIFACT_NAMES:
         legacy_path = game_dir / legacy_name
@@ -592,23 +697,31 @@ def install(args: argparse.Namespace) -> int:
             legacy_path.unlink()
     if config_path.exists():
         shutil.copy2(config_path, game_dir / CONFIG_FILE)
-    copied_translation = None
-    if translation_dir is not None:
-        copied_translation = copy_translation(translation_dir, game_dir, config)
-    settings = write_saeko_lang(config.language_code)
-    launcher = write_launcher(game_dir, config.language_code)
+    copied_translation = copy_translation(translation_dir, game_dir, config) if translation_dir else None
+    mods_dir = ensure_mods_folder(game_dir)
+    copied_mods = copy_optional_mods(args.mods_dir.resolve() if args.mods_dir else None, mods_dir)
+    texture_packs_dir = ensure_texture_packs_folder(game_dir)
+    texture_source = (
+        args.texture_packs_dir.resolve()
+        if args.texture_packs_dir
+        else (args.mods_dir.resolve().parent / "texture_packs" if args.mods_dir else None)
+    )
+    copied_texture_packs = copy_optional_texture_packs(texture_source, texture_packs_dir)
+    settings_language = config.language_code if copy_language_files else "en"
+    settings = write_saeko_lang(settings_language)
+    launcher = write_launcher(game_dir, settings_language)
 
     print("Install OK.")
     print(f"Copied DLL:      {game_dir / DLL_NAME}")
     if config_path.exists():
         print(f"Copied config:   {game_dir / CONFIG_FILE}")
-    if copied_translation is not None:
-        print(f"Copied CSV:      {copied_translation}")
-    else:
-        print("Copied CSV:      skipped; no local translation folder was found")
-        print("Next step:       use the in-game generator button to create CSV files, or pass --translation-dir when ready")
+    print(f"Copied CSV:      {copied_translation if copied_translation else '(skipped)'}")
+    print(f"Mods folder:     {mods_dir}")
+    print(f"Copied mods:     {copied_mods}")
+    print(f"Texture packs:   {texture_packs_dir}")
+    print(f"Copied packs:    {copied_texture_packs}")
     if settings:
-        print(f"Settings Lang:   {config.language_code} ({settings})")
+        print(f"Settings Lang:   {settings_language} ({settings})")
     print(f"Launcher:        {launcher}")
     return 0
 
@@ -639,11 +752,26 @@ def uninstall(args: argparse.Namespace) -> int:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--game-dir", type=Path, default=None)
-    parser.add_argument("--translation-dir", type=Path, default=None, help="Optional local CSV folder to copy into the game. If omitted, installer looks for ./<language_code>, ./translation, then ./pl; if none exists, CSV copy is skipped.")
-    parser.add_argument("--no-translation-copy", action="store_true", help="Install only the DLL/config/bootstrap and do not copy any CSV folder.")
+    parser.add_argument(
+        "--translation-dir",
+        type=Path,
+        default=None,
+        help=(
+            "Optional local CSV folder to copy into the game. If omitted, installer "
+            "looks for ./<language_code>, ./translation, then ./pl; if none exists, "
+            "CSV copy is skipped."
+        ),
+    )
     parser.add_argument("--dll", type=Path, default=DEFAULT_DLL)
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    parser.add_argument("--mods-dir", type=Path, default=DEFAULT_MODS_DIR)
+    parser.add_argument("--texture-packs-dir", type=Path, default=None)
     parser.add_argument("--backup-exe", type=Path)
+    parser.add_argument(
+        "--no-translation-copy",
+        action="store_true",
+        help="Install only the DLL/config/bootstrap/mods and do not copy any CSV folder.",
+    )
     parser.add_argument("--install", action="store_true")
     parser.add_argument("--uninstall", action="store_true")
     parser.add_argument("--dry-run", action="store_true")

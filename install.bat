@@ -4,8 +4,8 @@ cd /d "%~dp0"
 
 set "TRANSLATION_DIR="
 
-if exist ".\pl\" set "TRANSLATION_DIR=%~dp0pl"
 if exist ".\translation\" set "TRANSLATION_DIR=%~dp0translation"
+if exist ".\pl\" set "TRANSLATION_DIR=%~dp0pl"
 
 if defined TRANSLATION_DIR (
     echo Found translation folder: %TRANSLATION_DIR%
@@ -17,17 +17,17 @@ if defined TRANSLATION_DIR (
         exit /b 1
     )
 
-    python .\tools\install_dll_loader.py --install --dll "%~dp0saeko_mod_loader.dll" --config "%~dp0saeko_mod_loader.ini" --translation-dir "%TRANSLATION_DIR%"
+    python .\tools\install_dll_loader.py --install --dll "%~dp0saeko_mod_loader.dll" --config "%~dp0saeko_mod_loader.ini" --translation-dir "%TRANSLATION_DIR%" --mods-dir "%~dp0mods" --texture-packs-dir "%~dp0texture_packs"
 ) else (
-    echo No .\translation or .\pl folder found. Installing loader without copying CSV files.
-    echo You can generate templates in-game or install later with --translation-dir.
-    python .\tools\install_dll_loader.py --install --dll "%~dp0saeko_mod_loader.dll" --config "%~dp0saeko_mod_loader.ini" --no-translation-copy
+    echo No .\translation or .\pl folder found. Installing loader, Mods menu, and bundled DLL mods only.
+    echo Custom language templates can be generated later from the in-game Mods popup.
+    python .\tools\install_dll_loader.py --install --dll "%~dp0saeko_mod_loader.dll" --config "%~dp0saeko_mod_loader.ini" --mods-dir "%~dp0mods" --texture-packs-dir "%~dp0texture_packs" --no-translation-copy
 )
 
 if errorlevel 1 (
     echo.
     echo Install failed. If the game was not detected, run:
-    echo python .\tools\install_dll_loader.py --install --dll "%~dp0saeko_mod_loader.dll" --config "%~dp0saeko_mod_loader.ini" --game-dir "X:\SteamLibrary\steamapps\common\SAEKO Giantess Dating Sim" --no-translation-copy
+    echo python .\tools\install_dll_loader.py --install --dll "%~dp0saeko_mod_loader.dll" --config "%~dp0saeko_mod_loader.ini" --mods-dir "%~dp0mods" --texture-packs-dir "%~dp0texture_packs" --game-dir "X:\SteamLibrary\steamapps\common\SAEKO Giantess Dating Sim" --no-translation-copy
     echo.
     echo If you already have translated CSV files, add:
     echo --translation-dir "X:\path\to\your\translation"

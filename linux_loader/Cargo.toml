@@ -1,0 +1,14 @@
+[package]
+name = "saeko_mod_loader_linux"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "saeko_mod_loader"
+crate-type = ["cdylib"]
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+strip = true
